@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-        string name = "xxx";
-public bool isDefending;
+    string name = "xxx";
+    public bool isDefending;
     string type = "Warrior";
     public float health = 100;
-        public int healthReduce = 2;
+    public int healthReduce = 2;
     public float power;
     public float defence;
     public string weakness;
@@ -28,12 +28,7 @@ public bool isDefending;
     void Update()
     {
 
-        if (Input.GetKeyDown("a") && !hit)
-        {
-            animator.SetBool("attack", true);
-            hit = true;
-            StartCoroutine(Restart());
-        }
+        
 
     }
 
@@ -41,13 +36,5 @@ public bool isDefending;
     IEnumerator Restart()
     {
         yield return new WaitForSeconds(1f);
-        hit = false;
-        animator.SetBool("attack", false);
     }
-
-    void Attack()
-    {
-
-    }
-
 }
