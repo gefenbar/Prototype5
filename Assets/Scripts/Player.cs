@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    string Type = "Warrior";
-    int Health = 100;
-    public float PowerAttack;
-    public float Defence;
-    public string Weakness;
-    public string Strength;
+        string name = "xxx";
+public bool isDefending;
+    string type = "Warrior";
+    public float health = 100;
+        public int healthReduce = 2;
+    public float power;
+    public float defence;
+    public string weakness;
+    public string strength;
     bool hit = false;
     // string Wepons = "";
     public Animator animator;
@@ -18,7 +21,7 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -33,7 +36,7 @@ public class Player : MonoBehaviour
         }
 
     }
-    
+
 
     IEnumerator Restart()
     {
@@ -42,7 +45,7 @@ public class Player : MonoBehaviour
         animator.SetBool("attack", false);
     }
 
-void Attack()
+    void Attack()
     {
 
     }
