@@ -6,6 +6,7 @@ public class Player : MonoBehaviour
 {
     string name = "xxx";
     public bool isDefending;
+    public bool canAttack ;
     string type = "Warrior";
     public float health = 100;
     public int healthReduce = 2;
@@ -13,29 +14,17 @@ public class Player : MonoBehaviour
     public float defence;
     public string weakness;
     public string strength;
-    bool hit = false;
+    bool hit ;
     // string Wepons = "";
     public Animator animator;
 
-    
 
-    // Start is called before the first frame update
-    void Start()
+    public void OnCollisionStay(Collision col)
     {
+        if (col.gameObject.tag=="Enemy")
+        {
+            canAttack = true;
+        }
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-        
-
-    }
-
-
-    IEnumerator Restart()
-    {
-        yield return new WaitForSeconds(1f);
     }
 }

@@ -6,38 +6,32 @@ public class BattleFunctions : MonoBehaviour
 {
     public Animator animator;
     public EnemyAttributes enemy;
-    public HealthBar healthBar;
-    //  public PlayerHealthBar playerBar ;
-    // public EnemyHealthBar enemyBar;
-    float currentHealth;
+    public HealthBar playerHealthBar;
+    public HealthBar enemyHealthBar;
     public Player player;
-    //bool isDefending = false;
+    Vector3 temp = new Vector3(1.0f, 0, 0);
+
     public void MoveRight()
     {
-        player.isDefending = false;
         animator.SetBool("moveright", true);
-        Vector3 temp = new Vector3(1.0f, 0, 0);
         player.transform.position -= temp;
         StartCoroutine(ResetButtons());
     }
     public void MoveLeft()
     {
-        player.isDefending = false;
         animator.SetBool("moveleft", true);
-        Vector3 temp = new Vector3(1.0f, 0, 0);
         player.transform.position += temp;
         StartCoroutine(ResetButtons());
 
     }
     public void Attack()
     {
-        player.isDefending = false;
-        enemy.health -= enemy.healthReduce * player.power;
-        currentHealth = enemy.health;
         animator.SetBool("attack", true);
+         if ((player.transform.position.x - enemy.transform.position.x < 1.5)&&(player.transform.position.x - enemy.transform.position.x > -1.5)){
+            enemy.health -= enemy.healthReduce * player.power;
+        enemyHealthBar.SetHealth(enemy.health);
+         }
         StartCoroutine(ResetButtons());
-        healthBar.SetHealth(currentHealth);
-
     }
 
     public void Defense()
@@ -50,9 +44,11 @@ public class BattleFunctions : MonoBehaviour
     IEnumerator ResetButtons()
     {
         yield return new WaitForSeconds(1f);
+        player.isDefending = false;
         animator.SetBool("attack", false);
         animator.SetBool("Block", false);
         animator.SetBool("moveleft", false);
         animator.SetBool("moveright", false);
     }
+
 }

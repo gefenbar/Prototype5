@@ -9,6 +9,5 @@ public class EnemyAttributes : MonoBehaviour
     public string description;
     public float health;
     public float healthReduce;
-
     public float power;
 }
