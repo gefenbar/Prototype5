@@ -9,7 +9,7 @@ public class BattleFunctions : MonoBehaviour
     public HealthBar healthBar;
     //  public PlayerHealthBar playerBar ;
     // public EnemyHealthBar enemyBar;
-    float currentHealth;
+
     public Player player;
     //bool isDefending = false;
     public void MoveRight()
@@ -33,10 +33,10 @@ public class BattleFunctions : MonoBehaviour
     {
         player.isDefending = false;
         enemy.health -= enemy.healthReduce * player.power;
-        currentHealth = enemy.health;
+        healthBar.SetHealth(int(enemy.health));
         animator.SetBool("attack", true);
         StartCoroutine(ResetButtons());
-        healthBar.SetHealth(currentHealth);
+        
 
     }
 

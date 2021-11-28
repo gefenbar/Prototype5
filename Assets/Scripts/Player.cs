@@ -17,6 +17,7 @@ public class Player : MonoBehaviour
     // string Wepons = "";
     public Animator animator;
 
+    
 
     // Start is called before the first frame update
     void Start()
