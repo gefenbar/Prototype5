@@ -13,15 +13,29 @@ public class BattleFunctions : MonoBehaviour
 
     public void MoveRight()
     {
-        animator.SetBool("moveright", true);
-        player.transform.position -= temp;
-        StartCoroutine(ResetButtons());
+        if (player.transform.position.x > (enemy.transform.position.x + 1.5)){
+            animator.SetBool("moveright", true);
+            player.transform.position -= temp;
+            StartCoroutine(ResetButtons());
+        }
+        else
+        {
+            //pop up message to the screen
+        }
+
     }
     public void MoveLeft()
     {
-        animator.SetBool("moveleft", true);
-        player.transform.position += temp;
-        StartCoroutine(ResetButtons());
+        if (player.transform.position.x < 5){
+            animator.SetBool("moveleft", true);
+            player.transform.position += temp;
+            StartCoroutine(ResetButtons());
+        }
+        else
+        {
+            //pop up message to the screen
+        }
+        
 
     }
     public void Attack()
