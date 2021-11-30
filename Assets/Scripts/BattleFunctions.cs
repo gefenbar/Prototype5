@@ -43,8 +43,10 @@ public class BattleFunctions : MonoBehaviour
         animator.SetBool("attack", true);
          if ((player.transform.position.x - enemy.transform.position.x < 1.5)&&(player.transform.position.x - enemy.transform.position.x > -1.5)){
             enemy.health -= enemy.healthReduce * player.power;
-        enemyHealthBar.SetHealth(enemy.health);
-         }
+            enemyHealthBar.SetHealth(enemy.health);
+            enemy.TakeDamage();
+
+        }
         StartCoroutine(ResetButtons());
     }
 
@@ -63,6 +65,7 @@ public class BattleFunctions : MonoBehaviour
         animator.SetBool("Block", false);
         animator.SetBool("moveleft", false);
         animator.SetBool("moveright", false);
+
     }
 
 }
