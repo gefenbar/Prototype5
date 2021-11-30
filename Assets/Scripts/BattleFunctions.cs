@@ -13,7 +13,8 @@ public class BattleFunctions : MonoBehaviour
 
     public void MoveRight()
     {
-        if (player.transform.position.x > (enemy.transform.position.x + 1.5)){
+        if (player.transform.position.x > (enemy.transform.position.x + 1.5))
+        {
             animator.SetBool("moveright", true);
             player.transform.position -= temp;
             StartCoroutine(ResetButtons());
@@ -26,7 +27,8 @@ public class BattleFunctions : MonoBehaviour
     }
     public void MoveLeft()
     {
-        if (player.transform.position.x < 5){
+        if (player.transform.position.x < 5)
+        {
             animator.SetBool("moveleft", true);
             player.transform.position += temp;
             StartCoroutine(ResetButtons());
@@ -35,17 +37,21 @@ public class BattleFunctions : MonoBehaviour
         {
             //pop up message to the screen
         }
-        
+
 
     }
     public void Attack()
     {
         animator.SetBool("attack", true);
-         if ((player.transform.position.x - enemy.transform.position.x < 1.5)&&(player.transform.position.x - enemy.transform.position.x > -1.5)){
+        if ((player.transform.position.x - enemy.transform.position.x < 1.5) && (player.transform.position.x - enemy.transform.position.x > -1.5))
+        {
             enemy.health -= enemy.healthReduce * player.power;
             enemyHealthBar.SetHealth(enemy.health);
             enemy.TakeDamage();
-
+            if (enemy.health <= 0)
+            {
+                enemy.Die();
+            }
         }
         StartCoroutine(ResetButtons());
     }

@@ -13,20 +13,10 @@ public class EnemyAttributes : MonoBehaviour
     public Animator animator;
 
 
-
-    public void update()
-    {
-        if (health <= 0)
-        {
-            Die();
-        }
-    }
-
     public void TakeDamage()
     {
         animator.SetBool("Damage", true);
-        //yield return new WaitForSeconds(2);
-        animator.SetBool("Damage", false);
+                StartCoroutine(ReturnToPosition());
     }
 
     public void Die()
@@ -35,7 +25,12 @@ public class EnemyAttributes : MonoBehaviour
         
     }
 
+ IEnumerator ReturnToPosition()
+    {
+        yield return new WaitForSeconds(1f);
+        animator.SetBool("Damage", false);
 
+}
 }
 
 
