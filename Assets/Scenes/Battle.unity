@@ -2267,8 +2267,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 290984685}
-  - component: {fileID: 290984686}
   - component: {fileID: 290984687}
+  - component: {fileID: 290984689}
+  - component: {fileID: 290984688}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -2291,25 +2292,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &290984686
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 290984684}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b79d25089213be7e6ab79c883751d8e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: xxx
-  type: yyy
-  description: zzz
-  health: 100
-  healthReduce: 3
-  power: 5
-  animator: {fileID: 285462239}
 --- !u!95 &290984687
 Animator:
   serializedVersion: 3
@@ -2329,6 +2311,45 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &290984688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290984684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6768c7efb52bfc9cab8f59641f9c7fee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 290984689}
+  player: {fileID: 1900319267}
+  playerHealthBar: {fileID: 39933813}
+  enemyHealthBar: {fileID: 1073240709}
+--- !u!114 &290984689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290984684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb56b63ec08d87ec880154dd201a12bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: xxx
+  type: yyy
+  isDefending: 0
+  isAttacking: 0
+  health: 100
+  healthReduce: 3
+  power: 5
+  weakness: zxczxczxc
+  strength: zxczxczxcz
+  description: zxczczxc
+  animator: {fileID: 285462239}
 --- !u!1 &308821778
 GameObject:
   m_ObjectHideFlags: 0
@@ -2507,9 +2528,33 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1298607634}
-        m_TargetAssemblyTypeName: BattleFunctions, Assembly-CSharp
+      - m_Target: {fileID: 1900319268}
+        m_TargetAssemblyTypeName: BattleManager, Assembly-CSharp
+        m_MethodName: PlayerMove
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1900319268}
+        m_TargetAssemblyTypeName: BattleManager, Assembly-CSharp
         m_MethodName: Attack
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1900319268}
+        m_TargetAssemblyTypeName: BattleManager, Assembly-CSharp
+        m_MethodName: ComputerMove
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8144,7 +8189,6 @@ GameObject:
   - component: {fileID: 1298607633}
   - component: {fileID: 1298607632}
   - component: {fileID: 1298607631}
-  - component: {fileID: 1298607634}
   - component: {fileID: 1298607635}
   m_Layer: 5
   m_Name: Canvas
@@ -8240,23 +8284,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!114 &1298607634
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1298607629}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 968a4543537dd52848313d10b84b9ef4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 1900319264}
-  enemy: {fileID: 290984686}
-  playerHealthBar: {fileID: 39933813}
-  enemyHealthBar: {fileID: 1073240709}
-  player: {fileID: 1900319263}
 --- !u!114 &1298607635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8688,7 +8715,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 11, y: 270}
+  m_AnchoredPosition: {x: 700, y: 400}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1404206027
@@ -9143,9 +9170,33 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1298607634}
-        m_TargetAssemblyTypeName: BattleFunctions, Assembly-CSharp
+      - m_Target: {fileID: 1900319268}
+        m_TargetAssemblyTypeName: BattleManager, Assembly-CSharp
+        m_MethodName: PlayerMove
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1900319268}
+        m_TargetAssemblyTypeName: BattleManager, Assembly-CSharp
         m_MethodName: MoveLeft
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1900319268}
+        m_TargetAssemblyTypeName: BattleManager, Assembly-CSharp
+        m_MethodName: ComputerMove
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11471,27 +11522,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1668188202801692, guid: 7e6e29f21a00d5f499e21eb93d6fabaa, type: 3}
   m_PrefabInstance: {fileID: 119667813}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1900319263
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1900319262}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c8a5dee708d22443b748a4308619879, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isDefending: 0
-  canAttack: 0
-  health: 100
-  healthReduce: 100
-  power: 2
-  defence: 2
-  weakness: x
-  strength: y
-  animator: {fileID: 1900319264}
 --- !u!95 &1900319264 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 95844511793012932, guid: 7e6e29f21a00d5f499e21eb93d6fabaa, type: 3}
@@ -11511,6 +11541,45 @@ CapsuleCollider:
   m_Height: 1.83
   m_Direction: 1
   m_Center: {x: 0, y: 0.95, z: 0}
+--- !u!114 &1900319267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1900319262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb56b63ec08d87ec880154dd201a12bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: zxc
+  type: zxc
+  isDefending: 0
+  isAttacking: 0
+  health: 10
+  healthReduce: 10
+  power: 20
+  weakness: vbvb
+  strength: dfg
+  description: dfg
+  animator: {fileID: 1900319264}
+--- !u!114 &1900319268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1900319262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6768c7efb52bfc9cab8f59641f9c7fee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 290984689}
+  player: {fileID: 1900319267}
+  playerHealthBar: {fileID: 39933813}
+  enemyHealthBar: {fileID: 1073240709}
 --- !u!1 &1900970226
 GameObject:
   m_ObjectHideFlags: 0
@@ -11593,9 +11662,33 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1298607634}
-        m_TargetAssemblyTypeName: BattleFunctions, Assembly-CSharp
+      - m_Target: {fileID: 1900319268}
+        m_TargetAssemblyTypeName: BattleManager, Assembly-CSharp
+        m_MethodName: PlayerMove
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1900319268}
+        m_TargetAssemblyTypeName: BattleManager, Assembly-CSharp
         m_MethodName: MoveRight
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1900319268}
+        m_TargetAssemblyTypeName: BattleManager, Assembly-CSharp
+        m_MethodName: ComputerMove
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13485,9 +13578,33 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1298607634}
-        m_TargetAssemblyTypeName: BattleFunctions, Assembly-CSharp
+      - m_Target: {fileID: 1900319268}
+        m_TargetAssemblyTypeName: BattleManager, Assembly-CSharp
+        m_MethodName: PlayerMove
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1900319268}
+        m_TargetAssemblyTypeName: BattleManager, Assembly-CSharp
         m_MethodName: Defense
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1900319268}
+        m_TargetAssemblyTypeName: BattleManager, Assembly-CSharp
+        m_MethodName: ComputerMove
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
