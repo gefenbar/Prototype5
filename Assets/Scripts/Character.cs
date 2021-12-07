@@ -62,7 +62,7 @@ public class Character : MonoBehaviour
 
     public void Die()
     {
-        animator.SetBool("Die", true);
+        animator.SetBool("die", true);
                 StartCoroutine(ReturnToPosition());
 
 
