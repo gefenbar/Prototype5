@@ -24,7 +24,7 @@ public class Character : MonoBehaviour
     {
         animator.SetBool("moveright", true);
         transform.position -= temp;
-                StartCoroutine(ReturnToPosition());
+        StartCoroutine(ReturnToPosition());
 
     }
 
@@ -32,15 +32,16 @@ public class Character : MonoBehaviour
     {
         animator.SetBool("moveleft", true);
         transform.position += temp;
-                StartCoroutine(ReturnToPosition());
+        StartCoroutine(ReturnToPosition());
 
     }
 
     public void Attack()
     {
+        
         animator.SetBool("attack", true);
-                StartCoroutine(ReturnToPosition());
-
+        StartCoroutine(ReturnToPosition());
+        SoundManagerScript.PlaySound("Attack");
 
     }
 
@@ -49,7 +50,8 @@ public class Character : MonoBehaviour
     {
         isDefending = true;
         animator.SetBool("Block", true);
-                StartCoroutine(ReturnToPosition());
+        StartCoroutine(ReturnToPosition());
+        //SoundManagerScript.PlaySound("Block");
 
 
     }
@@ -58,12 +60,14 @@ public class Character : MonoBehaviour
     {
         animator.SetBool("Damage", true);
         StartCoroutine(ReturnToPosition());
+        //SoundManagerScript.PlaySound("injured");
     }
 
     public void Die()
     {
         animator.SetBool("die", true);
-                StartCoroutine(ReturnToPosition());
+        StartCoroutine(ReturnToPosition());
+        //SoundManagerScript.PlaySound("Die");
 
 
     }
