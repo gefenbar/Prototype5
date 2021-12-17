@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class EnterBattle : MonoBehaviour
+
+public class EnterBattleLoader : MonoBehaviour
 {
-    void OnMouseDown()
+   void OnMouseDown()
     {
-        SceneManager.LoadScene("Battle");
+        SceneManager.LoadScene("BattleLoader");
     }
 }

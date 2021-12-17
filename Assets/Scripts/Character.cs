@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Character : MonoBehaviour
 {
-    public static int coins=300;
+    public static int coins = 300;
     public static string sword;
     public static int apple = 0;
     public static int scroll = 0;
@@ -79,16 +79,20 @@ public class Character : MonoBehaviour
     public void UseApple()
     {
         animator.SetBool("useapple", true);
+        power += 10;
+
         StartCoroutine(ReturnToPosition());
     }
     public void UsePotion()
     {
         animator.SetBool("usepotion", true);
+        health += 20;
         StartCoroutine(ReturnToPosition());
     }
     public void UseScroll()
     {
-
+        power += 8;
+        health += 12;
         animator.SetBool("usescroll", true);
         StartCoroutine(ReturnToPosition());
     }
