@@ -219,19 +219,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bae4aa308c0c17e45b7a87fb8305ec13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!65 &168703167
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 168703162}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.06427203, y: 0.064272046, z: 0.11156489}
-  m_Center: {x: 0.0000000022845308, y: 0.000000008878427, z: 0.055782445}
 --- !u!1001 &244869677
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -602,43 +589,13 @@ RectTransform:
   m_Children:
   - {fileID: 1597931512}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &529803549 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4835308476763760943, guid: 0026beb287f27ab488ad1b904b5ef6d4, type: 3}
-  m_PrefabInstance: {fileID: 4835308475579021967}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &529803550
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 529803549}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09473a24480f1aea98daf429de67f789, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!65 &529803554
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 529803549}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.049857646, y: 0.06709372, z: 0.0431513}
-  m_Center: {x: -0.00030937511, y: 0.00060705026, z: 0.021575648}
 --- !u!1001 &558071289
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -833,7 +790,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1136385240
 GameObject:
@@ -991,7 +948,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1172623683
 PrefabInstance:
