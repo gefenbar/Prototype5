@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class Character : MonoBehaviour
 {
-
+    public static int coins=300;
+    public static string sword;
+    public static int apple = 0;
+    public static int scroll = 0;
+    public static int potion = 0;
     public string name;
     public string type;
     public bool isDefending = false;
     public bool isAttacking = false;
-    public float health;
+    public float health = 100;
     public int healthReduce;
     public float power;
     public string weakness;
@@ -38,7 +42,7 @@ public class Character : MonoBehaviour
 
     public void Attack()
     {
-        
+
         animator.SetBool("attack", true);
         StartCoroutine(ReturnToPosition());
         SoundManagerScript.PlaySound("Attack");
@@ -70,6 +74,23 @@ public class Character : MonoBehaviour
         //SoundManagerScript.PlaySound("Die");
 
 
+    }
+
+    public void UseApple()
+    {
+        animator.SetBool("useapple", true);
+        StartCoroutine(ReturnToPosition());
+    }
+    public void UsePotion()
+    {
+        animator.SetBool("usepotion", true);
+        StartCoroutine(ReturnToPosition());
+    }
+    public void UseScroll()
+    {
+
+        animator.SetBool("usescroll", true);
+        StartCoroutine(ReturnToPosition());
     }
 
     IEnumerator ReturnToPosition()
