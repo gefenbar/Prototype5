@@ -53,4 +53,10 @@ public class SoundManagerScript : MonoBehaviour
                 break;
         }
     }
+
+    //public static void Volume(string clip)
+    //{
+
+    //}
+
 }
