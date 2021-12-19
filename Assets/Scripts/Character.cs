@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Character : MonoBehaviour
 {
-    int counter=10;
+    int counter = 10;
     public Text timer;
     public string name;
     public string type;
@@ -88,7 +88,7 @@ public class Character : MonoBehaviour
         animator.SetBool("usepotion", true);
         health += 20;
         StartCoroutine(UpgradesTimer("Potion"));
-        StartCoroutine(ReturnToPosition());
+        //StartCoroutine(ReturnToPosition());
     }
     public void UseScroll()
     {
@@ -96,7 +96,7 @@ public class Character : MonoBehaviour
         health += 12;
         animator.SetBool("usescroll", true);
         StartCoroutine(UpgradesTimer("Scroll"));
-        StartCoroutine(ReturnToPosition());
+        //StartCoroutine(ReturnToPosition());
     }
 
     IEnumerator ReturnToPosition()
@@ -112,7 +112,7 @@ public class Character : MonoBehaviour
     }
     IEnumerator UpgradesTimer(string upgrade)
     {
-                    timer.text = counter.ToString();
+        timer.text = counter.ToString();
 
         if (counter == 0)
         {
@@ -136,8 +136,8 @@ public class Character : MonoBehaviour
                 health -= 12;
                 animator.SetBool("usescroll", false);
             }
-            counter=10;
-            timer.text=" ";
+            counter = 10;
+            timer.text = " ";
         }
         else
         {

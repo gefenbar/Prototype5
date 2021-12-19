@@ -10,5 +10,4 @@ public class Player : Character
     public static int scroll = 0;
     public static int potion = 0;
     
-
 }

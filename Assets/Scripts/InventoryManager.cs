@@ -9,7 +9,7 @@ public class InventoryManager : MonoBehaviour
     int applePrice = 150;
     int potionPrice = 250;
     int scrollPrice = 350;
-     int sword1price = 150;
+    int sword1price = 150;
     int sword2price = 250;
     int sword3price = 350;
 
@@ -23,12 +23,11 @@ public class InventoryManager : MonoBehaviour
         {
             Player.coins -= applePrice;
             Player.apple += 1;
-            Debug.Log("coinsleft: " + Player.coins);
-            Debug.Log("apples: " + Player.apple);
+          
         }
         else
-Error("Apple");
-        
+            Error("Apple");
+
 
     }
 
@@ -40,7 +39,7 @@ Error("Apple");
             Player.potion += 1;
         }
         else
-        Error("Potion");
+            Error("Potion");
 
     }
 
@@ -52,43 +51,63 @@ Error("Apple");
             Player.scroll += 1;
         }
         else
-                Error("Scroll");
+            Error("Scroll");
 
     }
 
-    public void Error(string item){
-        error.text="You don't have enough money to buy " + item;
+    public void Error(string item)
+    {
+        if (item == "Begginer's" || item == "Intermediate's")
+        {
+            error.text = "You need to buy the " + item + " sword before this one ";
+
+        }
+        else
+            error.text = "You don't have enough money to buy " + item;
     }
 
     public void BuySword1()
     {
- if (Player.coins >= sword1price)
+        if (Player.coins >= sword1price)
         {
             Player.coins -= sword1price;
-            Player.sword="sword1";
+            Player.sword = "Sword1";
+              // Player.morePower+=10;
         }
         else
-                Error("Sword1");
+            Error("Sword1");
 
     }
-     public void BuySword2()
+    public void BuySword2()
     {
- if (Player.coins >= sword2price)
+        if (Player.sword == "Sword1")
         {
-            Player.coins -= sword2price;
-            Player.sword="sword2";
-        }
-        else
+            if (Player.coins >= sword2price)
+            {
+                Player.coins -= sword2price;
+                Player.sword = "Sword2";
+        //       Player.morePower+=15;
+            }
+            else
                 Error("Sword2");
-    }
-     public void BuySword3()
-    {
- if (Player.coins >= sword3price)
-        {
-            Player.coins -= sword3price;
-            Player.sword="sword3";
         }
-        else
+        else Error("Begginer's");
+
+    }
+    public void BuySword3()
+    {
+        if (Player.sword == "Sword2")
+        {
+            if (Player.coins >= sword3price)
+            {
+                Player.coins -= sword3price;
+                Player.sword = "Sword3";
+         //      Player.morePower+=20;
+
+            }
+            else
                 Error("Sword3");
+        }
+        else Error("Intermediate's");
     }
 }

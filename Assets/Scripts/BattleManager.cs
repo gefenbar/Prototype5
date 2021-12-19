@@ -95,6 +95,12 @@ public class BattleManager : MonoBehaviour
             if (disabled.health <= 0)
             {
                 disabled.Die();
+                if(disabled==player){
+                    Player.coins/=2;
+                }
+                else{
+                    Player.coins*=2;
+                }
             }
         }
 
