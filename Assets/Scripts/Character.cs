@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Character : MonoBehaviour
 {
-    //public Text timer;
+    int counter=10;
+    public Text timer;
     public string name;
     public string type;
     public bool isDefending = false;
@@ -78,13 +80,14 @@ public class Character : MonoBehaviour
     {
         animator.SetBool("useapple", true);
         power += 10;
-
-        StartCoroutine(ReturnToPosition());
+        StartCoroutine(UpgradesTimer("Apple"));
+        // StartCoroutine(ReturnToPosition());
     }
     public void UsePotion()
     {
         animator.SetBool("usepotion", true);
         health += 20;
+        StartCoroutine(UpgradesTimer("Potion"));
         StartCoroutine(ReturnToPosition());
     }
     public void UseScroll()
@@ -92,6 +95,7 @@ public class Character : MonoBehaviour
         power += 8;
         health += 12;
         animator.SetBool("usescroll", true);
+        StartCoroutine(UpgradesTimer("Scroll"));
         StartCoroutine(ReturnToPosition());
     }
 
@@ -106,24 +110,43 @@ public class Character : MonoBehaviour
         animator.SetBool("moveright", false);
 
     }
-    // IEnumerator UpgradesTimer()
-    // {
-    //     for (int i = 10; i > 0; i++)
-    //     {
-    //         yield return new WaitForSeconds(1f);
-    //         timer = i;
-    //         if (timer == 0)
-    //         {
+    IEnumerator UpgradesTimer(string upgrade)
+    {
+                    timer.text = counter.ToString();
 
-    //         }
-    //         else
-    //         {
-    //             timer--;
-    //             timer.text =i.ToString();
-    //             }
+        if (counter == 0)
+        {
+            if (upgrade == "Apple")
+            {
+                power -= 10;
 
-    //     }
+                animator.SetBool("useapple", false);
+            }
 
-    //}
+            if (upgrade == "Potion")
+            {
+                health -= 20;
+
+                animator.SetBool("usepotion", false);
+
+            }
+            if (upgrade == "Scroll")
+            {
+                power -= 8;
+                health -= 12;
+                animator.SetBool("usescroll", false);
+            }
+            counter=10;
+            timer.text=" ";
+        }
+        else
+        {
+            yield return new WaitForSeconds(1f);
+            counter--;
+            StartCoroutine(UpgradesTimer(upgrade));
+
+        }
+
+    }
 
 }

@@ -68,7 +68,7 @@ Error("Apple");
             Player.sword="sword1";
         }
         else
-                Error("Sword");
+                Error("Sword1");
 
     }
      public void BuySword2()
@@ -86,7 +86,7 @@ Error("Apple");
  if (Player.coins >= sword3price)
         {
             Player.coins -= sword3price;
-            Player.sword="sword31";
+            Player.sword="sword3";
         }
         else
                 Error("Sword3");
