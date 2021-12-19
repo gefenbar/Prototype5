@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class SoundManagerScript : MonoBehaviour
 {
-    public static AudioClip Attack, Block, Die, Heal, injured;
-    static AudioSource audioSrc;
+    public AudioClip Attack, Block, Die, Heal, Injured, Move;
+    public AudioSource audioSrc;
 
 
 
@@ -13,50 +13,39 @@ public class SoundManagerScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Attack = Resources.Load<AudioClip>("Attack");
-        /* 
-               injured = Resources.Load<AudioClip>("injured");
-               Heal = Resources.Load<AudioClip>("Heal");
-               Die= Resources.Load<AudioClip>("Die");
-               Block = Resources.Load<AudioClip>("Block");
-        */
-        audioSrc = GetComponent<AudioSource>();
+        AudioSource audioSrc = GetComponent<AudioSource>();
+
 
     }
 
-    // Update is called once per frame
-    void Update()
+
+
+
+    public void AttackSound()
     {
-
+        audioSrc.PlayOneShot(Attack);
     }
-    public static void PlaySound(string clip)
+    public void BlockSound()
     {
-        switch (clip)
-        {
-            case "Attack":
-                audioSrc.PlayOneShot(Attack);
-                break;
-            /*            case "Block":
-                            audioSrc.PlayOneShot(Block);
-                            break;
-                        case "Die":
-                            audioSrc.PlayOneShot(Die);
-                            break;
-                        case "Heal":
-                            audioSrc.PlayOneShot(Heal);
-                            break;
-                        case "injured":
-                            audioSrc.PlayOneShot(injured);
-                            break;
-            */
-            default:
-                break;
-        }
+        audioSrc.PlayOneShot(Block);
+    }
+    public void DieSound()
+    {
+        audioSrc.PlayOneShot(Die);
+    }
+    public void HealSound()
+    {
+        audioSrc.PlayOneShot(Heal);
+    }
+    public void InjuredSound()
+    {
+        audioSrc.PlayOneShot(Injured);
+
+    }
+    public void MoveSound()
+    {
+        audioSrc.PlayOneShot(Move);
     }
 
-    //public static void Volume(string clip)
-    //{
-
-    //}
 
 }

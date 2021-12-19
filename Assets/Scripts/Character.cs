@@ -15,8 +15,9 @@ public class Character : MonoBehaviour
     public string weakness;
     public string strength;
     public string description;
-
+    public SoundManagerScript soundManager;
     public Animator animator;
+
 
     Vector3 temp = new Vector3(1.0f, 0, 0);
 
@@ -25,7 +26,7 @@ public class Character : MonoBehaviour
         animator.SetBool("moveright", true);
         transform.position -= temp;
         StartCoroutine(ReturnToPosition());
-
+        soundManager.MoveSound();
     }
 
     public void MoveLeft()
@@ -33,6 +34,7 @@ public class Character : MonoBehaviour
         animator.SetBool("moveleft", true);
         transform.position += temp;
         StartCoroutine(ReturnToPosition());
+        soundManager.MoveSound();
 
     }
 
@@ -41,7 +43,7 @@ public class Character : MonoBehaviour
         
         animator.SetBool("attack", true);
         StartCoroutine(ReturnToPosition());
-        SoundManagerScript.PlaySound("Attack");
+        soundManager.AttackSound();
 
     }
 
@@ -51,7 +53,7 @@ public class Character : MonoBehaviour
         isDefending = true;
         animator.SetBool("Block", true);
         StartCoroutine(ReturnToPosition());
-        //SoundManagerScript.PlaySound("Block");
+        soundManager.BlockSound();
 
 
     }
@@ -60,14 +62,14 @@ public class Character : MonoBehaviour
     {
         animator.SetBool("Damage", true);
         StartCoroutine(ReturnToPosition());
-        //SoundManagerScript.PlaySound("injured");
+        soundManager.InjuredSound();
     }
 
     public void Die()
     {
         animator.SetBool("die", true);
         StartCoroutine(ReturnToPosition());
-        //SoundManagerScript.PlaySound("Die");
+        soundManager.DieSound();
 
 
     }
