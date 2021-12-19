@@ -1,14 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Character : MonoBehaviour
 {
-    public static int coins = 300;
-    public static string sword;
-    public static int apple = 0;
-    public static int scroll = 0;
-    public static int potion = 0;
+    int counter = 10;
+    public Text timer;
     public string name;
     public string type;
     public bool isDefending = false;
@@ -82,21 +80,23 @@ public class Character : MonoBehaviour
     {
         animator.SetBool("useapple", true);
         power += 10;
-
-        StartCoroutine(ReturnToPosition());
+        StartCoroutine(UpgradesTimer("Apple"));
+        // StartCoroutine(ReturnToPosition());
     }
     public void UsePotion()
     {
         animator.SetBool("usepotion", true);
         health += 20;
-        StartCoroutine(ReturnToPosition());
+        StartCoroutine(UpgradesTimer("Potion"));
+        //StartCoroutine(ReturnToPosition());
     }
     public void UseScroll()
     {
         power += 8;
         health += 12;
         animator.SetBool("usescroll", true);
-        StartCoroutine(ReturnToPosition());
+        StartCoroutine(UpgradesTimer("Scroll"));
+        //StartCoroutine(ReturnToPosition());
     }
 
     IEnumerator ReturnToPosition()
@@ -110,4 +110,43 @@ public class Character : MonoBehaviour
         animator.SetBool("moveright", false);
 
     }
+    IEnumerator UpgradesTimer(string upgrade)
+    {
+        timer.text = counter.ToString();
+
+        if (counter == 0)
+        {
+            if (upgrade == "Apple")
+            {
+                power -= 10;
+
+                animator.SetBool("useapple", false);
+            }
+
+            if (upgrade == "Potion")
+            {
+                health -= 20;
+
+                animator.SetBool("usepotion", false);
+
+            }
+            if (upgrade == "Scroll")
+            {
+                power -= 8;
+                health -= 12;
+                animator.SetBool("usescroll", false);
+            }
+            counter = 10;
+            timer.text = " ";
+        }
+        else
+        {
+            yield return new WaitForSeconds(1f);
+            counter--;
+            StartCoroutine(UpgradesTimer(upgrade));
+
+        }
+
+    }
+
 }

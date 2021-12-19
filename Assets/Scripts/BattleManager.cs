@@ -6,8 +6,8 @@ using UnityEngine.UI;
 
 public class BattleManager : MonoBehaviour
 {
-    public Character enemy;
-    public Character player;
+    public Character enemy=new Enemy();
+    public Character player=new Player();
     Character enabled;
     Character disabled;
     public HealthBar playerHealthBar;
@@ -21,13 +21,13 @@ public class BattleManager : MonoBehaviour
     HealthBar disabledHealthBar;
     public void Update()
     {
-        if (Character.apple < 1)
+        if (Player.apple < 1)
             apple.interactable=false;
 
-        if (Character.potion < 1)
+        if (Player.potion < 1)
             potion.interactable=false;
 
-        if (Character.scroll < 1)
+        if (Player.scroll < 1)
             scroll.interactable=false;
 
     }
@@ -95,6 +95,12 @@ public class BattleManager : MonoBehaviour
             if (disabled.health <= 0)
             {
                 disabled.Die();
+                if(disabled==player){
+                    Player.coins/=2;
+                }
+                else{
+                    Player.coins*=2;
+                }
             }
         }
 
@@ -107,26 +113,26 @@ public class BattleManager : MonoBehaviour
 
     public void UseApple()
     {
-        if (Character.apple > 0)
+        if (Player.apple > 0)
         {
-            Character.apple -= 1;
+            Player.apple -= 1;
             player.UseApple();
         }
 
     }
     public void UsePotion()
     {
-        if (Character.potion > 0)
+        if (Player.potion > 0)
         {
-            Character.potion -= 1;
+            Player.potion -= 1;
             player.UsePotion();
         }
     }
     public void UseScroll()
     {
-        if (Character.scroll > 0)
+        if (Player.scroll > 0)
         {
-            Character.scroll -= 1;
+            Player.scroll -= 1;
             player.UseScroll();
         }
     }

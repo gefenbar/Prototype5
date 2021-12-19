@@ -391,7 +391,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &109951376
 PrefabInstance:
@@ -663,8 +663,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1900319267}
-        m_TargetAssemblyTypeName: Character, Assembly-CSharp
+      - m_Target: {fileID: 1900319268}
+        m_TargetAssemblyTypeName: BattleManager, Assembly-CSharp
         m_MethodName: MoveRight
         m_Mode: 1
         m_Arguments:
@@ -675,8 +675,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1900319267}
-        m_TargetAssemblyTypeName: Character, Assembly-CSharp
+      - m_Target: {fileID: 1900319268}
+        m_TargetAssemblyTypeName: BattleManager, Assembly-CSharp
         m_MethodName: Attack
         m_Mode: 1
         m_Arguments:
@@ -942,8 +942,8 @@ GameObject:
   m_Component:
   - component: {fileID: 290984685}
   - component: {fileID: 290984687}
-  - component: {fileID: 290984689}
   - component: {fileID: 290984688}
+  - component: {fileID: 290984686}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -964,8 +964,33 @@ Transform:
   m_Children:
   - {fileID: 2042811619}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &290984686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290984684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1570df2515a51539392c91507ca3c7d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: {fileID: 643339233}
+  name: Enemy
+  type: 
+  isDefending: 0
+  isAttacking: 0
+  health: 100
+  healthReduce: 0
+  power: 5
+  weakness: 3
+  strength: 
+  description: 
+  soundManager: {fileID: 2072285004}
+  animator: {fileID: 285462239}
 --- !u!95 &290984687
 Animator:
   serializedVersion: 3
@@ -975,7 +1000,7 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 290984684}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
+  m_Avatar: {fileID: 9000000, guid: 7e30eee73c241d5448ce0ac372cf6602, type: 3}
   m_Controller: {fileID: 9100000, guid: 36601e68730bfe84aba3e1c271cec14b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
@@ -997,37 +1022,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6768c7efb52bfc9cab8f59641f9c7fee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 290984689}
-  player: {fileID: 1900319267}
+  enemy: {fileID: 290984686}
+  player: {fileID: 1900319263}
   playerHealthBar: {fileID: 39933813}
   enemyHealthBar: {fileID: 1073240709}
   apple: {fileID: 1916298696}
   potion: {fileID: 1031309586}
   scroll: {fileID: 1270548044}
---- !u!114 &290984689
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 290984684}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb56b63ec08d87ec880154dd201a12bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: xxx
-  type: yyy
-  isDefending: 0
-  isAttacking: 0
-  health: 100
-  healthReduce: 3
-  power: 5
-  weakness: zxczxczxc
-  strength: zxczxczxcz
-  description: zxczczxc
-  soundManager: {fileID: 0}
-  animator: {fileID: 285462239}
 --- !u!1 &308821778
 GameObject:
   m_ObjectHideFlags: 0
@@ -1559,6 +1560,85 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ac5831a4705b70489955062116ed0e6, type: 3}
+--- !u!1 &643339231
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 643339232}
+  - component: {fileID: 643339234}
+  - component: {fileID: 643339233}
+  m_Layer: 5
+  m_Name: Timer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &643339232
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643339231}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1298607630}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -225, y: -300}
+  m_SizeDelta: {x: 200, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &643339233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643339231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 16
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &643339234
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643339231}
+  m_CullTransparentMesh: 1
 --- !u!4 &678095761 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8903058273634951509, guid: f1fc5bb90ac285e4486771552d63bcb8, type: 3}
@@ -1923,7 +2003,7 @@ Transform:
   m_Children:
   - {fileID: 2030427315}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1001572134
 PrefabInstance:
@@ -2577,7 +2657,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 44, y: -518, z: 0}
 --- !u!1 &1102192270
 GameObject:
@@ -3017,8 +3097,9 @@ RectTransform:
   - {fileID: 1031309585}
   - {fileID: 1270548043}
   - {fileID: 1916298695}
+  - {fileID: 643339232}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3576,8 +3657,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1900319267}
-        m_TargetAssemblyTypeName: Character, Assembly-CSharp
+      - m_Target: {fileID: 1900319268}
+        m_TargetAssemblyTypeName: BattleManager, Assembly-CSharp
         m_MethodName: MoveRight
         m_Mode: 1
         m_Arguments:
@@ -4380,6 +4461,31 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1668188202801692, guid: 7e6e29f21a00d5f499e21eb93d6fabaa, type: 3}
   m_PrefabInstance: {fileID: 119667813}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1900319263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1900319262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2defaf25713ce08bcafcdc4202d1aa7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: {fileID: 643339233}
+  name: John Doe
+  type: 
+  isDefending: 0
+  isAttacking: 0
+  health: 100
+  healthReduce: 3
+  power: 5
+  weakness: xyz
+  strength: xyz
+  description: 
+  soundManager: {fileID: 2072285004}
+  animator: {fileID: 1900319264}
 --- !u!95 &1900319264 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 95844511793012932, guid: 7e6e29f21a00d5f499e21eb93d6fabaa, type: 3}
@@ -4399,30 +4505,6 @@ CapsuleCollider:
   m_Height: 1.83
   m_Direction: 1
   m_Center: {x: 0, y: 0.95, z: 0}
---- !u!114 &1900319267
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1900319262}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb56b63ec08d87ec880154dd201a12bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: zxc
-  type: zxc
-  isDefending: 0
-  isAttacking: 0
-  health: 10
-  healthReduce: 10
-  power: 20
-  weakness: vbvb
-  strength: dfg
-  description: dfg
-  soundManager: {fileID: 2072285004}
-  animator: {fileID: 1900319264}
 --- !u!114 &1900319268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4435,8 +4517,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6768c7efb52bfc9cab8f59641f9c7fee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 290984689}
-  player: {fileID: 1900319267}
+  enemy: {fileID: 290984686}
+  player: {fileID: 1900319263}
   playerHealthBar: {fileID: 39933813}
   enemyHealthBar: {fileID: 1073240709}
   apple: {fileID: 1916298696}
