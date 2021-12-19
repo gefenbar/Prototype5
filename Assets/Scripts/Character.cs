@@ -4,11 +4,7 @@ using UnityEngine;
 
 public class Character : MonoBehaviour
 {
-    public static int coins = 300;
-    public static string sword;
-    public static int apple = 0;
-    public static int scroll = 0;
-    public static int potion = 0;
+    //public Text timer;
     public string name;
     public string type;
     public bool isDefending = false;
@@ -110,4 +106,24 @@ public class Character : MonoBehaviour
         animator.SetBool("moveright", false);
 
     }
+    // IEnumerator UpgradesTimer()
+    // {
+    //     for (int i = 10; i > 0; i++)
+    //     {
+    //         yield return new WaitForSeconds(1f);
+    //         timer = i;
+    //         if (timer == 0)
+    //         {
+
+    //         }
+    //         else
+    //         {
+    //             timer--;
+    //             timer.text =i.ToString();
+    //             }
+
+    //     }
+
+    //}
+
 }

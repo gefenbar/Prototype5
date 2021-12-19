@@ -15,16 +15,16 @@ public class InventoryManager : MonoBehaviour
 
     public void Update()
     {
-        coins.text = Character.coins.ToString();
+        coins.text = Player.coins.ToString();
     }
     public void BuyApple()
     {
-        if (Character.coins >= applePrice)
+        if (Player.coins >= applePrice)
         {
-            Character.coins -= applePrice;
-            Character.apple += 1;
-            Debug.Log("coinsleft: " + Character.coins);
-            Debug.Log("apples: " + Character.apple);
+            Player.coins -= applePrice;
+            Player.apple += 1;
+            Debug.Log("coinsleft: " + Player.coins);
+            Debug.Log("apples: " + Player.apple);
         }
         else
 Error("Apple");
@@ -34,10 +34,10 @@ Error("Apple");
 
     public void BuyPotion()
     {
-        if (Character.coins >= potionPrice)
+        if (Player.coins >= potionPrice)
         {
-            Character.coins -= potionPrice;
-            Character.potion += 1;
+            Player.coins -= potionPrice;
+            Player.potion += 1;
         }
         else
         Error("Potion");
@@ -46,10 +46,10 @@ Error("Apple");
 
     public void BuyScroll()
     {
-        if (Character.coins >= scrollPrice)
+        if (Player.coins >= scrollPrice)
         {
-            Character.coins -= scrollPrice;
-            Character.scroll += 1;
+            Player.coins -= scrollPrice;
+            Player.scroll += 1;
         }
         else
                 Error("Scroll");
@@ -62,10 +62,10 @@ Error("Apple");
 
     public void BuySword1()
     {
- if (Character.coins >= sword1price)
+ if (Player.coins >= sword1price)
         {
-            Character.coins -= sword1price;
-            Character.sword="sword1";
+            Player.coins -= sword1price;
+            Player.sword="sword1";
         }
         else
                 Error("Sword");
@@ -73,20 +73,20 @@ Error("Apple");
     }
      public void BuySword2()
     {
- if (Character.coins >= sword2price)
+ if (Player.coins >= sword2price)
         {
-            Character.coins -= sword2price;
-            Character.sword="sword2";
+            Player.coins -= sword2price;
+            Player.sword="sword2";
         }
         else
                 Error("Sword2");
     }
      public void BuySword3()
     {
- if (Character.coins >= sword3price)
+ if (Player.coins >= sword3price)
         {
-            Character.coins -= sword3price;
-            Character.sword="sword31";
+            Player.coins -= sword3price;
+            Player.sword="sword31";
         }
         else
                 Error("Sword3");

@@ -8,6 +8,6 @@ public class EnterBattleLoader : MonoBehaviour
 {
    void OnMouseDown()
     {
-        SceneManager.LoadScene("BattleLoader");
+        SceneManager.LoadScene("BattleLoad");
     }
 }
