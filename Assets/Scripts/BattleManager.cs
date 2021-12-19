@@ -40,10 +40,11 @@ public class BattleManager : MonoBehaviour
 
         if (enemy.power > 3)
         {
-            Defense();
+            
         }
         else if (enemy.health < 20)
         {
+            Defense();
         }
     }
 
