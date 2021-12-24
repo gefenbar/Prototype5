@@ -17,11 +17,11 @@ public class InformationPage : MonoBehaviour
         }
         if (Player.scroll == 0)
         {
-            apple.GetComponent<Image>().color = new Color32(150, 150, 150, 150);
+            scroll.GetComponent<Image>().color = new Color32(150, 150, 150, 150);
         }
         if (Player.potion == 0)
         {
-            apple.GetComponent<Image>().color = new Color32(150, 150, 150, 150);
+            potion.GetComponent<Image>().color = new Color32(150, 150, 150, 150);
 
         }
     }
