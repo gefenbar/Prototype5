@@ -38,7 +38,7 @@ public class BattleManager : MonoBehaviour
         disabled = player;
         disabledHealthBar = playerHealthBar;
 
-        if (enemy.power > 3)
+        if (enemy.attack > 3)
         {
             
         }
@@ -90,7 +90,7 @@ public class BattleManager : MonoBehaviour
         if ((enabled.transform.position.x - disabled.transform.position.x < 1.5) && (enabled.transform.position.x - disabled.transform.position.x > -1.5) && !disabled.isDefending)
         {
             disabled.TakeDamage();
-            disabled.health -= disabled.healthReduce * enabled.power;
+            disabled.health -= disabled.defense * enabled.attack;
             disabledHealthBar.SetHealth(disabled.health);
             if (disabled.health <= 0)
             {

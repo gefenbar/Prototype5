@@ -8,9 +8,18 @@ public class InformationPage : MonoBehaviour
     public GameObject apple;
     public GameObject scroll;
     public GameObject potion;
-
+    public Text coins;
+    public Text name;
+    // public Text wins;
+    // public Text losses;
+    // public Text attack;
+    // public Text defense;
+    // public Text strength;
+    // public Text weakness;
     void Start()
     {
+        
+        coins.text = Player.coins.ToString();
         if (Player.apple == 0)
         {
             apple.GetComponent<Image>().color = new Color32(150, 150, 150, 150);
