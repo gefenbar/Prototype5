@@ -9,8 +9,8 @@ public class Character : MonoBehaviour
     public bool isDefending = false;
     public bool isAttacking = false;
     public float health = 100;
-    public int defense;
-    public float attack;
+    public int defense=1;
+    public float attack=1;
     public string weakness;
     public string strength;
     public string description;

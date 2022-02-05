@@ -6,8 +6,8 @@ using UnityEngine.UI;
 
 public class BattleManager : MonoBehaviour
 {
-    public Character enemy=new Enemy();
-    public Character player=new Player();
+    public Character enemy = new Enemy();
+    public Character player = new Player();
     Character enabled;
     Character disabled;
     public HealthBar playerHealthBar;
@@ -22,13 +22,13 @@ public class BattleManager : MonoBehaviour
     public void Update()
     {
         if (Player.apple < 1)
-            apple.interactable=false;
+            apple.interactable = false;
 
         if (Player.potion < 1)
-            potion.interactable=false;
+            potion.interactable = false;
 
         if (Player.scroll < 1)
-            scroll.interactable=false;
+            scroll.interactable = false;
 
     }
 
@@ -38,14 +38,11 @@ public class BattleManager : MonoBehaviour
         disabled = player;
         disabledHealthBar = playerHealthBar;
 
-        if (enemy.attack > 3)
-        {
-            
-        }
-        else if (enemy.health < 20)
+        if (enemy.health < 20)
         {
             Defense();
         }
+        else Attack();
     }
 
 
@@ -95,11 +92,16 @@ public class BattleManager : MonoBehaviour
             if (disabled.health <= 0)
             {
                 disabled.Die();
-                if(disabled==player){
-                    Player.coins/=2;
+                if (disabled == player)
+                {
+                    Player.coins /= 2;
+                    Player.losses += 1;
                 }
-                else{
-                    Player.coins*=2;
+                else
+                {
+                    Player.coins *= 2;
+                    Player.wins += 1;
+
                 }
             }
         }
@@ -113,7 +115,7 @@ public class BattleManager : MonoBehaviour
 
     public void UseApple()
     {
-        if (Player.apple > 0)
+        if (Player.apple > 0 && enabled == player)
         {
             Player.apple -= 1;
             player.UseApple();
@@ -122,7 +124,7 @@ public class BattleManager : MonoBehaviour
     }
     public void UsePotion()
     {
-        if (Player.potion > 0)
+        if (Player.potion > 0 && enabled == player)
         {
             Player.potion -= 1;
             player.UsePotion();
@@ -130,7 +132,7 @@ public class BattleManager : MonoBehaviour
     }
     public void UseScroll()
     {
-        if (Player.scroll > 0)
+        if (Player.scroll > 0 && enabled == player)
         {
             Player.scroll -= 1;
             player.UseScroll();

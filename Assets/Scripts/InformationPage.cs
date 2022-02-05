@@ -10,16 +10,20 @@ public class InformationPage : MonoBehaviour
     public GameObject potion;
     public Text coins;
     public Text name;
-    // public Text wins;
-    // public Text losses;
-    // public Text attack;
-    // public Text defense;
+    public Text wins;
+     public Text losses;
+     public Text attack;
+    public Text defense;
     // public Text strength;
     // public Text weakness;
     void Start()
     {
-        
+        wins.text=Player.wins.ToString();
+        losses.text=Player.losses.ToString();
         coins.text = Player.coins.ToString();
+        attack.text = Player.attack.ToString();
+        defense.text = Player.defense.ToString();
+
         if (Player.apple == 0)
         {
             apple.GetComponent<Image>().color = new Color32(150, 150, 150, 150);

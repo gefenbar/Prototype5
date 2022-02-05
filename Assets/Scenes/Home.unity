@@ -3034,3 +3034,7 @@ MonoBehaviour:
   potion: {fileID: 1420734543}
   coins: {fileID: 1858000778}
   name: {fileID: 214827167}
+  wins: {fileID: 38089055}
+  losses: {fileID: 1340525452}
+  attack: {fileID: 1165300679}
+  defense: {fileID: 1407094146}

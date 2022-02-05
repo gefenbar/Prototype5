@@ -72,7 +72,7 @@ public class InventoryManager : MonoBehaviour
         {
             Player.coins -= sword1price;
             Player.sword = "Sword1";
-              // Player.morePower+=10;
+            Player.attack+=10;
         }
         else
             Error("Sword1");
@@ -86,7 +86,7 @@ public class InventoryManager : MonoBehaviour
             {
                 Player.coins -= sword2price;
                 Player.sword = "Sword2";
-        //       Player.morePower+=15;
+              Player.attack+=15;
             }
             else
                 Error("Sword2");
@@ -102,7 +102,7 @@ public class InventoryManager : MonoBehaviour
             {
                 Player.coins -= sword3price;
                 Player.sword = "Sword3";
-         //      Player.morePower+=20;
+              Player.attack+=20;
 
             }
             else
