@@ -2,17 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
 
 public class Loader : MonoBehaviour
 {
+    public Text description;
     void Start()
-    {
+    {                description.text="hfmhtdmhtjfiuhy;oh;ijohjyggui".ToString();
+
         StartCoroutine(StartBattle());
     }
-    IEnumerator StartBattle()
-    {Debug.Log("xxx");
+    IEnumerator StartBattle(){
         yield return new WaitForSeconds(10f);
-        Debug.Log("yyy");
         SceneManager.LoadScene("Battle");
     }
 }
