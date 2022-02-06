@@ -13,6 +13,7 @@ public class Character : MonoBehaviour
     public float attack=1;
     public string weakness;
     public string strength;
+    public string description;
      int counter = 10;
     public Text timer;
     public SoundManagerScript soundManager;

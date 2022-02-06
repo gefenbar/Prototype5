@@ -9,7 +9,7 @@ public class Loader : MonoBehaviour
 {
     public Text description;
     void Start()
-    {                description.text="hfmhtdmhtjfiuhy;oh;ijohjyggui".ToString();
+    {                description.text="tjfiuhy;oh;ijohjyggui/ntjfiuhy;oh;ijohjyggui/ntjfiuhy;oh;ijohjyggui/ntjfiuhy;oh;ijohjyggui/ntjfiuhy;oh;ijohjyggui/n".ToString();
 
         StartCoroutine(StartBattle());
     }

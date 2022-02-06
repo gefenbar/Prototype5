@@ -5,6 +5,10 @@ using UnityEngine.UI;
 
 public class InformationPage : MonoBehaviour
 {
+    public Text applesQuantity;
+     public Text scrollsQuantity;
+      public Text potionsQuantity;
+
     public GameObject apple;
     public GameObject scroll;
     public GameObject potion;
@@ -23,11 +27,14 @@ public class InformationPage : MonoBehaviour
         coins.text = Player.coins.ToString();
         attack.text = Player.attack.ToString();
         defense.text = Player.defense.ToString();
-
+applesQuantity.text=Player.apple.ToString();
+scrollsQuantity.text=Player.scroll.ToString();
+potionsQuantity.text=Player.potion.ToString();
         if (Player.apple == 0)
         {
             apple.GetComponent<Image>().color = new Color32(150, 150, 150, 150);
         }
+        
         if (Player.scroll == 0)
         {
             scroll.GetComponent<Image>().color = new Color32(150, 150, 150, 150);
