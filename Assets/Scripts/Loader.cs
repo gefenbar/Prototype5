@@ -9,7 +9,9 @@ public class Loader : MonoBehaviour
 {
     public Text description;
     void Start()
-    {                description.text="tjfiuhy;oh;ijohjyggui/ntjfiuhy;oh;ijohjyggui/ntjfiuhy;oh;ijohjyggui/ntjfiuhy;oh;ijohjyggui/ntjfiuhy;oh;ijohjyggui/n".ToString();
+    {      
+           // Enemy enemy =new Enemy();  
+      // description.text=enemy.toString();
 
         StartCoroutine(StartBattle());
     }

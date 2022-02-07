@@ -9,19 +9,16 @@ public class Character : MonoBehaviour
     public bool isDefending = false;
     public bool isAttacking = false;
     public float health = 100;
-    public int defense=1;
-    public float attack=1;
+    public int defense = 1;
+    public float attack = 1;
     public string weakness;
     public string strength;
-    public string description;
-     int counter = 10;
+    int counter = 10;
     public Text timer;
     public SoundManagerScript soundManager;
     public Animator animator;
-
-
     Vector3 temp = new Vector3(1.0f, 0, 0);
-
+    
     public void MoveRight()
     {
         animator.SetBool("moveright", true);

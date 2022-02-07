@@ -11,9 +11,8 @@ public class Player : Character
     public static int potion = 0;
     public static int wins = 0;
     public static int losses = 0;
-    public static float attack=1;
-    public static int defense=1;
-
-    public void Start(){
-    }
+    public static float attack = 1;
+    public static int defense = 1;
+    public static int bossNumber = 1;
+    public Enemy [] enemies = new Enemy[4];
 }

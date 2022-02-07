@@ -6,8 +6,14 @@ using UnityEngine.UI;
 
 public class BattleManager : MonoBehaviour
 {
-    public Character enemy = new Enemy();
-    public Character player = new Player();
+     public Player player = new Player();
+
+      Enemy enemy;
+     public void Start(){
+
+         enemy=player.enemies[Player.bossNumber];
+     }
+//    Enemy enemy = player.enemies[Player.bossNumber];
     Character enabled;
     Character disabled;
     public HealthBar playerHealthBar;
@@ -16,7 +22,6 @@ public class BattleManager : MonoBehaviour
     public Button potion;
 
     public Button scroll;
-
 
     HealthBar disabledHealthBar;
     public void Update()
@@ -40,11 +45,12 @@ public class BattleManager : MonoBehaviour
 
         if (enemy.health < 20)
         {
-            Defense();
+        //    Defense();
         }
-        else Attack();
+        else{
+        // Attack();
     }
-
+    }
 
     public void PlayerMove()
     {
@@ -99,6 +105,7 @@ public class BattleManager : MonoBehaviour
                 }
                 else
                 {
+                    Player.bossNumber++;
                     Player.coins *= 2;
                     Player.wins += 1;
 
