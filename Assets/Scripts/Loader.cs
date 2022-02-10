@@ -8,8 +8,8 @@ using UnityEngine.UI;
 public class Loader : MonoBehaviour
 { 
     public Text description;
-    void Start()
-    {     //description.text=Player.Instance.GetEnemy().toString();
+    void Start(){     
+        //description.text=Player.Instance.GetEnemy().toString();
         StartCoroutine(StartBattle());
     }
     IEnumerator StartBattle(){
