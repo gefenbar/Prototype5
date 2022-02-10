@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player : Character
 {
-        /*singleton*/
+    /*singleton*/
     public static Player Instance { get; private set; }
     private void Awake()
     {
@@ -17,7 +17,7 @@ public class Player : Character
             Instance = this;
         }
     }
-        /*singleton*/
+    /*singleton*/
 
     public static int coins = 300;
     public static string sword;
@@ -29,15 +29,20 @@ public class Player : Character
     public static float attack = 1;
     public static int defense = 1;
     public static int bossNumber = 0;
-    public Enemy [] enemies = new Enemy[4];
-    public Enemy GetEnemy (){
-    return enemies[bossNumber];
-    }
-    public void PickEnemy(){
+    public Enemy[] enemies = new Enemy[4];
+    public Enemy GetEnemy()
+    {
         for (int i = 0; i < 4; i++)
         {
-            if(i!=bossNumber)
-            enemies[i].enemyBody.SetActive(false);
+            if (i != bossNumber)
+                enemies[i].enemyBody.SetActive(false);
+        }
+        return enemies[bossNumber];
+    }
+    public void resetEnemies(){
+           for (int i = 0; i < 4; i++)
+        {
+                enemies[i].enemyBody.SetActive(true);
         }
     }
 }

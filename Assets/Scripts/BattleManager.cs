@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 
 public class BattleManager : MonoBehaviour
@@ -21,8 +23,8 @@ public class BattleManager : MonoBehaviour
 
     public void Start()
     {
-        enemy = player.GetEnemy();
-        player.PickEnemy();
+    player.resetEnemies();
+   enemy = player.GetEnemy();
     }
 
     public void Update()
@@ -43,7 +45,7 @@ public class BattleManager : MonoBehaviour
         enabled = enemy;
         disabled = player;
         disabledHealthBar = playerHealthBar;
-            Debug.Log(enemy.name + " turn");
+        Debug.Log(enemy.name + " turn");
 
         if (enemy.health < 20)
         {
@@ -108,10 +110,24 @@ public class BattleManager : MonoBehaviour
                 }
                 else
                 {
-                    Player.bossNumber++;
-                    Player.coins *= 2;
-                    Player.wins += 1;
+                    if (Player.bossNumber == 3)
+                        Debug.Log("YOU WON!");
+                    else
+                    {
+                        Player.bossNumber++;
+                        Player.coins *= 2;
+                        Player.wins += 1;
+                    }
+                }
+                //enemy = player.GetEnemy();
+                StartCoroutine(BackToMain());
 
+
+                IEnumerator BackToMain()
+                {
+                    Debug.Log("YOU WON THE FIGHT");
+                    yield return new WaitForSeconds(3f);
+                    SceneManager.LoadScene("Main");
                 }
             }
         }
