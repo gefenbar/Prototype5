@@ -4,11 +4,10 @@ using UnityEngine;
 
 public class Player : Character
 {
+        /*singleton*/
     public static Player Instance { get; private set; }
     private void Awake()
     {
-        // If there is an instance, and it's not me, delete myself.
-
         if (Instance != null && Instance != this)
         {
             Destroy(this);
@@ -18,6 +17,8 @@ public class Player : Character
             Instance = this;
         }
     }
+        /*singleton*/
+
     public static int coins = 300;
     public static string sword;
     public static int apple = 0;

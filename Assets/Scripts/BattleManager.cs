@@ -6,21 +6,6 @@ using UnityEngine.UI;
 
 public class BattleManager : MonoBehaviour
 {
-    public static BattleManager Instance { get; private set; }
-    private void Awake()
-    {
-
-        // If there is an instance, and it's not me, delete myself.
-
-        if (Instance != null && Instance != this)
-        {
-            Destroy(this);
-        }
-        else
-        {
-            Instance = this;
-        }
-    }
     public Player player;
     Enemy enemy;
     Character enabled;
@@ -58,6 +43,7 @@ public class BattleManager : MonoBehaviour
         enabled = enemy;
         disabled = player;
         disabledHealthBar = playerHealthBar;
+            Debug.Log(enemy.name + " turn");
 
         if (enemy.health < 20)
         {

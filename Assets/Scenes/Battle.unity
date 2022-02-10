@@ -2332,7 +2332,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1668188150359674}
         m_TargetAssemblyTypeName: BattleManager, Assembly-CSharp
         m_MethodName: PlayerMove
         m_Mode: 1
@@ -2344,7 +2344,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1668188150359674}
         m_TargetAssemblyTypeName: BattleManager, Assembly-CSharp
         m_MethodName: MoveRight
         m_Mode: 1
@@ -2356,7 +2356,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1668188150359674}
         m_TargetAssemblyTypeName: BattleManager, Assembly-CSharp
         m_MethodName: Attack
         m_Mode: 1
@@ -2368,7 +2368,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1668188150359674}
         m_TargetAssemblyTypeName: BattleManager, Assembly-CSharp
         m_MethodName: ComputerMove
         m_Mode: 1
@@ -4495,7 +4495,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1668188150359674}
         m_TargetAssemblyTypeName: BattleManager, Assembly-CSharp
         m_MethodName: PlayerMove
         m_Mode: 1
@@ -4507,7 +4507,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1668188150359674}
         m_TargetAssemblyTypeName: BattleManager, Assembly-CSharp
         m_MethodName: Attack
         m_Mode: 1
@@ -4519,7 +4519,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1668188150359674}
         m_TargetAssemblyTypeName: BattleManager, Assembly-CSharp
         m_MethodName: ComputerMove
         m_Mode: 1
@@ -18111,7 +18111,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1668188150359674}
         m_TargetAssemblyTypeName: BattleManager, Assembly-CSharp
         m_MethodName: PlayerMove
         m_Mode: 1
@@ -18123,7 +18123,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1668188150359674}
         m_TargetAssemblyTypeName: BattleManager, Assembly-CSharp
         m_MethodName: MoveRight
         m_Mode: 1
@@ -18135,7 +18135,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1668188150359674}
         m_TargetAssemblyTypeName: BattleManager, Assembly-CSharp
         m_MethodName: Defense
         m_Mode: 1
@@ -18147,7 +18147,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1668188150359674}
         m_TargetAssemblyTypeName: BattleManager, Assembly-CSharp
         m_MethodName: ComputerMove
         m_Mode: 1
@@ -18684,7 +18684,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1668188150359674}
         m_TargetAssemblyTypeName: BattleManager, Assembly-CSharp
         m_MethodName: PlayerMove
         m_Mode: 1
@@ -18696,7 +18696,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1668188150359674}
         m_TargetAssemblyTypeName: BattleManager, Assembly-CSharp
         m_MethodName: MoveLeft
         m_Mode: 1
@@ -18708,7 +18708,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1668188150359674}
         m_TargetAssemblyTypeName: BattleManager, Assembly-CSharp
         m_MethodName: ComputerMove
         m_Mode: 1
@@ -23088,7 +23088,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2defaf25713ce08bcafcdc4202d1aa7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 
+  name: a
   isDefending: 0
   isAttacking: 0
   health: 100
@@ -23200,7 +23200,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1668188150359674}
         m_TargetAssemblyTypeName: BattleManager, Assembly-CSharp
         m_MethodName: PlayerMove
         m_Mode: 1
@@ -23212,7 +23212,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1668188150359674}
         m_TargetAssemblyTypeName: BattleManager, Assembly-CSharp
         m_MethodName: MoveRight
         m_Mode: 1
@@ -23224,7 +23224,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1668188150359674}
         m_TargetAssemblyTypeName: BattleManager, Assembly-CSharp
         m_MethodName: ComputerMove
         m_Mode: 1
@@ -23770,7 +23770,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1955029111}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2, y: 0, z: 2.73}
+  m_LocalPosition: {x: -2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 734893474}
@@ -24695,7 +24695,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1668188150359674}
         m_TargetAssemblyTypeName: BattleManager, Assembly-CSharp
         m_MethodName: PlayerMove
         m_Mode: 1
@@ -24707,7 +24707,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1668188150359674}
         m_TargetAssemblyTypeName: BattleManager, Assembly-CSharp
         m_MethodName: Defense
         m_Mode: 1
@@ -24719,7 +24719,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1668188150359674}
         m_TargetAssemblyTypeName: BattleManager, Assembly-CSharp
         m_MethodName: ComputerMove
         m_Mode: 1
@@ -29426,7 +29426,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1668188150359673}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 4, y: -0.2, z: 0}
+  m_LocalPosition: {x: 4, y: 0, z: 0}
   m_LocalScale: {x: 1.03, y: 1.03, z: 1.03}
   m_Children:
   - {fileID: 4982116310056707}

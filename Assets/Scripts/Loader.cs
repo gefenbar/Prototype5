@@ -6,13 +6,10 @@ using UnityEngine.UI;
 
 
 public class Loader : MonoBehaviour
-{
+{ 
     public Text description;
-    Enemy enemy;
     void Start()
-    {      
-            enemy=BattleManager.Instance.player.GetEnemy();  
-      description.text=enemy.toString();
+    {     // description.text=Player.Instance.GetEnemy().toString();
         StartCoroutine(StartBattle());
     }
     IEnumerator StartBattle(){
