@@ -6,14 +6,23 @@ using UnityEngine.UI;
 
 public class BattleManager : MonoBehaviour
 {
-     public Player player = new Player();
+    public static BattleManager Instance { get; private set; }
+    private void Awake()
+    {
 
-      Enemy enemy;
-     public void Start(){
+        // If there is an instance, and it's not me, delete myself.
 
-         enemy=player.enemies[Player.bossNumber];
-     }
-//    Enemy enemy = player.enemies[Player.bossNumber];
+        if (Instance != null && Instance != this)
+        {
+            Destroy(this);
+        }
+        else
+        {
+            Instance = this;
+        }
+    }
+    public Player player;
+    Enemy enemy;
     Character enabled;
     Character disabled;
     public HealthBar playerHealthBar;
@@ -24,6 +33,13 @@ public class BattleManager : MonoBehaviour
     public Button scroll;
 
     HealthBar disabledHealthBar;
+
+    public void Start()
+    {
+        enemy = player.GetEnemy();
+        player.PickEnemy();
+    }
+
     public void Update()
     {
         if (Player.apple < 1)
@@ -45,11 +61,12 @@ public class BattleManager : MonoBehaviour
 
         if (enemy.health < 20)
         {
-        //    Defense();
+            //    Defense();
         }
-        else{
-        // Attack();
-    }
+        else
+        {
+            // Attack();
+        }
     }
 
     public void PlayerMove()

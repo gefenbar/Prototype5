@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Character : MonoBehaviour
 {
-    public static string name;
+    public string name;
     public bool isDefending = false;
     public bool isAttacking = false;
     public float health = 100;
@@ -18,7 +18,7 @@ public class Character : MonoBehaviour
     public SoundManagerScript soundManager;
     public Animator animator;
     Vector3 temp = new Vector3(1.0f, 0, 0);
-    
+
     public void MoveRight()
     {
         animator.SetBool("moveright", true);
