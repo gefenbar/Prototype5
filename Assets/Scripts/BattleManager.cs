@@ -8,7 +8,6 @@ using UnityEngine.SceneManagement;
 
 public class BattleManager : MonoBehaviour
 {
-    public Player player;
     Enemy enemy;
     Character enabled;
     Character disabled;
@@ -23,19 +22,19 @@ public class BattleManager : MonoBehaviour
 
     public void Start()
     {
-    player.resetEnemies();
-   enemy = player.GetEnemy();
+    Player.Instance.resetEnemies();
+   enemy = Player.Instance.GetEnemy();
     }
 
     public void Update()
     {
-        if (Player.apple < 1)
+        if (Player.Instance.apple < 1)
             apple.interactable = false;
 
-        if (Player.potion < 1)
+        if (Player.Instance.potion < 1)
             potion.interactable = false;
 
-        if (Player.scroll < 1)
+        if (Player.Instance.scroll < 1)
             scroll.interactable = false;
 
     }
@@ -43,7 +42,7 @@ public class BattleManager : MonoBehaviour
     public void ComputerMove()//example
     {
         enabled = enemy;
-        disabled = player;
+        disabled = Player.Instance;
         disabledHealthBar = playerHealthBar;
         Debug.Log(enemy.name + " turn");
 
@@ -59,7 +58,7 @@ public class BattleManager : MonoBehaviour
 
     public void PlayerMove()
     {
-        enabled = player;
+        enabled = Player.Instance;
         disabled = enemy;
         disabledHealthBar = enemyHealthBar;
     }
@@ -103,20 +102,20 @@ public class BattleManager : MonoBehaviour
             if (disabled.health <= 0)
             {
                 disabled.Die();
-                if (disabled == player)
+                if (disabled == Player.Instance)
                 {
-                    Player.coins /= 2;
-                    Player.losses += 1;
+                    Player.Instance.coins /= 2;
+                    Player.Instance.losses += 1;
                 }
                 else
                 {
-                    if (Player.bossNumber == 3)
+                    if (Player.Instance.bossNumber == 3)
                         Debug.Log("YOU WON!");
                     else
                     {
-                        Player.bossNumber++;
-                        Player.coins *= 2;
-                        Player.wins += 1;
+                        Player.Instance.bossNumber++;
+                        Player.Instance.coins *= 2;
+                        Player.Instance.wins += 1;
                     }
                 }
                 //enemy = player.GetEnemy();
@@ -141,27 +140,27 @@ public class BattleManager : MonoBehaviour
 
     public void UseApple()
     {
-        if (Player.apple > 0 && enabled == player)
+        if (Player.Instance.apple > 0 && enabled == Player.Instance)
         {
-            Player.apple -= 1;
-            player.UseApple();
+            Player.Instance.apple -= 1;
+            Player.Instance.UseApple();
         }
 
     }
     public void UsePotion()
     {
-        if (Player.potion > 0 && enabled == player)
+        if (Player.Instance.potion > 0 && enabled == Player.Instance)
         {
-            Player.potion -= 1;
-            player.UsePotion();
+            Player.Instance.potion -= 1;
+            Player.Instance.UsePotion();
         }
     }
     public void UseScroll()
     {
-        if (Player.scroll > 0 && enabled == player)
+        if (Player.Instance.scroll > 0 && enabled == Player.Instance)
         {
-            Player.scroll -= 1;
-            player.UseScroll();
+            Player.Instance.scroll -= 1;
+            Player.Instance.UseScroll();
         }
     }
 }

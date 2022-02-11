@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Player : Character
 {
+    public Player(){
+        this.attack=3;
+        this.defense=4;
+    }
     /*singleton*/
     public static Player Instance { get; private set; }
     private void Awake()
@@ -19,16 +23,14 @@ public class Player : Character
     }
     /*singleton*/
 
-    public static int coins = 300;
-    public static string sword;
-    public static int apple = 0;
-    public static int scroll = 0;
-    public static int potion = 0;
-    public static int wins = 0;
-    public static int losses = 0;
-    public static float attack = 1;
-    public static int defense = 1;
-    public static int bossNumber = 0;
+    public  int coins = 300;
+    public  string sword;
+    public  int apple = 0;
+    public  int scroll = 0;
+    public  int potion = 0;
+    public  int wins = 0;
+    public  int losses = 0;
+    public  int bossNumber = 0;
     public Enemy[] enemies = new Enemy[4];
     public Enemy GetEnemy()
     {

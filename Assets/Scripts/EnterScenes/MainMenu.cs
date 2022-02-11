@@ -4,6 +4,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
+    Player player;
+    public void Awake(){
+        player=Player.Instance;
+    }
     public void PlayGame()
     {
         SceneManager.LoadScene("Main");

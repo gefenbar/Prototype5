@@ -9,7 +9,7 @@ public class Loader : MonoBehaviour
 { 
     public Text description;
     void Start(){     
-        //description.text=Player.Instance.GetEnemy().toString();
+        description.text=Player.Instance.enemies[Player.Instance.bossNumber].toString();
         StartCoroutine(StartBattle());
     }
     IEnumerator StartBattle(){

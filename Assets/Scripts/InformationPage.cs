@@ -22,24 +22,24 @@ public class InformationPage : MonoBehaviour
     // public Text weakness;
     void Start()
     {
-        wins.text=Player.wins.ToString();
-        losses.text=Player.losses.ToString();
-        coins.text = Player.coins.ToString();
-        attack.text = Player.attack.ToString();
-        defense.text = Player.defense.ToString();
-applesQuantity.text=Player.apple.ToString();
-scrollsQuantity.text=Player.scroll.ToString();
-potionsQuantity.text=Player.potion.ToString();
-        if (Player.apple == 0)
+        wins.text=Player.Instance.wins.ToString();
+        losses.text=Player.Instance.losses.ToString();
+        coins.text = Player.Instance.coins.ToString();
+        attack.text = Player.Instance.attack.ToString();
+        defense.text = Player.Instance.defense.ToString();
+applesQuantity.text=Player.Instance.apple.ToString();
+scrollsQuantity.text=Player.Instance.scroll.ToString();
+potionsQuantity.text=Player.Instance.potion.ToString();
+        if (Player.Instance.apple == 0)
         {
             apple.GetComponent<Image>().color = new Color32(150, 150, 150, 150);
         }
         
-        if (Player.scroll == 0)
+        if (Player.Instance.scroll == 0)
         {
             scroll.GetComponent<Image>().color = new Color32(150, 150, 150, 150);
         }
-        if (Player.potion == 0)
+        if (Player.Instance.potion == 0)
         {
             potion.GetComponent<Image>().color = new Color32(150, 150, 150, 150);
 
