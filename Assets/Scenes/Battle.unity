@@ -5109,6 +5109,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 9071513377284133047, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: name
+      value: Enemy3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9071513377284133047, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: timer
       value: 
       objectReference: {fileID: 643339233}
@@ -5165,6 +5169,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9071513378736235630, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: name
+      value: Enemy4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9071513378736235630, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: timer
       value: 
       objectReference: {fileID: 643339233}
@@ -5173,6 +5181,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2072285004}
     - target: {fileID: 9071513378742902380, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: name
+      value: Enemy1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9071513378742902380, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: timer
       value: 
       objectReference: {fileID: 643339233}
@@ -5180,6 +5192,10 @@ PrefabInstance:
       propertyPath: soundManager
       value: 
       objectReference: {fileID: 2072285004}
+    - target: {fileID: 9071513379128385647, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: name
+      value: Enemy2
+      objectReference: {fileID: 0}
     - target: {fileID: 9071513379128385647, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: timer
       value: 

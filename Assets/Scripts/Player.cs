@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class Player : Character
 {
-    public Player(){
-        this.attack=3;
-        this.defense=4;
+    public Player()
+    {
+        this.attack = 3;
+        this.defense = 4;
     }
     /*singleton*/
     public static Player Instance { get; private set; }
@@ -23,28 +24,22 @@ public class Player : Character
     }
     /*singleton*/
 
-    public  int coins = 300;
-    public  string sword;
-    public  int apple = 0;
-    public  int scroll = 0;
-    public  int potion = 0;
-    public  int wins = 0;
-    public  int losses = 0;
-    public  int bossNumber = 0;
+    public int coins = 300;
+    public string sword;
+    public int apple = 0;
+    public int scroll = 0;
+    public int potion = 0;
+    public int wins = 0;
+    public int losses = 0;
+    public int bossNumber = 0;
     public Enemy[] enemies = new Enemy[4];
-    public Enemy GetEnemy()
+    public void resetEnemies()
     {
         for (int i = 0; i < 4; i++)
         {
+            enemies[i].enemyBody.SetActive(true);
             if (i != bossNumber)
                 enemies[i].enemyBody.SetActive(false);
-        }
-        return enemies[bossNumber];
-    }
-    public void resetEnemies(){
-           for (int i = 0; i < 4; i++)
-        {
-                enemies[i].enemyBody.SetActive(true);
         }
     }
 }

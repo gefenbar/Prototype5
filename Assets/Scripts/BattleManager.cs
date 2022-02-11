@@ -22,8 +22,8 @@ public class BattleManager : MonoBehaviour
 
     public void Start()
     {
-    Player.Instance.resetEnemies();
-   enemy = Player.Instance.GetEnemy();
+        Player.Instance.resetEnemies();
+        enemy = Player.Instance.enemies[Player.Instance.bossNumber];
     }
 
     public void Update()
@@ -44,7 +44,7 @@ public class BattleManager : MonoBehaviour
         enabled = enemy;
         disabled = Player.Instance;
         disabledHealthBar = playerHealthBar;
-        Debug.Log(enemy.name + " turn");
+        // Debug.Log(enemy.name + " turn");
 
         if (enemy.health < 20)
         {
@@ -118,7 +118,6 @@ public class BattleManager : MonoBehaviour
                         Player.Instance.wins += 1;
                     }
                 }
-                //enemy = player.GetEnemy();
                 StartCoroutine(BackToMain());
 
 

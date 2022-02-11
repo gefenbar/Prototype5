@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     Player player;
-    public void Awake(){
+    public void Start(){
         player=Player.Instance;
     }
     public void PlayGame()
