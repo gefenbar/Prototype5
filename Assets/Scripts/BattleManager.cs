@@ -15,15 +15,14 @@ public class BattleManager : MonoBehaviour
     public HealthBar enemyHealthBar;
     public Button apple;
     public Button potion;
-
     public Button scroll;
-
     HealthBar disabledHealthBar;
 
     public void Start()
     {
         Player.Instance.resetEnemies();
         enemy = Player.Instance.enemies[Player.Instance.bossNumber];
+
     }
 
     public void Update()
@@ -104,7 +103,7 @@ public class BattleManager : MonoBehaviour
                 disabled.Die();
                 if (disabled == Player.Instance)
                 {
-                    Player.Instance.coins /= 2;
+                    Player.Instance.coins -= Player.Instance.bet;
                     Player.Instance.losses += 1;
                 }
                 else
@@ -114,7 +113,7 @@ public class BattleManager : MonoBehaviour
                     else
                     {
                         Player.Instance.bossNumber++;
-                        Player.Instance.coins *= 2;
+                        Player.Instance.coins += Player.Instance.bet;
                         Player.Instance.wins += 1;
                     }
                 }

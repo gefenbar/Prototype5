@@ -2138,7 +2138,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1595679770}
         m_TargetAssemblyTypeName: BattleManager, Assembly-CSharp
         m_MethodName: PlayerMove
         m_Mode: 1
@@ -2150,7 +2150,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1595679770}
         m_TargetAssemblyTypeName: BattleManager, Assembly-CSharp
         m_MethodName: UsePotion
         m_Mode: 1
@@ -2162,7 +2162,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1595679770}
         m_TargetAssemblyTypeName: BattleManager, Assembly-CSharp
         m_MethodName: ComputerMove
         m_Mode: 1
@@ -2830,7 +2830,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1595679770}
         m_TargetAssemblyTypeName: BattleManager, Assembly-CSharp
         m_MethodName: PlayerMove
         m_Mode: 1
@@ -2842,7 +2842,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1595679770}
         m_TargetAssemblyTypeName: BattleManager, Assembly-CSharp
         m_MethodName: UseScroll
         m_Mode: 1
@@ -2854,7 +2854,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1595679770}
         m_TargetAssemblyTypeName: BattleManager, Assembly-CSharp
         m_MethodName: ComputerMove
         m_Mode: 1
@@ -3828,6 +3828,7 @@ MonoBehaviour:
   apple: {fileID: 1916298696}
   potion: {fileID: 1031309586}
   scroll: {fileID: 1270548044}
+  input: {fileID: 0}
 --- !u!4 &1595679771
 Transform:
   m_ObjectHideFlags: 0
@@ -4516,7 +4517,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1595679770}
         m_TargetAssemblyTypeName: BattleManager, Assembly-CSharp
         m_MethodName: PlayerMove
         m_Mode: 1
@@ -4528,7 +4529,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1595679770}
         m_TargetAssemblyTypeName: BattleManager, Assembly-CSharp
         m_MethodName: UseApple
         m_Mode: 1
@@ -4540,7 +4541,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1595679770}
         m_TargetAssemblyTypeName: BattleManager, Assembly-CSharp
         m_MethodName: ComputerMove
         m_Mode: 1

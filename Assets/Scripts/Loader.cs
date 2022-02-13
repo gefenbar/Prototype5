@@ -10,10 +10,21 @@ public class Loader : MonoBehaviour
     public Text description;
     void Start(){     
         description.text=Player.Instance.enemies[Player.Instance.bossNumber].toString();
-        StartCoroutine(StartBattle());
     }
-    IEnumerator StartBattle(){
-        yield return new WaitForSeconds(10f);
+    public void BetQuarter(){
+        Player.Instance.bet=Player.Instance.coins/4;
+        SceneManager.LoadScene("Battle");
+    }
+      public void BetThird(){
+        Player.Instance.bet=Player.Instance.coins/3;
+        SceneManager.LoadScene("Battle");
+    }
+      public void BetHalf(){
+        Player.Instance.bet=Player.Instance.coins/2;
+        SceneManager.LoadScene("Battle");
+    }
+      public void BetThreeQuarters(){
+        Player.Instance.bet=Player.Instance.coins*(3/4);
         SceneManager.LoadScene("Battle");
     }
 }

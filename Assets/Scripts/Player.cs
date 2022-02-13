@@ -23,9 +23,9 @@ public class Player : Character
         }
     }
     /*singleton*/
-
-    public int coins = 300;
     public string sword;
+    public float bet;
+    public float coins = 300;
     public int apple = 0;
     public int scroll = 0;
     public int potion = 0;
