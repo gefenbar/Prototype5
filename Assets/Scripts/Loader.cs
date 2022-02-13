@@ -6,10 +6,10 @@ using UnityEngine.UI;
 
 
 public class Loader : MonoBehaviour
-{ 
+{ public Enemy [] enemies=new Enemy[4];
     public Text description;
     void Start(){     
-        description.text=Player.Instance.enemies[Player.Instance.bossNumber].toString();
+        description.text=enemies[Player.Instance.bossNumber].toString();
     }
     public void BetQuarter(){
         Player.Instance.bet=Player.Instance.coins/4;

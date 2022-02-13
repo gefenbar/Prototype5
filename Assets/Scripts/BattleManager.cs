@@ -16,13 +16,20 @@ public class BattleManager : MonoBehaviour
     public Button apple;
     public Button potion;
     public Button scroll;
+    public Enemy[] enemies = new Enemy[4];
     HealthBar disabledHealthBar;
-
+    public Player player;
+    public GameObject playerBody;
     public void Start()
     {
-        Player.Instance.resetEnemies();
-        enemy = Player.Instance.enemies[Player.Instance.bossNumber];
-
+        Player.Instance.timer = player.timer;
+        Player.Instance.soundManager = player.soundManager;
+        Player.Instance.health=player.health;
+        Player.Instance.body=playerBody;
+        // playerBody.transform.position.x=4;
+        //Player.Instance.transform.position.x=player.transform.position.x;
+        enemy = enemies[Player.Instance.bossNumber];
+        playerBody.SetActive(false);
     }
 
     public void Update()
@@ -64,6 +71,7 @@ public class BattleManager : MonoBehaviour
 
     public void MoveRight()
     {
+
         if (enabled.transform.position.x > (disabled.transform.position.x + 1.5))
         {
             enabled.MoveRight();

@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Character : MonoBehaviour
 {
+    public GameObject body;
     public string name;
     public bool isDefending = false;
     public bool isAttacking = false;
@@ -14,8 +15,8 @@ public class Character : MonoBehaviour
     public string weakness;
     public string strength;
     int counter = 10;
-    public Text timer;
-    public SoundManagerScript soundManager;
+    public  Text timer;
+    public  SoundManagerScript soundManager;
     public Animator animator;
     Vector3 temp = new Vector3(1.0f, 0, 0);
 

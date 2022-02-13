@@ -19,7 +19,7 @@ public class InventoryManager : MonoBehaviour
     }
     public void BuyApple()
     {
-        if (Player.Instance.coins >= applePrice)
+        if (Player.Instance.coins > applePrice)
         {
             Player.Instance.coins -= applePrice;
             Player.Instance.apple += 1;
@@ -33,7 +33,7 @@ public class InventoryManager : MonoBehaviour
 
     public void BuyPotion()
     {
-        if (Player.Instance.coins >= potionPrice)
+        if (Player.Instance.coins > potionPrice)
         {
             Player.Instance.coins -= potionPrice;
             Player.Instance.potion += 1;
@@ -45,7 +45,7 @@ public class InventoryManager : MonoBehaviour
 
     public void BuyScroll()
     {
-        if (Player.Instance.coins >= scrollPrice)
+        if (Player.Instance.coins > scrollPrice)
         {
             Player.Instance.coins -= scrollPrice;
             Player.Instance.scroll += 1;
@@ -68,7 +68,7 @@ public class InventoryManager : MonoBehaviour
 
     public void BuySword1()
     {
-        if (Player.Instance.coins >= sword1price)
+        if (Player.Instance.coins > sword1price)
         {
             Player.Instance.coins -= sword1price;
             Player.Instance.sword = "Sword1";
@@ -82,7 +82,7 @@ public class InventoryManager : MonoBehaviour
     {
         if (Player.Instance.sword == "Sword1")
         {
-            if (Player.Instance.coins >= sword2price)
+            if (Player.Instance.coins > sword2price)
             {
                 Player.Instance.coins -= sword2price;
                 Player.Instance.sword = "Sword2";
@@ -98,7 +98,7 @@ public class InventoryManager : MonoBehaviour
     {
         if (Player.Instance.sword == "Sword2")
         {
-            if (Player.Instance.coins >= sword3price)
+            if (Player.Instance.coins > sword3price)
             {
                 Player.Instance.coins -= sword3price;
                 Player.Instance.sword = "Sword3";

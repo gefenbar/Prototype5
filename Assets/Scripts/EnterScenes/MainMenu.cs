@@ -5,17 +5,19 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     Player player;
+    public void Start(){
+    }
     public void PlayGame()
     {
-        player = Player.Instance;
+                player=Player.Instance;
         SceneManager.LoadScene("Main");
     }
 
-    public void Settings()
+ public void Settings()
     {
         SceneManager.LoadScene("Settings");
     }
-    public void Rules()
+     public void Rules()
     {
         SceneManager.LoadScene("GameRules");
     }
