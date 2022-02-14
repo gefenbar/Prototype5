@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.44855887, g: 0.49860805, b: 0.5756574, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -633,7 +633,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 255, y: -39}
+  m_AnchoredPosition: {x: 232, y: -50}
   m_SizeDelta: {x: 266.6047, y: 273.1414}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &687845117
@@ -715,7 +715,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -227, y: -91}
+  m_AnchoredPosition: {x: -344, y: -93}
   m_SizeDelta: {x: 513.3375, y: 195.122}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &775998844
@@ -927,6 +927,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1043533694}
   - component: {fileID: 1043533693}
+  - component: {fileID: 1043533695}
   m_Layer: 0
   m_Name: HomeAudio
   m_TagString: Untagged
@@ -1044,6 +1045,14 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!81 &1043533695
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043533692}
+  m_Enabled: 1
 --- !u!1 &1055498028
 GameObject:
   m_ObjectHideFlags: 0

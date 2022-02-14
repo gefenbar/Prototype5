@@ -5,10 +5,32 @@ using UnityEngine.Audio;
 
 public class SoundSettings : MonoBehaviour
 {
-    public AudioMixer audioMixer;
+    public AudioMixer BackGroundaudioMixer;
+    public AudioMixer BattleMixer;
 
-    public void SetVolume(float volume)
+
+    public void SetBackgroundVolume(float volume)
     {
-        audioMixer.SetFloat("volume", volume);
+        BackGroundaudioMixer.SetFloat("volume", volume);
+    }
+    public void SetBattleVolume(float volume)
+    {
+        BattleMixer.SetFloat("battleVolume", volume);
+    }
+
+    public void SetMute(bool isMute)
+    {   
+        if(isMute == true)
+        {
+            BattleMixer.SetFloat("battleVolume", -80);
+            BackGroundaudioMixer.SetFloat("volume", -80);
+            
+        }
+        else
+        {
+            BattleMixer.SetFloat("battleVolume", -30);
+            BackGroundaudioMixer.SetFloat("volume", 0);
+        }
+
     }
 }

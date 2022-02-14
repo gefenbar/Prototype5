@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class BattleManager : MonoBehaviour
 {
@@ -10,8 +12,25 @@ public class BattleManager : MonoBehaviour
     Character disabled;
     public HealthBar playerHealthBar;
     public HealthBar enemyHealthBar;
+    public Button apple;
+    public Button potion;
+
+    public Button scroll;
+
 
     HealthBar disabledHealthBar;
+    public void Update()
+    {
+        if (Character.apple < 1)
+            apple.interactable=false;
+
+        if (Character.potion < 1)
+            potion.interactable=false;
+
+        if (Character.scroll < 1)
+            scroll.interactable=false;
+
+    }
 
     public void ComputerMove()//example
     {
@@ -86,7 +105,29 @@ public class BattleManager : MonoBehaviour
         enabled.Defense();
     }
 
+    public void UseApple()
+    {
+        if (Character.apple > 0)
+        {
+            Character.apple -= 1;
+            player.UseApple();
+        }
 
-
+    }
+    public void UsePotion()
+    {
+        if (Character.potion > 0)
+        {
+            Character.potion -= 1;
+            player.UsePotion();
+        }
+    }
+    public void UseScroll()
+    {
+        if (Character.scroll > 0)
+        {
+            Character.scroll -= 1;
+            player.UseScroll();
+        }
+    }
 }
-
