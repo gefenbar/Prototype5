@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Player : Character
 {
+ //temp
     public Player()
     {
         this.attack = 3;

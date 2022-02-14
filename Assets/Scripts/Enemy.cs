@@ -8,6 +8,5 @@ public class Enemy : Character
     public string toString()
     {
         return "Name: " + this.name + "\nAttack: " + this.attack + "\nDefense: " + this.defense;
-        // public string description = "Name: " + name + "\nAttack: " + this.attack + "\nDefense: " + this.defense;
     }
 }
