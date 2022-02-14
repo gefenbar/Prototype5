@@ -117,6 +117,7 @@ public class BattleManager : MonoBehaviour
                 else
                 {
                     if (Player.Instance.bossNumber == 3)
+
                         Debug.Log("YOU WON!");
                     else
                     {
@@ -130,7 +131,7 @@ public class BattleManager : MonoBehaviour
 
                 IEnumerator BackToMain()
                 {
-                    Debug.Log("YOU WON THE FIGHT");
+                    //Debug.Log("YOU WON THE FIGHT");
                     yield return new WaitForSeconds(3f);
                     SceneManager.LoadScene("Main");
                 }
