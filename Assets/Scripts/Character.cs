@@ -5,22 +5,19 @@ using UnityEngine.UI;
 
 public class Character : MonoBehaviour
 {
-    int counter = 10;
-    public Text timer;
+    public GameObject body;
     public string name;
-    public string type;
     public bool isDefending = false;
     public bool isAttacking = false;
     public float health = 100;
-    public int healthReduce;
-    public float power;
+    public int defense = 1;
+    public float attack = 1;
     public string weakness;
     public string strength;
-    public string description;
-    public SoundManagerScript soundManager;
+    int counter = 10;
+    public  Text timer;
+    public  SoundManagerScript soundManager;
     public Animator animator;
-
-
     Vector3 temp = new Vector3(1.0f, 0, 0);
 
     public void MoveRight()
@@ -79,7 +76,7 @@ public class Character : MonoBehaviour
     public void UseApple()
     {
         animator.SetBool("useapple", true);
-        power += 10;
+        attack += 10;
         StartCoroutine(UpgradesTimer("Apple"));
         // StartCoroutine(ReturnToPosition());
     }
@@ -92,7 +89,7 @@ public class Character : MonoBehaviour
     }
     public void UseScroll()
     {
-        power += 8;
+        attack += 8;
         health += 12;
         animator.SetBool("usescroll", true);
         StartCoroutine(UpgradesTimer("Scroll"));
@@ -118,7 +115,7 @@ public class Character : MonoBehaviour
         {
             if (upgrade == "Apple")
             {
-                power -= 10;
+                attack -= 10;
 
                 animator.SetBool("useapple", false);
             }
@@ -132,7 +129,7 @@ public class Character : MonoBehaviour
             }
             if (upgrade == "Scroll")
             {
-                power -= 8;
+                attack -= 8;
                 health -= 12;
                 animator.SetBool("usescroll", false);
             }

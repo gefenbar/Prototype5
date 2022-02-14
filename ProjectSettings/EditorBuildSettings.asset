@@ -30,6 +30,9 @@ EditorBuildSettings:
     path: Assets/Scenes/BattleLoad.unity
     guid: 08bb1d83649f62b81abf022d9decdb1f
   - enabled: 0
-    path: Assets/Scenes/BattleLoader.unity
+    path: 
     guid: 29c596f5fe08d4a1893a94c2d19230e7
+  - enabled: 1
+    path: Assets/Scenes/GameRules.unity
+    guid: 8cc1bcf964659c54e9a9e4d870d05077
   m_configObjects: {}
