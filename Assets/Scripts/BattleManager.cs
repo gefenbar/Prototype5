@@ -117,8 +117,8 @@ public class BattleManager : MonoBehaviour
                 else
                 {
                     if (Player.Instance.bossNumber == 3)
-
                         Debug.Log("YOU WON!");
+                        
                     else
                     {
                         Player.Instance.bossNumber++;
