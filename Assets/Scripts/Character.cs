@@ -1,28 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Character : MonoBehaviour
 {
-    public static int coins = 300;
-    public static string sword;
-    public static int apple = 0;
-    public static int scroll = 0;
-    public static int potion = 0;
+
+    public GameObject body;
     public string name;
-    public string type;
     public bool isDefending = false;
     public bool isAttacking = false;
     public float health = 100;
-    public int healthReduce;
-    public float power;
+    public int defense = 1;
+    public float attack = 1;
     public string weakness;
     public string strength;
-    public string description;
-    public SoundManagerScript soundManager;
+    int counter = 10;
+    public  Text timer;
+    public  SoundManagerScript soundManager;
     public Animator animator;
-
-
     Vector3 temp = new Vector3(1.0f, 0, 0);
 
     public void MoveRight()
@@ -58,8 +54,6 @@ public class Character : MonoBehaviour
         animator.SetBool("Block", true);
         StartCoroutine(ReturnToPosition());
         soundManager.BlockSound();
-
-
     }
 
     public void TakeDamage()
@@ -74,29 +68,30 @@ public class Character : MonoBehaviour
         animator.SetBool("die", true);
         StartCoroutine(ReturnToPosition());
         soundManager.DieSound();
-
-
     }
 
     public void UseApple()
     {
         animator.SetBool("useapple", true);
-        power += 10;
-
-        StartCoroutine(ReturnToPosition());
+        attack += 10;
+        StartCoroutine(UpgradesTimer("Apple"));
+        // StartCoroutine(ReturnToPosition());
     }
     public void UsePotion()
     {
         animator.SetBool("usepotion", true);
         health += 20;
-        StartCoroutine(ReturnToPosition());
+
+        StartCoroutine(UpgradesTimer("Potion"));
+        //StartCoroutine(ReturnToPosition());
     }
     public void UseScroll()
     {
-        power += 8;
+        attack += 8;
         health += 12;
         animator.SetBool("usescroll", true);
-        StartCoroutine(ReturnToPosition());
+        StartCoroutine(UpgradesTimer("Scroll"));
+        //StartCoroutine(ReturnToPosition());
     }
 
     IEnumerator ReturnToPosition()
@@ -110,4 +105,43 @@ public class Character : MonoBehaviour
         animator.SetBool("moveright", false);
 
     }
+    IEnumerator UpgradesTimer(string upgrade)
+    {
+        timer.text = counter.ToString();
+
+        if (counter == 0)
+        {
+            if (upgrade == "Apple")
+            {
+                attack -= 10;
+
+                animator.SetBool("useapple", false);
+            }
+
+            if (upgrade == "Potion")
+            {
+                health -= 20;
+
+                animator.SetBool("usepotion", false);
+
+            }
+            if (upgrade == "Scroll")
+            {
+                attack -= 8;
+                health -= 12;
+                animator.SetBool("usescroll", false);
+            }
+            counter = 10;
+            timer.text = " ";
+        }
+        else
+        {
+            yield return new WaitForSeconds(1f);
+            counter--;
+            StartCoroutine(UpgradesTimer(upgrade));
+
+        }
+
+    }
+
 }

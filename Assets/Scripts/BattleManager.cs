@@ -2,12 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 
 public class BattleManager : MonoBehaviour
 {
-    public Character enemy;
-    public Character player;
+    Enemy enemy;
     Character enabled;
     Character disabled;
     public HealthBar playerHealthBar;
@@ -16,48 +15,62 @@ public class BattleManager : MonoBehaviour
     public Button potion;
 
     public Button scroll;
-
-
+    public Enemy[] enemies = new Enemy[4];
     HealthBar disabledHealthBar;
+    public Player player;
+    public GameObject playerBody;
+    public void Start()
+    {
+        Player.Instance.timer = player.timer;
+        Player.Instance.soundManager = player.soundManager;
+        Player.Instance.health=player.health;
+        Player.Instance.body=playerBody;
+        // playerBody.transform.position.x=4;
+        //Player.Instance.transform.position.x=player.transform.position.x;
+        enemy = enemies[Player.Instance.bossNumber];
+        playerBody.SetActive(false);
+    }
+
     public void Update()
     {
-        if (Character.apple < 1)
-            apple.interactable=false;
+        if (Player.Instance.apple < 1)
+            apple.interactable = false;
 
-        if (Character.potion < 1)
-            potion.interactable=false;
+        if (Player.Instance.potion < 1)
+            potion.interactable = false;
 
-        if (Character.scroll < 1)
-            scroll.interactable=false;
+        if (Player.Instance.scroll < 1)
+            scroll.interactable = false;
 
     }
 
     public void ComputerMove()//example
     {
         enabled = enemy;
-        disabled = player;
+        disabled = Player.Instance;
         disabledHealthBar = playerHealthBar;
+        // Debug.Log(enemy.name + " turn");
 
-        if (enemy.power > 3)
+        if (enemy.health < 20)
         {
-            
+            //    Defense();
         }
-        else if (enemy.health < 20)
+        else
         {
-            Defense();
+            // Attack();
         }
     }
 
-
     public void PlayerMove()
     {
-        enabled = player;
+        enabled = Player.Instance;
         disabled = enemy;
         disabledHealthBar = enemyHealthBar;
     }
 
     public void MoveRight()
     {
+
         if (enabled.transform.position.x > (disabled.transform.position.x + 1.5))
         {
             enabled.MoveRight();
@@ -90,11 +103,37 @@ public class BattleManager : MonoBehaviour
         if ((enabled.transform.position.x - disabled.transform.position.x < 1.5) && (enabled.transform.position.x - disabled.transform.position.x > -1.5) && !disabled.isDefending)
         {
             disabled.TakeDamage();
-            disabled.health -= disabled.healthReduce * enabled.power;
+            disabled.health -= disabled.defense * enabled.attack;
             disabledHealthBar.SetHealth(disabled.health);
             if (disabled.health <= 0)
             {
                 disabled.Die();
+                if (disabled == Player.Instance)
+                {
+                    Player.Instance.coins -= Player.Instance.bet;
+                    Player.Instance.losses += 1;
+                }
+                else
+                {
+                    if (Player.Instance.bossNumber == 3)
+
+                        Debug.Log("YOU WON!");
+                    else
+                    {
+                        Player.Instance.bossNumber++;
+                        Player.Instance.coins += Player.Instance.bet;
+                        Player.Instance.wins += 1;
+                    }
+                }
+                StartCoroutine(BackToMain());
+
+
+                IEnumerator BackToMain()
+                {
+                    //Debug.Log("YOU WON THE FIGHT");
+                    yield return new WaitForSeconds(3f);
+                    SceneManager.LoadScene("Main");
+                }
             }
         }
 
@@ -107,27 +146,30 @@ public class BattleManager : MonoBehaviour
 
     public void UseApple()
     {
-        if (Character.apple > 0)
+
+        if (Player.Instance.apple > 0 && enabled == Player.Instance)
         {
-            Character.apple -= 1;
-            player.UseApple();
+            Player.Instance.apple -= 1;
+            Player.Instance.UseApple();
         }
 
     }
     public void UsePotion()
     {
-        if (Character.potion > 0)
+
+        if (Player.Instance.potion > 0 && enabled == Player.Instance)
         {
-            Character.potion -= 1;
-            player.UsePotion();
+            Player.Instance.potion -= 1;
+            Player.Instance.UsePotion();
         }
     }
     public void UseScroll()
     {
-        if (Character.scroll > 0)
+
+        if (Player.Instance.scroll > 0 && enabled == Player.Instance)
         {
-            Character.scroll -= 1;
-            player.UseScroll();
+            Player.Instance.scroll -= 1;
+            Player.Instance.UseScroll();
         }
     }
 }

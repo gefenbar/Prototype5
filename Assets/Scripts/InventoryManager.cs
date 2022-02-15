@@ -9,86 +9,108 @@ public class InventoryManager : MonoBehaviour
     int applePrice = 150;
     int potionPrice = 250;
     int scrollPrice = 350;
-     int sword1price = 150;
+    int sword1price = 150;
     int sword2price = 250;
     int sword3price = 350;
 
     public void Update()
     {
-        coins.text = Character.coins.ToString();
+
+        coins.text = Player.Instance.coins.ToString();
     }
     public void BuyApple()
     {
-        if (Character.coins >= applePrice)
+        if (Player.Instance.coins > applePrice)
         {
-            Character.coins -= applePrice;
-            Character.apple += 1;
-            Debug.Log("coinsleft: " + Character.coins);
-            Debug.Log("apples: " + Character.apple);
+            Player.Instance.coins -= applePrice;
+            Player.Instance.apple += 1;
+          
         }
         else
-Error("Apple");
-        
+            Error("Apple");
+
 
     }
 
     public void BuyPotion()
     {
-        if (Character.coins >= potionPrice)
+
+        if (Player.Instance.coins > potionPrice)
         {
-            Character.coins -= potionPrice;
-            Character.potion += 1;
+            Player.Instance.coins -= potionPrice;
+            Player.Instance.potion += 1;
         }
         else
-        Error("Potion");
-
+            Error("Potion");
     }
 
     public void BuyScroll()
     {
-        if (Character.coins >= scrollPrice)
+
+        if (Player.Instance.coins > scrollPrice)
         {
-            Character.coins -= scrollPrice;
-            Character.scroll += 1;
+            Player.Instance.coins -= scrollPrice;
+            Player.Instance.scroll += 1;
         }
         else
-                Error("Scroll");
+            Error("Scroll");
 
     }
 
-    public void Error(string item){
-        error.text="You don't have enough money to buy " + item;
+    public void Error(string item)
+    {
+        if (item == "Begginer's" || item == "Intermediate's")
+        {
+            error.text = "You need to buy the " + item + " sword before this one ";
+
+        }
+        else
+            error.text = "You don't have enough money to buy " + item;
     }
 
     public void BuySword1()
     {
- if (Character.coins >= sword1price)
+
+        if (Player.Instance.coins > sword1price)
         {
-            Character.coins -= sword1price;
-            Character.sword="sword1";
+            Player.Instance.coins -= sword1price;
+            Player.Instance.sword = "Sword1";
+            Player.Instance.attack+=10;
         }
         else
-                Error("Sword");
+            Error("Sword1");
 
     }
-     public void BuySword2()
+    public void BuySword2()
     {
- if (Character.coins >= sword2price)
+        if (Player.Instance.sword == "Sword1")
         {
-            Character.coins -= sword2price;
-            Character.sword="sword2";
-        }
-        else
+            if (Player.Instance.coins > sword2price)
+            {
+                Player.Instance.coins -= sword2price;
+                Player.Instance.sword = "Sword2";
+              Player.Instance.attack+=15;
+            }
+            else
                 Error("Sword2");
-    }
-     public void BuySword3()
-    {
- if (Character.coins >= sword3price)
-        {
-            Character.coins -= sword3price;
-            Character.sword="sword31";
         }
-        else
+        else Error("Begginer's");
+
+    }
+    public void BuySword3()
+    {
+        if (Player.Instance.sword == "Sword2")
+        {
+            if (Player.Instance.coins > sword3price)
+            {
+                Player.Instance.coins -= sword3price;
+                Player.Instance.sword = "Sword3";
+              Player.Instance.attack+=20;
+
+            }
+            else
                 Error("Sword3");
+        }
+        else Error("Intermediate's");
     }
 }
