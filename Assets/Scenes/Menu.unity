@@ -431,6 +431,7 @@ GameObject:
   m_Component:
   - component: {fileID: 121164206}
   - component: {fileID: 121164205}
+  - component: {fileID: 121164207}
   m_Layer: 0
   m_Name: MenuAudio
   m_TagString: Untagged
@@ -447,7 +448,7 @@ AudioSource:
   m_GameObject: {fileID: 121164204}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 54dcb5ff5638b0042a86ebe042f99046, type: 2}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 94220cc8dc3cf0b45b8bf5c3b1cb5ee6, type: 2}
   m_audioClip: {fileID: 8300000, guid: fa12cfe749020c74aab8f5e147582c30, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -620,6 +621,14 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!81 &121164207
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 121164204}
+  m_Enabled: 1
 --- !u!1 &670515372
 GameObject:
   m_ObjectHideFlags: 0

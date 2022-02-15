@@ -1517,6 +1517,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1043533694}
   - component: {fileID: 1043533693}
+  - component: {fileID: 1043533695}
   m_Layer: 0
   m_Name: HomeAudio
   m_TagString: Untagged
@@ -1533,7 +1534,7 @@ AudioSource:
   m_GameObject: {fileID: 1043533692}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 54dcb5ff5638b0042a86ebe042f99046, type: 2}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 94220cc8dc3cf0b45b8bf5c3b1cb5ee6, type: 2}
   m_audioClip: {fileID: 8300000, guid: ea4d2622de682f7428253cca1618e098, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -1634,6 +1635,14 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!81 &1043533695
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043533692}
+  m_Enabled: 1
 --- !u!1 &1047045714
 GameObject:
   m_ObjectHideFlags: 0
