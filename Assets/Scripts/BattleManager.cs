@@ -28,9 +28,6 @@ public class BattleManager : MonoBehaviour
         Player.Instance.health = player.health;
         playerBody.transform.position= new Vector3(4, 0, 0);
         Player.Instance.body.transform.position=playerBody.transform.position;
-              //  Player.Instance.body.position = playerBody.position;
-
-        //Player.Instance.transform.position.x=player.transform.position.x;
         enemy = enemies[Player.Instance.bossNumber];
         playerBody.SetActive(false);
     }

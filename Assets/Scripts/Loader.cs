@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 
 public class Loader : MonoBehaviour
-{ public Enemy [] enemies=new Enemy[4];
+{ public Enemy [] enemies=new Enemy[15];
     public Text description;
     void Start(){     
         description.text=enemies[Player.Instance.bossNumber].toString();
