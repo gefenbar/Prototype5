@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 
 public class BattleManager : MonoBehaviour
 {
+    public Player player;
     Enemy enemy;
     Character enabled;
     Character disabled;
@@ -16,17 +17,19 @@ public class BattleManager : MonoBehaviour
     public Button apple;
     public Button potion;
     public Button scroll;
-    public Enemy[] enemies = new Enemy[4];
+    public Enemy[] enemies = new Enemy[15];
     HealthBar disabledHealthBar;
-    public Player player;
     public GameObject playerBody;
+    public Button[] buttons = new Button[6];
     public void Start()
     {
         Player.Instance.timer = player.timer;
         Player.Instance.soundManager = player.soundManager;
-        Player.Instance.health=player.health;
-        Player.Instance.body=playerBody;
-        // playerBody.transform.position.x=4;
+        Player.Instance.health = player.health;
+        playerBody.transform.position= new Vector3(4, 0, 0);
+        Player.Instance.body.transform.position=playerBody.transform.position;
+              //  Player.Instance.body.position = playerBody.position;
+
         //Player.Instance.transform.position.x=player.transform.position.x;
         enemy = enemies[Player.Instance.bossNumber];
         playerBody.SetActive(false);
@@ -109,6 +112,7 @@ public class BattleManager : MonoBehaviour
             if (disabled.health <= 0)
             {
                 disabled.Die();
+                EndBattle();
                 if (disabled == Player.Instance)
                 {
                     Player.Instance.coins -= Player.Instance.bet;
@@ -116,9 +120,9 @@ public class BattleManager : MonoBehaviour
                 }
                 else
                 {
-                    if (Player.Instance.bossNumber == 3)
+                    if (Player.Instance.bossNumber == 15)
                         Debug.Log("YOU WON!");
-                        
+
                     else
                     {
                         Player.Instance.bossNumber++;
@@ -127,15 +131,15 @@ public class BattleManager : MonoBehaviour
                     }
                 }
                 StartCoroutine(BackToMain());
-
-
-                IEnumerator BackToMain()
-                {
-                    //Debug.Log("YOU WON THE FIGHT");
-                    yield return new WaitForSeconds(3f);
-                    SceneManager.LoadScene("Main");
-                }
             }
+
+            IEnumerator BackToMain()
+            {
+                //Debug.Log("YOU WON THE FIGHT");
+                yield return new WaitForSeconds(3f);
+                SceneManager.LoadScene("Main");
+            }
+
         }
 
     }
@@ -169,5 +173,12 @@ public class BattleManager : MonoBehaviour
             Player.Instance.scroll -= 1;
             Player.Instance.UseScroll();
         }
+    }
+    public void EndBattle()
+    {
+for (int i = 0; i < buttons.Length; i++)
+{
+    buttons[i].interactable=false;
+}
     }
 }
