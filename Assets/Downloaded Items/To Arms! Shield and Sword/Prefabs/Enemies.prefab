@@ -8726,7 +8726,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   body: {fileID: 1588527390182017724}
-  name: Enemy4
+  name: Enemy10
   isDefending: 0
   isAttacking: 0
   health: 100
@@ -12069,7 +12069,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   body: {fileID: 2195433641724068475}
-  name: Enemy4
+  name: Enemy14
   isDefending: 0
   isAttacking: 0
   health: 100
@@ -19072,7 +19072,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   body: {fileID: 3365191517127973679}
-  name: Enemy4
+  name: Enemy9
   isDefending: 0
   isAttacking: 0
   health: 100
@@ -22150,7 +22150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   body: {fileID: 3996572795935157875}
-  name: Enemy4
+  name: Enemy15
   isDefending: 0
   isAttacking: 0
   health: 100
@@ -30155,7 +30155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   body: {fileID: 5295381776829227645}
-  name: Enemy4
+  name: Enemy7
   isDefending: 0
   isAttacking: 0
   health: 100
@@ -31655,7 +31655,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   body: {fileID: 5547475683984474636}
-  name: Enemy4
+  name: Enemy13
   isDefending: 0
   isAttacking: 0
   health: 100
@@ -34872,7 +34872,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   body: {fileID: 6188595200896831758}
-  name: Enemy4
+  name: Enemy8
   isDefending: 0
   isAttacking: 0
   health: 100
@@ -36517,7 +36517,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   body: {fileID: 6486133648658916027}
-  name: Enemy4
+  name: Enemy11
   isDefending: 0
   isAttacking: 0
   health: 100
@@ -40075,7 +40075,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   body: {fileID: 7100878329537925588}
-  name: Enemy4
+  name: Enemy6
   isDefending: 0
   isAttacking: 0
   health: 100
@@ -45096,7 +45096,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   body: {fileID: 7959699189915412280}
-  name: Enemy4
+  name: Enemy5
   isDefending: 0
   isAttacking: 0
   health: 100
@@ -45448,7 +45448,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   body: {fileID: 8077087260152004624}
-  name: Enemy4
+  name: Enemy12
   isDefending: 0
   isAttacking: 0
   health: 100
