@@ -31,5 +31,5 @@ EditorBuildSettings:
     guid: 08bb1d83649f62b81abf022d9decdb1f
   - enabled: 1
     path: Assets/Scenes/GameRules.unity
-    guid: f6f9c4b8cbb22e34c87d7ebd20c7f53b
+    guid: 8cc1bcf964659c54e9a9e4d870d05077
   m_configObjects: {}
