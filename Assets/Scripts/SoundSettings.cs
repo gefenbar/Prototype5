@@ -7,7 +7,14 @@ public class SoundSettings : MonoBehaviour
 {
     public AudioMixer BackGroundaudioMixer;
     public AudioMixer BattleMixer;
+    /* public Slider BackGroundaudioSlider;
+     public Slider BattleSlider;
 
+     private void start()
+     {
+         BackGroundaudioSlider.value = BackGroundaudioMixer.SetFloat("volume", volume);
+         BattleSlider.value = BattleMixer.SetFloat("battleVolume", volume);
+     }*/
 
     public void SetBackgroundVolume(float volume)
     {
