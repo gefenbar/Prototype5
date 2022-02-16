@@ -69,31 +69,35 @@ public class Character : MonoBehaviour
         animator.SetBool("die", true);
         StartCoroutine(ReturnToPosition());
         soundManager.DieSound();
+        
 
 
     }
 
     public void UseApple()
     {
-        animator.SetBool("useapple", true);
+        animator.SetBool("useUpgrade", true);
         attack += 10;
         StartCoroutine(UpgradesTimer("Apple"));
-        // StartCoroutine(ReturnToPosition());
+        StartCoroutine(ReturnToPosition());
+        soundManager.UseUpgrade();
     }
     public void UsePotion()
     {
-        animator.SetBool("usepotion", true);
+        animator.SetBool("useUpgrade", true);
         health += 20;
         StartCoroutine(UpgradesTimer("Potion"));
-        //StartCoroutine(ReturnToPosition());
+        StartCoroutine(ReturnToPosition());
+        soundManager.HealSound();
     }
     public void UseScroll()
     {
         attack += 8;
         health += 12;
-        animator.SetBool("usescroll", true);
+        animator.SetBool("useUpgrade", true);
         StartCoroutine(UpgradesTimer("Scroll"));
-        //StartCoroutine(ReturnToPosition());
+        StartCoroutine(ReturnToPosition());
+        soundManager.UseUpgrade();
     }
 
     IEnumerator ReturnToPosition()
@@ -105,6 +109,7 @@ public class Character : MonoBehaviour
         animator.SetBool("Block", false);
         animator.SetBool("moveleft", false);
         animator.SetBool("moveright", false);
+        animator.SetBool("useUpgrade", false);
 
     }
     IEnumerator UpgradesTimer(string upgrade)
@@ -117,21 +122,21 @@ public class Character : MonoBehaviour
             {
                 attack -= 10;
 
-                animator.SetBool("useapple", false);
+                animator.SetBool("useUpgrade", false);
             }
 
             if (upgrade == "Potion")
             {
                 health -= 20;
 
-                animator.SetBool("usepotion", false);
+                animator.SetBool("useUpgrade", false);
 
             }
             if (upgrade == "Scroll")
             {
                 attack -= 8;
                 health -= 12;
-                animator.SetBool("usescroll", false);
+                animator.SetBool("useUpgrade", false);
             }
             counter = 10;
             timer.text = " ";
