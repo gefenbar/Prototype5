@@ -30,6 +30,14 @@ public class BattleManager : MonoBehaviour
         Player.Instance.body.transform.position=playerBody.transform.position;
         enemy = enemies[Player.Instance.bossNumber];
         playerBody.SetActive(false);
+        for (int i = 0; i < enemies.Length; i++)
+        {
+            if(i!=Player.Instance.bossNumber){
+                enemies[i].body.SetActive(false);
+            }
+            else
+            enemies[i].body.SetActive(true);
+        }
     }
 
     public void Update()
@@ -51,15 +59,15 @@ public class BattleManager : MonoBehaviour
         disabled = Player.Instance;
         disabledHealthBar = playerHealthBar;
         // Debug.Log(enemy.name + " turn");
-
-        if (enemy.health < 20)
-        {
-            //    Defense();
-        }
-        else
-        {
-            // Attack();
-        }
+Attack();
+        // if (enemy.health < 20)
+        // {
+        //     //    Defense();
+        // }
+        // else
+        // {
+        //     // Attack();
+        // }
     }
 
     public void PlayerMove()

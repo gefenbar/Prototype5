@@ -98,8 +98,8 @@ public class Character : MonoBehaviour
 
     IEnumerator ReturnToPosition()
     {
-        yield return new WaitForSeconds(1f);
-        //isDefending = false;
+        yield return new WaitForSeconds(0.3f);
+        isDefending = false;
         animator.SetBool("Damage", false);
         animator.SetBool("attack", false);
         animator.SetBool("Block", false);
