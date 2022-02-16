@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SoundManagerScript : MonoBehaviour
 {
-    public AudioClip Attack, Block, Die, Heal, Injured, Move , useUpgrade;
+    public AudioClip Attack, Block, Die, Heal, Injured, Move;
     public AudioSource audioSrc;
 
 
@@ -45,10 +45,6 @@ public class SoundManagerScript : MonoBehaviour
     public void MoveSound()
     {
         audioSrc.PlayOneShot(Move);
-    }
-    public void UseUpgrade()
-    {
-        audioSrc.PlayOneShot(useUpgrade);
     }
 
 
