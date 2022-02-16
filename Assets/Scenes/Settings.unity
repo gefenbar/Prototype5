@@ -402,7 +402,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1232731127}
         m_TargetAssemblyTypeName: SoundSettings, Assembly-CSharp
         m_MethodName: SetMute
         m_Mode: 0
