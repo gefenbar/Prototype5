@@ -18,9 +18,6 @@ public class SoundManagerScript : MonoBehaviour
 
     }
 
-
-
-
     public void AttackSound()
     {
         audioSrc.PlayOneShot(Attack);

@@ -2,19 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.UI;
+
+
 
 public class SoundSettings : MonoBehaviour
 {
     public AudioMixer BackGroundaudioMixer;
     public AudioMixer BattleMixer;
-    /* public Slider BackGroundaudioSlider;
-     public Slider BattleSlider;
+    public Slider BackGroundaudioSlider;
+    public Slider BattleSlider;
+    
 
-     private void start()
-     {
-         BackGroundaudioSlider.value = BackGroundaudioMixer.SetFloat("volume", volume);
-         BattleSlider.value = BattleMixer.SetFloat("battleVolume", volume);
-     }*/
+    public void Awake()
+    {
+        float BackGroundaudioVolume;
+        float BattleVolume;
+        bool result = BackGroundaudioMixer.GetFloat("volume", out BackGroundaudioVolume);
+        bool result2 = BattleMixer.GetFloat("battleVolume", out BattleVolume);
+        BackGroundaudioSlider.value = BackGroundaudioVolume;
+        BattleSlider.value = BattleVolume;
+
+    }
 
     public void SetBackgroundVolume(float volume)
     {
@@ -29,14 +38,18 @@ public class SoundSettings : MonoBehaviour
     {
         if (isMute == true)
         {
+            BackGroundaudioSlider.value = -80;
+            BattleSlider.value = -80;
             BattleMixer.SetFloat("battleVolume", -80);
             BackGroundaudioMixer.SetFloat("volume", -80);
 
         }
         else
         {
+            BackGroundaudioSlider.value = -30;
+            BattleSlider.value = -30;
             BattleMixer.SetFloat("battleVolume", -30);
-            BackGroundaudioMixer.SetFloat("volume", 0);
+            BackGroundaudioMixer.SetFloat("volume", -30);
         }
 
     }
