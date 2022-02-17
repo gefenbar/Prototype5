@@ -13,6 +13,7 @@ public class InventoryManager : MonoBehaviour
     int sword2price = 250;
     int sword3price = 350;
 
+
     public void Update()
     {
         coins.text = Player.Instance.coins.ToString();
@@ -71,8 +72,9 @@ public class InventoryManager : MonoBehaviour
         if (Player.Instance.coins > sword1price)
         {
             Player.Instance.coins -= sword1price;
-            Player.Instance.sword = "Sword1";
+            Player.Instance.sword = 1;
             Player.Instance.attack+=10;
+
         }
         else
             Error("Sword1");
@@ -80,12 +82,12 @@ public class InventoryManager : MonoBehaviour
     }
     public void BuySword2()
     {
-        if (Player.Instance.sword == "Sword1")
+        if (Player.Instance.sword == 1)
         {
             if (Player.Instance.coins > sword2price)
             {
                 Player.Instance.coins -= sword2price;
-                Player.Instance.sword = "Sword2";
+                Player.Instance.sword = 2;
               Player.Instance.attack+=15;
             }
             else
@@ -96,12 +98,12 @@ public class InventoryManager : MonoBehaviour
     }
     public void BuySword3()
     {
-        if (Player.Instance.sword == "Sword2")
+        if (Player.Instance.sword == 2)
         {
             if (Player.Instance.coins > sword3price)
             {
                 Player.Instance.coins -= sword3price;
-                Player.Instance.sword = "Sword3";
+                Player.Instance.sword = 3;
               Player.Instance.attack+=20;
 
             }

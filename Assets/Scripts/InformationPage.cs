@@ -12,12 +12,15 @@ public class InformationPage : MonoBehaviour
     public GameObject apple;
     public GameObject scroll;
     public GameObject potion;
+    public GameObject sword;
     public Text coins;
     public Text name;
     public Text wins;
      public Text losses;
      public Text attack;
     public Text defense;
+    public Sprite[] swords = new Sprite[4];
+    
     // public Text strength;
     // public Text weakness;
     void Start()
@@ -27,9 +30,9 @@ public class InformationPage : MonoBehaviour
         coins.text = Player.Instance.coins.ToString();
         attack.text = Player.Instance.attack.ToString();
         defense.text = Player.Instance.defense.ToString();
-applesQuantity.text=Player.Instance.apple.ToString();
-scrollsQuantity.text=Player.Instance.scroll.ToString();
-potionsQuantity.text=Player.Instance.potion.ToString();
+        applesQuantity.text=Player.Instance.apple.ToString();
+        scrollsQuantity.text=Player.Instance.scroll.ToString();
+        potionsQuantity.text=Player.Instance.potion.ToString();
         if (Player.Instance.apple == 0)
         {
             apple.GetComponent<Image>().color = new Color32(150, 150, 150, 150);
@@ -44,5 +47,14 @@ potionsQuantity.text=Player.Instance.potion.ToString();
             potion.GetComponent<Image>().color = new Color32(150, 150, 150, 150);
 
         }
+        for (int i = 0; i<4; i++)
+        {
+            if(i == Player.Instance.sword)
+            {
+                sword.GetComponent<Image>().sprite = swords[i]; 
+
+            }
+        }
+
     }
 }

@@ -5,6 +5,17 @@ using UnityEngine;
 public class Player : Character
 {
  //temp
+    public void start()
+    {
+        for (int i = 0; i < 4; i++)
+        {
+            if (i == Player.Instance.sword)
+            {
+                physicalSword.GetComponent<MeshFilter>().sharedMesh = physicalSwords[i];
+            }
+        }
+    }
+
     public Player()
     {
         this.attack = 3;
@@ -26,9 +37,11 @@ public class Player : Character
 
     }
     /*singleton*/
-    public string sword;
+    public GameObject physicalSword;
+    public Mesh[] physicalSwords = new Mesh[4];
+    public int sword;
     public float bet;
-    public float coins = 100;
+    public float coins = 500;
     public int apple = 0;
     public int scroll = 0;
     public int potion = 0;
