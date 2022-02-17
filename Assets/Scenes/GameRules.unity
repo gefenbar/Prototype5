@@ -797,8 +797,9 @@ MonoBehaviour:
     The
     winer of the arena is the last standing.
 
-    For each win you will recieve
-    2 X BET.
+    For each win you will recieve amount
+    equal to the bet he placed puls the amount from the enemy that equal to the bet
+    .
 
     If you lose you will lose your honor, but you will have the opportunity
     to earn respect money and become stronger.'
