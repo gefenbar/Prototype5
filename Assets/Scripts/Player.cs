@@ -37,6 +37,7 @@ public class Player : Character
 
     }
     /*singleton*/
+
     public GameObject physicalSword;
     public Mesh[] physicalSwords = new Mesh[4];
     public int sword;

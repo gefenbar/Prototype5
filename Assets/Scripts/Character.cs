@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class Character : MonoBehaviour
 {
+    public ParticleSystem boostEffect;
+    public ParticleSystem healEffect;
+    public ParticleSystem bloodEffect;
     public GameObject body;
     public string name;
     public bool isDefending = false;
@@ -59,9 +62,11 @@ public class Character : MonoBehaviour
 
     public void TakeDamage()
     {
+        
         animator.SetBool("Damage", true);
         StartCoroutine(ReturnToPosition());
         soundManager.InjuredSound();
+        //playBoost(bloodEffect);
     }
 
     public void Die()
@@ -76,30 +81,49 @@ public class Character : MonoBehaviour
 
     public void UseApple()
     {
+        playBoost(boostEffect);
         animator.SetBool("useUpgrade", true);
         attack += 10;
         StartCoroutine(UpgradesTimer("Apple"));
         StartCoroutine(ReturnToPosition());
         soundManager.UseUpgrade();
+        //stopBoost(boostEffect);
     }
     public void UsePotion()
     {
+        playBoost(healEffect);
         animator.SetBool("useUpgrade", true);
         health += 20;
         StartCoroutine(UpgradesTimer("Potion"));
         StartCoroutine(ReturnToPosition());
         soundManager.HealSound();
+        
     }
     public void UseScroll()
     {
+        playBoost(boostEffect);
         attack += 8;
         health += 12;
         animator.SetBool("useUpgrade", true);
         StartCoroutine(UpgradesTimer("Scroll"));
         StartCoroutine(ReturnToPosition());
         soundManager.UseUpgrade();
+        //stopBoost(boostEffect);
     }
+    public void playBoost(ParticleSystem Effect)
+    {
 
+        Effect.Play();
+    }
+    public void stopBoost(ParticleSystem Effect)
+    {
+        //BoostTimer();
+        Effect.Stop();
+    }
+    /*IEnumerator BoostTimer()
+    {
+        yield return new WaitForSeconds(5f);
+    }*/
     IEnumerator ReturnToPosition()
     {
         yield return new WaitForSeconds(0.3f);
