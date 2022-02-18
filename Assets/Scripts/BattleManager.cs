@@ -23,7 +23,7 @@ public class BattleManager : MonoBehaviour
     public Button[] buttons = new Button[7];
     public void Start()
     {
-        // player.animator("die",false);
+        Player.Instance.body.SetActive(true);
         Player.Instance.timer = player.timer;
         Player.Instance.soundManager = player.soundManager;
         Player.Instance.health = player.health;
