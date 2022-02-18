@@ -20,7 +20,7 @@ public class BattleManager : MonoBehaviour
     public Enemy[] enemies = new Enemy[15];
     HealthBar disabledHealthBar;
     public GameObject playerBody;
-    public Button[] buttons = new Button[7];
+    public Button[] buttons = new Button[10];
     public void Start()
     {
         Player.Instance.body.SetActive(true);
@@ -56,11 +56,10 @@ public class BattleManager : MonoBehaviour
 
     public void ComputerMove()
     {
-                // DelayButtons();
+        DisableButtons();
         enabled = enemy;
         disabled = Player.Instance;
         disabledHealthBar = playerHealthBar;
-        // Debug.Log(enemy.name + " turn");
         Attack();
         // if (enemy.health < 20)
         // {
@@ -74,16 +73,16 @@ public class BattleManager : MonoBehaviour
 
     public void PlayerMove()
     {
+        StartCoroutine(DelayButtons());
         enabled = Player.Instance;
         disabled = enemy;
         disabledHealthBar = enemyHealthBar;
     }
-    // IEnumerator DelayButtons()
-    // {
-    //     DisableButtons();
-    //     yield return new WaitForSeconds(1.5f);
-    //     EnableButtons();
-    // }
+    IEnumerator DelayButtons()
+    {
+        yield return new WaitForSeconds(0.7f);
+        EnableButtons();
+    }
 
 
 

@@ -62,7 +62,7 @@ public class Character : MonoBehaviour
 
     public void TakeDamage()
     {
-        
+
         animator.SetBool("Damage", true);
         StartCoroutine(ReturnToPosition());
         soundManager.InjuredSound();
@@ -82,33 +82,32 @@ public class Character : MonoBehaviour
     public void UseApple()
     {
         playBoost(boostEffect);
+        soundManager.UseUpgrade();
         animator.SetBool("useUpgrade", true);
         attack += 10;
         StartCoroutine(UpgradesTimer("Apple"));
         StartCoroutine(ReturnToPosition());
-        soundManager.UseUpgrade();
-        
     }
     public void UsePotion()
     {
-        playBoost(healEffect);
+        // playBoost(healEffect);
+        soundManager.HealSound();
+
         animator.SetBool("useUpgrade", true);
         health += 20;
         StartCoroutine(UpgradesTimer("Potion"));
         StartCoroutine(ReturnToPosition());
-        soundManager.HealSound();
-        
+
     }
     public void UseScroll()
     {
-        playBoost(boostEffect);
+        // playBoost(boostEffect);
+        soundManager.UseUpgrade();
         attack += 8;
         health += 12;
         animator.SetBool("useUpgrade", true);
         StartCoroutine(UpgradesTimer("Scroll"));
         StartCoroutine(ReturnToPosition());
-        soundManager.UseUpgrade();
-        stopBoost(boostEffect);
     }
     public void playBoost(ParticleSystem Effect)
     {
@@ -117,10 +116,9 @@ public class Character : MonoBehaviour
     }
     public void stopBoost(ParticleSystem Effect)
     {
-
         Effect.Stop();
     }
-    
+
     IEnumerator ReturnToPosition()
     {
         yield return new WaitForSeconds(0.3f);
@@ -136,8 +134,11 @@ public class Character : MonoBehaviour
     {
         timer.text = counter.ToString();
 
+
         if (counter == 0)
         {
+            // stopBoost(boostEffect);
+            // stopBoost(boostEffect);
             stopBoost(boostEffect);
             if (upgrade == "Apple")
             {
@@ -167,7 +168,6 @@ public class Character : MonoBehaviour
             yield return new WaitForSeconds(1f);
             counter--;
             StartCoroutine(UpgradesTimer(upgrade));
-
         }
 
     }
