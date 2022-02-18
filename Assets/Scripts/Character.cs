@@ -15,8 +15,8 @@ public class Character : MonoBehaviour
     public string weakness;
     public string strength;
     int counter = 10;
-    public  Text timer;
-    public  SoundManagerScript soundManager;
+    public Text timer;
+    public SoundManagerScript soundManager;
     public Animator animator;
     Vector3 temp = new Vector3(1.0f, 0, 0);
 
@@ -69,7 +69,7 @@ public class Character : MonoBehaviour
         animator.SetBool("die", true);
         StartCoroutine(ReturnToPosition());
         soundManager.DieSound();
-        
+
 
 
     }
@@ -110,7 +110,6 @@ public class Character : MonoBehaviour
         animator.SetBool("moveleft", false);
         animator.SetBool("moveright", false);
         animator.SetBool("useUpgrade", false);
-
     }
     IEnumerator UpgradesTimer(string upgrade)
     {
