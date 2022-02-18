@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44855887, g: 0.49860805, b: 0.5756574, a: 1}
+  m_IndirectSpecularColor: {r: 0.4485582, g: 0.49860758, b: 0.5756559, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1651,7 +1651,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Back
+  m_Text: Leave Battle
 --- !u!222 &620861775
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3768,7 +3768,7 @@ GameObject:
   - component: {fileID: 1404206028}
   - component: {fileID: 1404206027}
   m_Layer: 5
-  m_Name: Button
+  m_Name: LeaveButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3850,6 +3850,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1595679770}
+        m_TargetAssemblyTypeName: BattleManager, Assembly-CSharp
+        m_MethodName: LeaveBattle
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1404206028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3915,7 +3927,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1463535733}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: -0.00000071812974}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1847729390}
@@ -4492,6 +4504,7 @@ MonoBehaviour:
   - {fileID: 1900970228}
   - {fileID: 149289976}
   - {fileID: 1463535735}
+  - {fileID: 1404206027}
 --- !u!4 &1595679771
 Transform:
   m_ObjectHideFlags: 0
