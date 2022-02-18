@@ -20,7 +20,7 @@ public class BattleManager : MonoBehaviour
     public Enemy[] enemies = new Enemy[15];
     HealthBar disabledHealthBar;
     public GameObject playerBody;
-    public Button[] buttons = new Button[7];
+    public Button[] buttons = new Button[10];
     public void Start()
     {
         Player.Instance.body.SetActive(true);
@@ -56,6 +56,7 @@ public class BattleManager : MonoBehaviour
 
     public void ComputerMove()
     {
+                DisableButtons();
                 // DelayButtons();
         enabled = enemy;
         disabled = Player.Instance;
@@ -74,16 +75,16 @@ public class BattleManager : MonoBehaviour
 
     public void PlayerMove()
     {
+        StartCoroutine(DelayButtons());
         enabled = Player.Instance;
         disabled = enemy;
         disabledHealthBar = enemyHealthBar;
     }
-    // IEnumerator DelayButtons()
-    // {
-    //     DisableButtons();
-    //     yield return new WaitForSeconds(1.5f);
-    //     EnableButtons();
-    // }
+    IEnumerator DelayButtons()
+    {
+        yield return new WaitForSeconds(0.7f);
+        EnableButtons();
+    }
 
 
 

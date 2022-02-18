@@ -87,7 +87,7 @@ public class Character : MonoBehaviour
         StartCoroutine(UpgradesTimer("Apple"));
         StartCoroutine(ReturnToPosition());
         soundManager.UseUpgrade();
-        
+        //stopBoost(boostEffect);
     }
     public void UsePotion()
     {
@@ -108,7 +108,7 @@ public class Character : MonoBehaviour
         StartCoroutine(UpgradesTimer("Scroll"));
         StartCoroutine(ReturnToPosition());
         soundManager.UseUpgrade();
-        stopBoost(boostEffect);
+        //stopBoost(boostEffect);
     }
     public void playBoost(ParticleSystem Effect)
     {
@@ -117,10 +117,9 @@ public class Character : MonoBehaviour
     }
     public void stopBoost(ParticleSystem Effect)
     {
-
         Effect.Stop();
     }
-    
+  
     IEnumerator ReturnToPosition()
     {
         yield return new WaitForSeconds(0.3f);
@@ -138,7 +137,6 @@ public class Character : MonoBehaviour
 
         if (counter == 0)
         {
-            stopBoost(boostEffect);
             if (upgrade == "Apple")
             {
                 attack -= 10;
