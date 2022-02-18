@@ -50,7 +50,6 @@ public class BattleManager : MonoBehaviour
 
         if (Player.Instance.scroll < 1)
             scroll.interactable = false;
-
     }
 
     public void ComputerMove()//example
@@ -185,5 +184,10 @@ for (int i = 0; i < buttons.Length; i++)
 {
     buttons[i].interactable=false;
 }
+    }
+
+     public void LeaveBattle()
+    {
+            Player.Instance.coins-=Player.Instance.bet/2;
     }
 }
