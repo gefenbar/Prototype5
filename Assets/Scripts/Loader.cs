@@ -24,7 +24,7 @@ public class Loader : MonoBehaviour
         SceneManager.LoadScene("Battle");
     }
       public void BetThreeQuarters(){
-        Player.Instance.bet=Player.Instance.coins*(3/4);
+        Player.Instance.bet=Player.Instance.coins*3/4;
         SceneManager.LoadScene("Battle");
     }
 }
