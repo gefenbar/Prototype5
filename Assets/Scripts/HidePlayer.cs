@@ -4,16 +4,9 @@ using UnityEngine;
 
 public class HidePlayer : MonoBehaviour
 {
-    // Start is called before the first frame update
     void Awake()
     {
                         Player.Instance.body.SetActive(false);
 
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
-}

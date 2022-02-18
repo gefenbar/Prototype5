@@ -54,8 +54,9 @@ public class BattleManager : MonoBehaviour
             scroll.interactable = false;
     }
 
-    public void ComputerMove()//example
+    public void ComputerMove()
     {
+                // DelayButtons();
         enabled = enemy;
         disabled = Player.Instance;
         disabledHealthBar = playerHealthBar;
@@ -77,6 +78,14 @@ public class BattleManager : MonoBehaviour
         disabled = enemy;
         disabledHealthBar = enemyHealthBar;
     }
+    // IEnumerator DelayButtons()
+    // {
+    //     DisableButtons();
+    //     yield return new WaitForSeconds(1.5f);
+    //     EnableButtons();
+    // }
+
+
 
     public void MoveRight()
     {
@@ -118,7 +127,7 @@ public class BattleManager : MonoBehaviour
             if (disabled.health <= 0)
             {
                 disabled.Die();
-                EndBattle();
+                DisableButtons();
                 if (disabled == Player.Instance)
                 {
                     Player.Instance.coins -= Player.Instance.bet;
@@ -180,11 +189,18 @@ public class BattleManager : MonoBehaviour
             Player.Instance.UseScroll();
         }
     }
-    public void EndBattle()
+    void DisableButtons()
     {
         for (int i = 0; i < buttons.Length; i++)
         {
             buttons[i].interactable = false;
+        }
+    }
+    void EnableButtons()
+    {
+        for (int i = 0; i < buttons.Length; i++)
+        {
+            buttons[i].interactable = true;
         }
     }
 
