@@ -112,4 +112,7 @@ public class InventoryManager : MonoBehaviour
         }
         else Error("Intermediate's");
     }
+    public void DisableBuy(Button button){
+button.interactable=false;
+    }
 }

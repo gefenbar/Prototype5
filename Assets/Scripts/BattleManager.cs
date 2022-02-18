@@ -56,12 +56,10 @@ public class BattleManager : MonoBehaviour
 
     public void ComputerMove()
     {
-                DisableButtons();
-                // DelayButtons();
+        DisableButtons();
         enabled = enemy;
         disabled = Player.Instance;
         disabledHealthBar = playerHealthBar;
-        // Debug.Log(enemy.name + " turn");
         Attack();
         // if (enemy.health < 20)
         // {

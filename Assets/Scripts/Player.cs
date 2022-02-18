@@ -4,23 +4,19 @@ using UnityEngine;
 
 public class Player : Character
 {
- //temp
-    public void start()
-    {
-        for (int i = 0; i < 4; i++)
-        {
-            if (i == Player.Instance.sword)
-            {
-                physicalSword.GetComponent<MeshFilter>().sharedMesh = physicalSwords[i];
-            }
-        }
-    }
+//  //temp
+//     public void SetPhysicalSword()
+//     {
+//         for (int i = 0; i < 4; i++)
+//         {
+//             if (i == Player.Instance.sword)
+//             {
+//                 Player.Instance.physicalSword.GetComponent<MeshFilter>().sharedMesh = physicalSwords[i];
+//             }
+//         }
+//     }
 
-    public Player()
-    {
-        this.attack = 3;
-        this.defense = 4;
-    }
+
     /*singleton*/
     public static Player Instance { get; private set; }
     private void Awake()
@@ -38,7 +34,7 @@ public class Player : Character
     }
     /*singleton*/
 
-    public GameObject physicalSword;
+    // public Mesh physicalSword;
     public Mesh[] physicalSwords = new Mesh[4];
     public int sword;
     public float bet;
