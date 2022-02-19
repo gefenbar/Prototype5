@@ -21,9 +21,7 @@ public class InformationPage : MonoBehaviour
      public Text attack;
     public Text defense;
     public Sprite[] swords = new Sprite[4];
-    
-    // public Text strength;
-    // public Text weakness;
+ 
     void Start()
     {
         description.text = Player.Instance.description.ToString();
@@ -32,6 +30,7 @@ public class InformationPage : MonoBehaviour
         coins.text = Player.Instance.coins.ToString();
         attack.text = Player.Instance.attack.ToString();
         defense.text = Player.Instance.defense.ToString();
+        name.text = Player.Instance.name.ToString();
         applesQuantity.text=Player.Instance.apple.ToString();
         scrollsQuantity.text=Player.Instance.scroll.ToString();
         potionsQuantity.text=Player.Instance.potion.ToString();
