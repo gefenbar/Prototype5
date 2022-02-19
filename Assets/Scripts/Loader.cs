@@ -7,11 +7,13 @@ using UnityEngine.UI;
 
 public class Loader : MonoBehaviour
 { public Enemy [] enemies=new Enemy[15];
-    public Text description;
+    public Text info;
+    public Text background;
         public Text coins;
  
-    void Start(){     
-        description.text=enemies[Player.Instance.bossNumber].toString();
+    void Start(){   
+      background.text=enemies[Player.Instance.bossNumber].description;  
+        info.text=enemies[Player.Instance.bossNumber].toString();
         coins.text=Player.Instance.coins.ToString();
     }
     public void BetQuarter(){
