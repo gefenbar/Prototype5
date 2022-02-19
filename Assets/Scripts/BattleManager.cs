@@ -63,8 +63,23 @@ public class BattleManager : MonoBehaviour
         enabled = enemy;
         disabled = Player.Instance;
         disabledHealthBar = playerHealthBar;
-
-        if (enemy.health < 20 && enemy.potionEnemy > 0 && distance > 2)
+        if (distance < 2.5 && enemy.health > 50 && Player.Instance.apple > 0)
+        {
+            Attack();
+        }
+        else if (distance < 2.5 && enemy.attack < Player.Instance.attack && enemy.health > 50)
+        {
+            Defense();
+        }
+        else if (distance < 2.5 && Player.Instance.health < enemy.health && enemy.attack >= Player.Instance.attack)
+        {
+            Attack();
+        }
+        else if (distance < 2.5 && Player.Instance.apple > 0 )
+        {
+            Defense();
+        }
+        else if (enemy.health < 20 && enemy.potionEnemy > 0 && distance > 2)
         {
             enemy.potionEnemy -=1;
             enemy.UsePotion();
@@ -87,6 +102,14 @@ public class BattleManager : MonoBehaviour
         {
             MoveRight();
         }
+        else if (distance < 2.5 )
+        {
+            Attack();
+        }
+        else if (distance < 2.5)
+        {
+            Defense();
+        }
     }
 
     public void PlayerMove()
@@ -95,6 +118,7 @@ public class BattleManager : MonoBehaviour
         enabled = Player.Instance;
         disabled = enemy;
         disabledHealthBar = enemyHealthBar;
+        enabledHealthBar = playerHealthBar;
     }
     IEnumerator DelayButtons()
     {
