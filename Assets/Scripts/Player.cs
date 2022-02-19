@@ -34,16 +34,3 @@ public class Player : Character
     public int bossNumber = 0;
 }
 
-    // public Mesh physicalSword;
-//  //temp
-//     public void SetPhysicalSword()
-//     {
-//         for (int i = 0; i < 4; i++)
-//         {
-//             if (i == Player.Instance.sword)
-//             {
-//                 Player.Instance.physicalSword.GetComponent<MeshFilter>().sharedMesh = physicalSwords[i];
-//             }
-//         }
-//     }
-

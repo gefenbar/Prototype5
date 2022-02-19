@@ -63,7 +63,7 @@ public class BattleManager : MonoBehaviour
         enabled = enemy;
         disabled = Player.Instance;
         disabledHealthBar = playerHealthBar;
-        if (distance < 2.5 && enemy.health > 50 && Player.Instance.apple > 0)
+        if (distance < 2.5 && Player.Instance.apple > 0)
         {
             Attack();
         }
@@ -75,13 +75,13 @@ public class BattleManager : MonoBehaviour
         {
             Attack();
         }
-        else if (distance < 2.5 && Player.Instance.apple > 0 )
+        else if (distance < 2.5 && Player.Instance.apple > 0)
         {
             Defense();
         }
         else if (enemy.health < 20 && enemy.potionEnemy > 0 && distance > 2)
         {
-            enemy.potionEnemy -=1;
+            enemy.potionEnemy -= 1;
             enemy.UsePotion();
         }
         else if (enemy.health > 50 && enemy.appleEnemy > 0 && distance > 2)
@@ -103,8 +103,8 @@ public class BattleManager : MonoBehaviour
         {
             MoveLeft();
             Defense();
-        }           
-        else if (distance < 2.5 )
+        }
+        else if (distance < 2.5)
         {
             Attack();
         }
@@ -131,7 +131,7 @@ public class BattleManager : MonoBehaviour
     }
     IEnumerator DelayButtons()
     {
-        yield return new WaitForSeconds(0.7f);
+        yield return new WaitForSeconds(1f);
         EnableButtons();
     }
 
@@ -140,12 +140,12 @@ public class BattleManager : MonoBehaviour
     public void MoveRight()
     {
 
-        if (enabled.transform.position.x > -3 && enabled == enemy) 
+        if (enabled.transform.position.x > -3 && enabled == enemy)
         {
             enabled.MoveRight();
 
         }
-        if (distance > 1 && enabled == Player.Instance)
+        if (distance > 1.25 && enabled == Player.Instance)
         {
             enabled.MoveRight();
         }
@@ -161,11 +161,11 @@ public class BattleManager : MonoBehaviour
             enabled.MoveLeft();
 
         }
-        if (distance > 1 && enabled == enemy)
+        if (distance > 1.25 && enabled == enemy)
         {
             enabled.MoveLeft();
         }
-        
+
 
     }
     public void Attack()
@@ -175,7 +175,7 @@ public class BattleManager : MonoBehaviour
         if ((distance < 1.5) && (distance > -1.5) && !disabled.isDefending)
         {
             disabled.TakeDamage();
-            disabled.health -= (enabled.attack/disabled.defense) + 3;
+            disabled.health -= (enabled.attack / disabled.defense) + 3;
             disabledHealthBar.SetHealth(disabled.health);
             if (disabled.health <= 0)
             {
@@ -183,18 +183,19 @@ public class BattleManager : MonoBehaviour
                 DisableButtons();
                 if (disabled == Player.Instance)
                 {
-                    if(result.text == "YOU WIN!")
+                    if (result.text == "YOU WIN!")
                     {
                         result.text = "IT'S A DRAW!";
                     }
-                    else 
+                    else
                         result.text = "YOU LOSE!";
                     Player.Instance.coins -= Player.Instance.bet;
                     Player.Instance.losses += 1;
                 }
                 else
                 {
-                    if (Player.Instance.bossNumber == 15) { 
+                    if (Player.Instance.bossNumber == 15)
+                    {
                         result.text = "YOU WIN THE GAME!";
                         Application.Quit();
                     }

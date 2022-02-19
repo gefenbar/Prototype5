@@ -7,11 +7,6 @@ public class HealthBar : MonoBehaviour
 {
     public Slider slider;
 
-
-    // Start is called before the first frame update
-
-
-
     public void SetHealth (float health)
     {
         slider.value = health;
