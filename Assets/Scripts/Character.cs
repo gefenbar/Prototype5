@@ -138,22 +138,21 @@ public class Character : MonoBehaviour
             stopBoost(scrollEffect);
             if (upgrade == "Apple")
             {
-                attack -= 10;
+                attack -= 6;
 
                 animator.SetBool("useUpgrade", false);
             }
 
             if (upgrade == "Potion")
             {
-                health -= 20;
+                
 
                 animator.SetBool("useUpgrade", false);
 
             }
             if (upgrade == "Scroll")
             {
-                attack -= 8;
-                health -= 12;
+                defense -= 8;
                 animator.SetBool("useUpgrade", false);
             }
             counter = 10;

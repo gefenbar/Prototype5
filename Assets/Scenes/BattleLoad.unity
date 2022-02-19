@@ -498,6 +498,14 @@ PrefabInstance:
         such as Spartacus and Crixcus due to his fighting powers and techniques.   
         Read more: https://historyten.com/roman/famous-roman-gladiators/#ixzz7LMUenFaG'
       objectReference: {fileID: 0}
+    - target: {fileID: 5034781426090485015, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: name
+      value: 'Tetricus '
+      objectReference: {fileID: 0}
+    - target: {fileID: 5034781426090485015, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: description
+      value: The arena champions, prepare to die.
+      objectReference: {fileID: 0}
     - target: {fileID: 6335847218525735104, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: name
       value: Commodus
@@ -508,6 +516,14 @@ PrefabInstance:
         emperor who fought in the arena with the gladiators and was known to fight
         in unfair matchups with weaker opponents. He had a huge ego and regarded
         himself as quite the warrior.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6664480360588399704, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: name
+      value: 'Roburius '
+      objectReference: {fileID: 0}
+    - target: {fileID: 6664480360588399704, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: description
+      value: The second most powerful,  brutal, and fastest gladiator.
       objectReference: {fileID: 0}
     - target: {fileID: 8049789299303600827, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: name
@@ -650,9 +666,41 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 9071513378742902380, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: attack
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9071513378742902380, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: defense
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9071513378742902380, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: appleEnemy
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9071513378742902380, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: appleEffect
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 9071513378742902380, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: description
       value: meaning unknown. He is one of the many famous gladiators known for his
         battles with another gladiator named Prudes.
+      objectReference: {fileID: 0}
+    - target: {fileID: 9071513378742902380, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: potionEnemy
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9071513378742902380, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: scrollEnemy
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9071513378742902380, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: potionEffect
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 9071513378742902380, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: scrollEffect
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 9071513378742902380, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: soundManager

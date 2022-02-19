@@ -1971,6 +1971,14 @@ PrefabInstance:
       value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 8826753849451144683, guid: 77056ed195cbdf8b0aa6a144d73abc1b, type: 3}
+      propertyPath: attack
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8826753849451144683, guid: 77056ed195cbdf8b0aa6a144d73abc1b, type: 3}
+      propertyPath: defense
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8826753849451144683, guid: 77056ed195cbdf8b0aa6a144d73abc1b, type: 3}
       propertyPath: healEffect
       value: 
       objectReference: {fileID: 0}

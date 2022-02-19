@@ -6164,6 +6164,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 643339233}
     - target: {fileID: 8826753849451144683, guid: 77056ed195cbdf8b0aa6a144d73abc1b, type: 3}
+      propertyPath: attack
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8826753849451144683, guid: 77056ed195cbdf8b0aa6a144d73abc1b, type: 3}
+      propertyPath: defense
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8826753849451144683, guid: 77056ed195cbdf8b0aa6a144d73abc1b, type: 3}
       propertyPath: healEffect
       value: 
       objectReference: {fileID: 0}
@@ -6246,9 +6254,29 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 643339233}
     - target: {fileID: 1173553261239456818, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: attack
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1173553261239456818, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: defense
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1173553261239456818, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: animator
       value: 
       objectReference: {fileID: 2105842863}
+    - target: {fileID: 1173553261239456818, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: appleEnemy
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1173553261239456818, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: potionEnemy
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1173553261239456818, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: scrollEnemy
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1173553261239456818, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: soundManager
       value: 
@@ -6266,9 +6294,29 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 643339233}
     - target: {fileID: 2271699670859527877, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: attack
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2271699670859527877, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: defense
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 2271699670859527877, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: animator
       value: 
       objectReference: {fileID: 1762999735}
+    - target: {fileID: 2271699670859527877, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: appleEnemy
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2271699670859527877, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: potionEnemy
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2271699670859527877, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: scrollEnemy
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2271699670859527877, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: soundManager
       value: 
@@ -6286,9 +6334,29 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 643339233}
     - target: {fileID: 3734444921935157870, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: attack
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3734444921935157870, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: defense
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 3734444921935157870, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: animator
       value: 
       objectReference: {fileID: 683562847}
+    - target: {fileID: 3734444921935157870, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: appleEnemy
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3734444921935157870, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: potionEnemy
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3734444921935157870, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: scrollEnemy
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3734444921935157870, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: soundManager
       value: 
@@ -6306,9 +6374,29 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 643339233}
     - target: {fileID: 5034781426090485015, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: attack
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5034781426090485015, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: defense
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 5034781426090485015, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: animator
       value: 
       objectReference: {fileID: 1750963718}
+    - target: {fileID: 5034781426090485015, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: appleEnemy
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5034781426090485015, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: potionEnemy
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5034781426090485015, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: scrollEnemy
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5034781426090485015, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: soundManager
       value: 
@@ -6326,9 +6414,29 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 643339233}
     - target: {fileID: 5216596844269849173, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: attack
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5216596844269849173, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: defense
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 5216596844269849173, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: animator
       value: 
       objectReference: {fileID: 2000112611}
+    - target: {fileID: 5216596844269849173, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: appleEnemy
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5216596844269849173, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: potionEnemy
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5216596844269849173, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: scrollEnemy
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5216596844269849173, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: soundManager
       value: 
@@ -6346,9 +6454,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 643339233}
     - target: {fileID: 6335847218525735104, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: defense
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335847218525735104, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: animator
       value: 
       objectReference: {fileID: 2080793752}
+    - target: {fileID: 6335847218525735104, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: appleEnemy
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335847218525735104, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: potionEnemy
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6335847218525735104, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: soundManager
       value: 
@@ -6366,9 +6486,29 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 643339233}
     - target: {fileID: 6664480360588399704, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: attack
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 6664480360588399704, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: defense
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6664480360588399704, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: animator
       value: 
       objectReference: {fileID: 276212004}
+    - target: {fileID: 6664480360588399704, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: appleEnemy
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6664480360588399704, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: potionEnemy
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6664480360588399704, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: scrollEnemy
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6664480360588399704, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: soundManager
       value: 
@@ -6386,9 +6526,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 643339233}
     - target: {fileID: 8049789299303600827, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: defense
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8049789299303600827, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: animator
       value: 
       objectReference: {fileID: 1602506327}
+    - target: {fileID: 8049789299303600827, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: potionEnemy
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8049789299303600827, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: scrollEnemy
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8049789299303600827, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: soundManager
       value: 
@@ -6406,9 +6558,25 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 643339233}
     - target: {fileID: 8743061819408041822, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: attack
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8743061819408041822, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: defense
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8743061819408041822, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: animator
       value: 
       objectReference: {fileID: 1224067266}
+    - target: {fileID: 8743061819408041822, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: appleEnemy
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8743061819408041822, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: potionEnemy
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8743061819408041822, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: soundManager
       value: 
@@ -6426,9 +6594,25 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 643339233}
     - target: {fileID: 9020716337012394915, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: defense
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 9020716337012394915, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: animator
       value: 
       objectReference: {fileID: 133237449}
+    - target: {fileID: 9020716337012394915, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: appleEnemy
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9020716337012394915, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: potionEnemy
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9020716337012394915, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: scrollEnemy
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9020716337012394915, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: soundManager
       value: 
@@ -6490,9 +6674,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 643339233}
     - target: {fileID: 9071513377284133047, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: attack
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9071513377284133047, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: defense
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9071513377284133047, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: animator
       value: 
       objectReference: {fileID: 1888157434}
+    - target: {fileID: 9071513377284133047, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: appleEnemy
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9071513377284133047, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: description
       value: Not much is known about Hermes, the only thing is known that Hermes
@@ -6935,13 +7131,29 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 643339233}
     - target: {fileID: 9071513378736235630, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: attack
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9071513378736235630, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: defense
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9071513378736235630, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: animator
       value: 
       objectReference: {fileID: 509369108}
     - target: {fileID: 9071513378736235630, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: appleEnemy
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9071513378736235630, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: description
       value: The fastest gladiator that competes at the arena, is known as the gladiator
         with the "flash attack".
+      objectReference: {fileID: 0}
+    - target: {fileID: 9071513378736235630, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: potionEnemy
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9071513378736235630, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: soundManager
@@ -6960,12 +7172,36 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 643339233}
     - target: {fileID: 9071513378742902380, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: attack
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9071513378742902380, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: defense
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9071513378742902380, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: animator
       value: 
       objectReference: {fileID: 734893475}
     - target: {fileID: 9071513378742902380, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: appleEnemy
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9071513378742902380, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: appleEffect
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 9071513378742902380, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: description
       value: Popular gladiator in Rome, famous for his sword skills and his agility
+      objectReference: {fileID: 0}
+    - target: {fileID: 9071513378742902380, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: potionEffect
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 9071513378742902380, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: scrollEffect
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 9071513378742902380, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: soundManager
@@ -7072,6 +7308,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 643339233}
     - target: {fileID: 9071513379128385647, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: attack
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9071513379128385647, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: defense
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9071513379128385647, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: animator
       value: 
       objectReference: {fileID: 592221689}
@@ -7079,6 +7323,14 @@ PrefabInstance:
       propertyPath: description
       value: One of the most famous gladiators in Rome won a number of battles and
         emerged victorious against many skilled adversaries
+      objectReference: {fileID: 0}
+    - target: {fileID: 9071513379128385647, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: potionEnemy
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9071513379128385647, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: scrollEnemy
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9071513379128385647, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: soundManager
@@ -7129,8 +7381,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 336519648}
     - target: {fileID: 9142061711463311132, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: appleEnemy
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142061711463311132, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: isDefending
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142061711463311132, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: potionEnemy
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142061711463311132, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: scrollEnemy
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9142061711463311132, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: soundManager

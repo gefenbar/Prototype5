@@ -103,15 +103,7 @@ public class BattleManager : MonoBehaviour
         {
             MoveLeft();
             Defense();
-        }
-        else if(distance > 3)
-        {
-            MoveLeft();
-        }
-        else if(Player.Instance.counter > 5)
-        {
-            MoveRight();
-        }
+        }           
         else if (distance < 2.5 )
         {
             Attack();
@@ -119,6 +111,14 @@ public class BattleManager : MonoBehaviour
         else if (distance < 2.5)
         {
             Defense();
+        }
+        else if (distance > 3)
+        {
+            MoveLeft();
+        }
+        else if (Player.Instance.counter < 5)
+        {
+            MoveRight();
         }
     }
 
@@ -175,7 +175,7 @@ public class BattleManager : MonoBehaviour
         if ((distance < 1.5) && (distance > -1.5) && !disabled.isDefending)
         {
             disabled.TakeDamage();
-            disabled.health -= disabled.defense * enabled.attack;
+            disabled.health -= (enabled.attack/disabled.defense) + 3;
             disabledHealthBar.SetHealth(disabled.health);
             if (disabled.health <= 0)
             {
@@ -194,9 +194,10 @@ public class BattleManager : MonoBehaviour
                 }
                 else
                 {
-                    if (Player.Instance.bossNumber == 15)
+                    if (Player.Instance.bossNumber == 15) { 
                         result.text = "YOU WIN THE GAME!";
-                    
+                        Application.Quit();
+                    }
 
                     else
                     {
