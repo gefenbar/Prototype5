@@ -12,11 +12,17 @@ public class InventoryManager : MonoBehaviour
     int sword1price = 150;
     int sword2price = 250;
     int sword3price = 350;
-
-
+    public Button [] buySwords=new Button [3];
+   
     public void Update()
     {
         coins.text = Player.Instance.coins.ToString();
+for (int i = 0; i < buySwords.Length; i++)
+{
+    if(Player.Instance.sword >= i+1)
+                    buySwords[i].interactable = false;        
+}
+
     }
     public void BuyApple()
     {
@@ -24,7 +30,7 @@ public class InventoryManager : MonoBehaviour
         {
             Player.Instance.coins -= applePrice;
             Player.Instance.apple += 1;
-          
+
         }
         else
             Error("Apple");
@@ -73,7 +79,8 @@ public class InventoryManager : MonoBehaviour
         {
             Player.Instance.coins -= sword1price;
             Player.Instance.sword = 1;
-            Player.Instance.attack+=10;
+            Player.Instance.attack += 10;
+
 
         }
         else
@@ -88,7 +95,8 @@ public class InventoryManager : MonoBehaviour
             {
                 Player.Instance.coins -= sword2price;
                 Player.Instance.sword = 2;
-              Player.Instance.attack+=15;
+                Player.Instance.attack += 15;
+
             }
             else
                 Error("Sword2");
@@ -104,7 +112,8 @@ public class InventoryManager : MonoBehaviour
             {
                 Player.Instance.coins -= sword3price;
                 Player.Instance.sword = 3;
-              Player.Instance.attack+=20;
+                Player.Instance.attack += 20;
+
 
             }
             else
@@ -112,7 +121,5 @@ public class InventoryManager : MonoBehaviour
         }
         else Error("Intermediate's");
     }
-    public void DisableBuy(Button button){
-button.interactable=false;
-    }
+
 }

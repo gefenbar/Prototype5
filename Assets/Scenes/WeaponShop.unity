@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4485584, g: 0.49860787, b: 0.5756564, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311926, g: 0.38073993, b: 0.35872683, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -583,7 +583,7 @@ RectTransform:
   - {fileID: 291076147}
   - {fileID: 1865990756}
   m_Father: {fileID: 2009684957}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1344,18 +1344,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1536903222}
-        m_TargetAssemblyTypeName: InventoryManager, Assembly-CSharp
-        m_MethodName: DisableBuy
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 1126080099}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1126080100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1629,18 +1617,6 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1536903222}
-        m_TargetAssemblyTypeName: InventoryManager, Assembly-CSharp
-        m_MethodName: DisableBuy
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 1178362756}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1932,6 +1908,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coins: {fileID: 263473891}
   error: {fileID: 533184613}
+  buySwords:
+  - {fileID: 1178362756}
+  - {fileID: 1641298048}
+  - {fileID: 1126080099}
 --- !u!1 &1587215350
 GameObject:
   m_ObjectHideFlags: 0
@@ -2101,18 +2081,6 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1536903222}
-        m_TargetAssemblyTypeName: InventoryManager, Assembly-CSharp
-        m_MethodName: DisableBuy
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 1641298048}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2576,8 +2544,8 @@ RectTransform:
   - {fileID: 533184615}
   - {fileID: 1326432049}
   - {fileID: 835672745}
-  - {fileID: 675734360}
   - {fileID: 2102691317}
+  - {fileID: 675734360}
   - {fileID: 462609455}
   m_Father: {fileID: 1536903220}
   m_RootOrder: 0
@@ -2656,7 +2624,7 @@ RectTransform:
   - {fileID: 1178362755}
   - {fileID: 1751257482}
   m_Father: {fileID: 2009684957}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
