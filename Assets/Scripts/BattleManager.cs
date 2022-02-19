@@ -94,6 +94,16 @@ public class BattleManager : MonoBehaviour
             enemy.scrollEnemy -= 1;
             enemy.UseScroll();
         }
+        else if (3.5 < distance < 2.5 && Player.Instance.health < enemy.health && enemy.attack >= Player.Instance.attack)
+        {
+            MoveLeft();
+            Attack();
+        }
+        else if (3.5 < distance < 2.5 && Player.Instance.apple > 0)
+        {
+            MoveLeft();
+            Defense();
+        }
         else if(distance > 3)
         {
             MoveLeft();
@@ -118,7 +128,6 @@ public class BattleManager : MonoBehaviour
         enabled = Player.Instance;
         disabled = enemy;
         disabledHealthBar = enemyHealthBar;
-        enabledHealthBar = playerHealthBar;
     }
     IEnumerator DelayButtons()
     {
@@ -163,7 +172,7 @@ public class BattleManager : MonoBehaviour
     {
         enabled.Attack();
 
-        if ((enabled.transform.position.x - disabled.transform.position.x < 1.5) && (enabled.transform.position.x - disabled.transform.position.x > -1.5) && !disabled.isDefending)
+        if ((distance < 1.5) && (distance > -1.5) && !disabled.isDefending)
         {
             disabled.TakeDamage();
             disabled.health -= disabled.defense * enabled.attack;
