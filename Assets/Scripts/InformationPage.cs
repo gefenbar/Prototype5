@@ -16,7 +16,8 @@ public class InformationPage : MonoBehaviour
     public Text coins;
     public Text name;
     public Text wins;
-     public Text losses;
+    public Text description;
+    public Text losses;
      public Text attack;
     public Text defense;
     public Sprite[] swords = new Sprite[4];
@@ -25,6 +26,7 @@ public class InformationPage : MonoBehaviour
     // public Text weakness;
     void Start()
     {
+        description.text = Player.Instance.description.ToString();
         wins.text=Player.Instance.wins.ToString();
         losses.text=Player.Instance.losses.ToString();
         coins.text = Player.Instance.coins.ToString();

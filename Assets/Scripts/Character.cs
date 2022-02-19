@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class Character : MonoBehaviour
 {
-    public ParticleSystem boostEffect;
-    public ParticleSystem healEffect;
-    public ParticleSystem bloodEffect;
+    public ParticleSystem appleEffect;
+    public ParticleSystem potionEffect;
+    public ParticleSystem scrollEffect;
     public GameObject body;
     public string name;
     public bool isDefending = false;
@@ -15,8 +15,7 @@ public class Character : MonoBehaviour
     public float health = 100;
     public int defense = 1;
     public float attack = 1;
-    public string weakness;
-    public string strength;
+    public string description;  
     int counter = 10;
     public Text timer;
     public SoundManagerScript soundManager;
@@ -66,7 +65,6 @@ public class Character : MonoBehaviour
         animator.SetBool("Damage", true);
         StartCoroutine(ReturnToPosition());
         soundManager.InjuredSound();
-        //playBoost(bloodEffect);
     }
 
     public void Die()
@@ -81,7 +79,7 @@ public class Character : MonoBehaviour
 
     public void UseApple()
     {
-        playBoost(boostEffect);
+        playBoost(appleEffect);
         soundManager.UseUpgrade();
         animator.SetBool("useUpgrade", true);
         attack += 10;
@@ -90,9 +88,8 @@ public class Character : MonoBehaviour
     }
     public void UsePotion()
     {
-        // playBoost(healEffect);
+        playBoost(potionEffect);
         soundManager.HealSound();
-
         animator.SetBool("useUpgrade", true);
         health += 20;
         StartCoroutine(UpgradesTimer("Potion"));
@@ -101,7 +98,7 @@ public class Character : MonoBehaviour
     }
     public void UseScroll()
     {
-        // playBoost(boostEffect);
+        playBoost(scrollEffect);
         soundManager.UseUpgrade();
         attack += 8;
         health += 12;
@@ -137,9 +134,9 @@ public class Character : MonoBehaviour
 
         if (counter == 0)
         {
-            // stopBoost(boostEffect);
-            // stopBoost(boostEffect);
-            stopBoost(boostEffect);
+            stopBoost(appleEffect);
+            stopBoost(potionEffect);
+            stopBoost(scrollEffect);
             if (upgrade == "Apple")
             {
                 attack -= 10;
