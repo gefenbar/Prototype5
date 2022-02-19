@@ -18,6 +18,7 @@ public class BattleManager : MonoBehaviour
     public Button potion;
     public Button scroll;
     public Enemy[] enemies = new Enemy[15];
+    public Text result;
     HealthBar disabledHealthBar;
     public GameObject playerBody;
     public Button[] buttons = new Button[10];
@@ -129,16 +130,24 @@ public class BattleManager : MonoBehaviour
                 DisableButtons();
                 if (disabled == Player.Instance)
                 {
+                    if(result.text == "YOU WIN!")
+                    {
+                        result.text = "IT'S A DRAW!";
+                    }
+                    else 
+                        result.text = "YOU LOSE!";
                     Player.Instance.coins -= Player.Instance.bet;
                     Player.Instance.losses += 1;
                 }
                 else
                 {
                     if (Player.Instance.bossNumber == 15)
-                        Debug.Log("YOU WON!");
+                        result.text = "YOU WIN THE GAME!";
+                    
 
                     else
                     {
+                        result.text = "YOU WIN!";
                         Player.Instance.bossNumber++;
                         Player.Instance.coins += Player.Instance.bet;
                         Player.Instance.wins += 1;
@@ -149,7 +158,6 @@ public class BattleManager : MonoBehaviour
 
             IEnumerator BackToMain()
             {
-                //Debug.Log("YOU WON THE FIGHT");
                 yield return new WaitForSeconds(3f);
                 SceneManager.LoadScene("Main");
             }
