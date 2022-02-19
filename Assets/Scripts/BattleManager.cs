@@ -94,12 +94,12 @@ public class BattleManager : MonoBehaviour
             enemy.scrollEnemy -= 1;
             enemy.UseScroll();
         }
-        else if (3.5 < distance < 2.5 && Player.Instance.health < enemy.health && enemy.attack >= Player.Instance.attack)
+        else if (1 < distance && distance < 3 && Player.Instance.scroll > 0)
         {
             MoveLeft();
             Attack();
         }
-        else if (3.5 < distance < 2.5 && Player.Instance.apple > 0)
+        else if (1 < distance && distance < 3 && Player.Instance.apple == 0)
         {
             MoveLeft();
             Defense();
