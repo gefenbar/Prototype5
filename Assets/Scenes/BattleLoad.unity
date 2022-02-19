@@ -468,17 +468,94 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1173553261239456818, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: name
+      value: Prudes
+      objectReference: {fileID: 0}
+    - target: {fileID: 1173553261239456818, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: description
+      value: meaning "proud"; one of the most famous Roman gladiator names of a famous
+        gladiator who was known for his epic battle against Tetraites.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2271699670859527877, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: name
+      value: 'Mevia '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2271699670859527877, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: description
+      value: meaning unknown, was the most famous ancient Roman gladiator amongst
+        the very rare female gladiators. She was more of a venatore who fought animals
+        rather than people.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3734444921935157870, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: name
+      value: Gannicus
+      objectReference: {fileID: 0}
+    - target: {fileID: 3734444921935157870, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: description
+      value: 'Gannicus is one of the most skilled, durable, and athletic fighters
+        of the ancient Roman period.  He could be compared to the best gladiators
+        such as Spartacus and Crixcus due to his fighting powers and techniques.   
+        Read more: https://historyten.com/roman/famous-roman-gladiators/#ixzz7LMUenFaG'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335847218525735104, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: name
+      value: Commodus
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335847218525735104, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: description
+      value: meaning "suitable", "convenient", or "opportune". Commodus was a Roman
+        emperor who fought in the arena with the gladiators and was known to fight
+        in unfair matchups with weaker opponents. He had a huge ego and regarded
+        himself as quite the warrior.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8049789299303600827, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: name
+      value: Flamma
+      objectReference: {fileID: 0}
+    - target: {fileID: 8049789299303600827, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: description
+      value: meaning "the flame" was one of the most formidable and capable gladiators.
+        Originally from Syria, was a soldier in the Syrian army who was later captured,
+        condemned, and forced to fight in the arenas as a Gladiator in Ancient Rome.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8743061819408041822, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: name
+      value: Marcus Attilius
+      objectReference: {fileID: 0}
+    - target: {fileID: 8743061819408041822, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: description
+      value: meaning "Mars". Marcus Attilius was one of the many who chose to become
+        a gladiator on their own accord rather than slavery in ancient Rome.
+      objectReference: {fileID: 0}
+    - target: {fileID: 9020716337012394915, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: name
+      value: Crixus
+      objectReference: {fileID: 0}
+    - target: {fileID: 9020716337012394915, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: description
+      value: meaning "one with curly hair". Crixus was a famous gladiator known to
+        be the right-hand man of Spartacus. He was involved in the Gladiator war
+        against the Roman Empire.
+      objectReference: {fileID: 0}
     - target: {fileID: 9071513377284133047, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: body
       value: 
       objectReference: {fileID: 387621645}
     - target: {fileID: 9071513377284133047, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: name
-      value: Enemy3
+      value: Verus
       objectReference: {fileID: 0}
     - target: {fileID: 9071513377284133047, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: timer
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 9071513377284133047, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: description
+      value: meaning "a true one"; one of the many famous gladiators of the who was
+        famed for his battle with Priscus which had led to both parties winning a
+        Rudis from Emperor Titus, which is a wooden sword that symbolized a gladiator's
+        freedom.
       objectReference: {fileID: 0}
     - target: {fileID: 9071513377284133047, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: soundManager
@@ -542,11 +619,19 @@ PrefabInstance:
       objectReference: {fileID: 387621644}
     - target: {fileID: 9071513378736235630, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: name
-      value: Enemy4
+      value: Priscus
       objectReference: {fileID: 0}
     - target: {fileID: 9071513378736235630, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: timer
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 9071513378736235630, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: description
+      value: meaning "ancient", one of the two ancient roman gladiators who are famous
+        for their unforgettable battle between Priscus and Verus in which neither
+        could get the upper hand. They were both awarded freedom by the emperor of
+        the time Titus. The latter presented them with a Rudis that gained them their
+        independence.
       objectReference: {fileID: 0}
     - target: {fileID: 9071513378736235630, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: soundManager
@@ -558,7 +643,7 @@ PrefabInstance:
       objectReference: {fileID: 1221349370}
     - target: {fileID: 9071513378742902380, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: name
-      value: Enemy1
+      value: Tetraites
       objectReference: {fileID: 0}
     - target: {fileID: 9071513378742902380, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: timer
@@ -566,10 +651,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9071513378742902380, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: description
-      value: A Thracian soldier by birth, Spartacus was captured by the Romans and
-        then sold as a slave. he is the most famous gladiator of ancient Rome and
-        perhaps the greatest gladiator whose story has been told and retold throughout
-        the ages. He led many battles against Roman soldiers and had emerged victorious.
+      value: meaning unknown. He is one of the many famous gladiators known for his
+        battles with another gladiator named Prudes.
       objectReference: {fileID: 0}
     - target: {fileID: 9071513378742902380, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: soundManager
@@ -581,15 +664,34 @@ PrefabInstance:
       objectReference: {fileID: 387621646}
     - target: {fileID: 9071513379128385647, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: name
-      value: Enemy2
+      value: Spiculus
       objectReference: {fileID: 0}
     - target: {fileID: 9071513379128385647, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: timer
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 9071513379128385647, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: description
+      value: meaning "ear of grain", was one of the ancient Roman famous gladiators
+        who fought to win many battles in the amphitheater. He had built a close
+        relationship with Roman Emperor Nero, who awarded him riches and rewards
+        because of his courage. Later, he was asked by Emperor Nero after his downfall
+        to kill him, to which he refused.
+      objectReference: {fileID: 0}
+    - target: {fileID: 9071513379128385647, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: soundManager
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142061711463311132, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: name
+      value: Carpophorus
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142061711463311132, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: description
+      value: meaning "fruit bearer". Carpophorus is not a Roman gladiator in the
+        true sense, but a bestarii. He specialized as a fighter was pitted against
+        animals, but this makes his feat no less legendary and deserving to be on
+        this list.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}

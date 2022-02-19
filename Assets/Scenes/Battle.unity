@@ -6402,7 +6402,7 @@ PrefabInstance:
       objectReference: {fileID: 1888157432}
     - target: {fileID: 9071513377284133047, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: name
-      value: Enemy3
+      value: Hemes
       objectReference: {fileID: 0}
     - target: {fileID: 9071513377284133047, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: timer
@@ -6412,6 +6412,11 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 1888157434}
+    - target: {fileID: 9071513377284133047, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: description
+      value: Not much is known about Hermes, the only thing is known that Hermes
+        is a cruel gladiator, all the gladiators who competed  him found their deaths
+      objectReference: {fileID: 0}
     - target: {fileID: 9071513377284133047, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: soundManager
       value: 
@@ -6842,7 +6847,7 @@ PrefabInstance:
       objectReference: {fileID: 509369106}
     - target: {fileID: 9071513378736235630, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: name
-      value: Enemy4
+      value: Priscus
       objectReference: {fileID: 0}
     - target: {fileID: 9071513378736235630, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: timer
@@ -6853,6 +6858,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 509369108}
     - target: {fileID: 9071513378736235630, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: description
+      value: The fastest gladiator that competes at the arena, is known as the gladiator
+        with the "flash attack".
+      objectReference: {fileID: 0}
+    - target: {fileID: 9071513378736235630, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: soundManager
       value: 
       objectReference: {fileID: 2072285004}
@@ -6862,7 +6872,7 @@ PrefabInstance:
       objectReference: {fileID: 734893473}
     - target: {fileID: 9071513378742902380, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: name
-      value: Enemy1
+      value: Tetraites
       objectReference: {fileID: 0}
     - target: {fileID: 9071513378742902380, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: timer
@@ -6872,6 +6882,10 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 734893475}
+    - target: {fileID: 9071513378742902380, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: description
+      value: Popular gladiator in Rome, famous for his sword skills and his agility
+      objectReference: {fileID: 0}
     - target: {fileID: 9071513378742902380, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: soundManager
       value: 
@@ -6970,7 +6984,7 @@ PrefabInstance:
       objectReference: {fileID: 592221687}
     - target: {fileID: 9071513379128385647, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: name
-      value: Enemy2
+      value: Spiculus
       objectReference: {fileID: 0}
     - target: {fileID: 9071513379128385647, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: timer
@@ -6980,6 +6994,11 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 592221689}
+    - target: {fileID: 9071513379128385647, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: description
+      value: One of the most famous gladiators in Rome won a number of battles and
+        emerged victorious against many skilled adversaries
+      objectReference: {fileID: 0}
     - target: {fileID: 9071513379128385647, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: soundManager
       value: 
