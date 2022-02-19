@@ -1,6 +1,5 @@
 {
   "dependencies": {
-  "com.unity.ml-agents": "git+https://github.com/Unity-Technologies/ml-agents.git?path=com.unity.ml-agents#release_17",
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.cinemachine": "2.8.0",
     "com.unity.collab-proxy": "1.13.5",
@@ -10,6 +9,7 @@
     "com.unity.inputsystem": "1.1.1",
     "com.unity.learn.iet-framework": "2.0.0",
     "com.unity.live-capture": "1.0.1",
+    "com.unity.ml-agents": "1.0.8",
     "com.unity.test-framework": "1.1.29",
     "com.unity.textmeshpro": "3.0.6",
     "com.unity.timeline": "1.6.2",
