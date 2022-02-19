@@ -1192,9 +1192,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '+8 Power
-
-    +12 Health
+  m_Text: '+8 defense
 
     Price: 350 Coins'
 --- !u!222 &848439979
@@ -1607,6 +1605,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coins: {fileID: 423662405}
   error: {fileID: 384613081}
+  buySwords:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &1125640524
 GameObject:
   m_ObjectHideFlags: 0
@@ -1875,7 +1877,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '+10 Power
+  m_Text: '+6 Power
 
     Price: 150 Coins'
 --- !u!222 &1310843870

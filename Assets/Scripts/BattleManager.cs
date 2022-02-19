@@ -19,6 +19,7 @@ public class BattleManager : MonoBehaviour
     public Button scroll;
     public Enemy[] enemies = new Enemy[15];
     public Text result;
+    float distance;
     HealthBar disabledHealthBar;
     public GameObject playerBody;
     public Button[] buttons = new Button[10];
@@ -45,6 +46,7 @@ public class BattleManager : MonoBehaviour
 
     public void Update()
     {
+        distance = Player.Instance.body.transform.position.x - enemy.transform.position.x;
         if (Player.Instance.apple < 1)
             apple.interactable = false;
 
@@ -61,15 +63,30 @@ public class BattleManager : MonoBehaviour
         enabled = enemy;
         disabled = Player.Instance;
         disabledHealthBar = playerHealthBar;
-        Attack();
-        // if (enemy.health < 20)
-        // {
-        //     //    Defense();
-        // }
-        // else
-        // {
-        //     // Attack();
-        // }
+
+        if (enemy.health < 20 && enemy.potionEnemy > 0 && distance > 2)
+        {
+            enemy.potionEnemy -=1;
+            enemy.UsePotion();
+        }
+        else if (enemy.health > 50 && enemy.appleEnemy > 0 && distance > 2)
+        {
+            enemy.appleEnemy -= 1;
+            enemy.UseApple();
+        }
+        else if (enemy.attack < Player.Instance.attack - 5 && enemy.scrollEnemy > 0 && distance > 2)
+        {
+            enemy.scrollEnemy -= 1;
+            enemy.UseScroll();
+        }
+        else if(distance > 3)
+        {
+            MoveLeft();
+        }
+        else if(Player.Instance.counter > 5)
+        {
+            MoveRight();
+        }
     }
 
     public void PlayerMove()
@@ -90,29 +107,32 @@ public class BattleManager : MonoBehaviour
     public void MoveRight()
     {
 
-        if (enabled.transform.position.x > (disabled.transform.position.x + 1.5))
+        if (enabled.transform.position.x > -3 && enabled == enemy) 
+        {
+            enabled.MoveRight();
+
+        }
+        if (distance > 1 && enabled == Player.Instance)
         {
             enabled.MoveRight();
         }
-        else
-        {
-            //pop up message to the screen
-        }
+
 
 
     }
     public void MoveLeft()
     {
 
-        if (enabled.transform.position.x < 5)
+        if (enabled.transform.position.x < 5 && enabled == Player.Instance)
         {
             enabled.MoveLeft();
 
         }
-        else
+        if (distance > 1 && enabled == enemy)
         {
-            //pop up message to the screen
+            enabled.MoveLeft();
         }
+        
 
     }
     public void Attack()

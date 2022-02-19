@@ -16,7 +16,7 @@ public class Character : MonoBehaviour
     public int defense = 1;
     public float attack = 1;
     public string description;  
-    int counter = 10;
+    public int counter = 10;
     public Text timer;
     public SoundManagerScript soundManager;
     public Animator animator;
@@ -82,7 +82,7 @@ public class Character : MonoBehaviour
         playBoost(appleEffect);
         soundManager.UseUpgrade();
         animator.SetBool("useUpgrade", true);
-        attack += 10;
+        attack += 6;
         StartCoroutine(UpgradesTimer("Apple"));
         StartCoroutine(ReturnToPosition());
     }
@@ -100,8 +100,7 @@ public class Character : MonoBehaviour
     {
         playBoost(scrollEffect);
         soundManager.UseUpgrade();
-        attack += 8;
-        health += 12;
+        defense += 8;
         animator.SetBool("useUpgrade", true);
         StartCoroutine(UpgradesTimer("Scroll"));
         StartCoroutine(ReturnToPosition());
