@@ -1028,7 +1028,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: '+10 Attack
 
-    Price: 150 Coins'
+    Price: 220 Coins'
 --- !u!222 &947956083
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2346,7 +2346,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: '+20 Attack
 
-    Price: 250 Coins'
+    Price: 350 Coins'
 --- !u!222 &1900777711
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2427,7 +2427,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: '+30 Attack
 
-    Price: 350 Coins'
+    Price: 500 Coins'
 --- !u!222 &1917246197
 CanvasRenderer:
   m_ObjectHideFlags: 0

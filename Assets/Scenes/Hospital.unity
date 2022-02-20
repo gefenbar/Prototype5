@@ -1194,7 +1194,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: '+8 defense
 
-    Price: 350 Coins'
+    Price: 150 Coins'
 --- !u!222 &848439979
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1681,7 +1681,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: '+20 Health
 
-    Price: 250 Coins'
+    Price: 150 Coins'
 --- !u!222 &1125640527
 CanvasRenderer:
   m_ObjectHideFlags: 0

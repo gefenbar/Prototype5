@@ -7,11 +7,11 @@ public class InventoryManager : MonoBehaviour
     public Text coins;
     public Text error;
     int applePrice = 150;
-    int potionPrice = 250;
-    int scrollPrice = 350;
-    int sword1price = 150;
-    int sword2price = 250;
-    int sword3price = 350;
+    int potionPrice = 150;
+    int scrollPrice = 150;
+    int sword1price = 220;
+    int sword2price = 350;
+    int sword3price = 500;
     public Button [] buySwords=new Button [3];
    
     public void Update()

@@ -67,7 +67,7 @@ public class BattleManager : MonoBehaviour
         {
             Attack();
         }
-        else if (distance < 2.5 && enemy.attack < Player.Instance.attack && enemy.health > 50)
+        else if (distance < 2.5 && enemy.attack+15 < Player.Instance.attack && enemy.health > 30)
         {
             Defense();
         }
