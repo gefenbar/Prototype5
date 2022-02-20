@@ -450,6 +450,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 239453859}
   m_CullTransparentMesh: 1
+--- !u!95 &281513171 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1924065032310651456, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+  m_PrefabInstance: {fileID: 387621639}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &283423063 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1246571829601279004, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+  m_PrefabInstance: {fileID: 387621639}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &312294839 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1160697154220238699, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+  m_PrefabInstance: {fileID: 387621639}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &362245093 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1622207782547640028, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+  m_PrefabInstance: {fileID: 387621639}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &373376974 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6335847218525735104, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
@@ -473,6 +493,10 @@ PrefabInstance:
       value: Prudes
       objectReference: {fileID: 0}
     - target: {fileID: 1173553261239456818, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1158904148}
+    - target: {fileID: 1173553261239456818, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: description
       value: meaning "proud"; one of the most famous Roman gladiator names of a famous
         gladiator who was known for his epic battle against Tetraites.
@@ -481,6 +505,10 @@ PrefabInstance:
       propertyPath: name
       value: 'Mevia '
       objectReference: {fileID: 0}
+    - target: {fileID: 2271699670859527877, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 312294839}
     - target: {fileID: 2271699670859527877, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: description
       value: meaning unknown, was the most famous ancient Roman gladiator amongst
@@ -491,6 +519,10 @@ PrefabInstance:
       propertyPath: name
       value: Gannicus
       objectReference: {fileID: 0}
+    - target: {fileID: 3734444921935157870, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 362245093}
     - target: {fileID: 3734444921935157870, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: description
       value: 'Gannicus is one of the most skilled, durable, and athletic fighters
@@ -503,13 +535,25 @@ PrefabInstance:
       value: 'Tetricus '
       objectReference: {fileID: 0}
     - target: {fileID: 5034781426090485015, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 533293470}
+    - target: {fileID: 5034781426090485015, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: description
       value: The arena champions, prepare to die.
       objectReference: {fileID: 0}
+    - target: {fileID: 5216596844269849173, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1750287694}
     - target: {fileID: 6335847218525735104, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: name
       value: Commodus
       objectReference: {fileID: 0}
+    - target: {fileID: 6335847218525735104, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1480656332}
     - target: {fileID: 6335847218525735104, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: description
       value: meaning "suitable", "convenient", or "opportune". Commodus was a Roman
@@ -522,6 +566,10 @@ PrefabInstance:
       value: 'Roburius '
       objectReference: {fileID: 0}
     - target: {fileID: 6664480360588399704, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 878581962}
+    - target: {fileID: 6664480360588399704, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: description
       value: The second most powerful,  brutal, and fastest gladiator.
       objectReference: {fileID: 0}
@@ -529,6 +577,10 @@ PrefabInstance:
       propertyPath: name
       value: Flamma
       objectReference: {fileID: 0}
+    - target: {fileID: 8049789299303600827, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 283423063}
     - target: {fileID: 8049789299303600827, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: description
       value: meaning "the flame" was one of the most formidable and capable gladiators.
@@ -540,6 +592,10 @@ PrefabInstance:
       value: Marcus Attilius
       objectReference: {fileID: 0}
     - target: {fileID: 8743061819408041822, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1076354023}
+    - target: {fileID: 8743061819408041822, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: description
       value: meaning "Mars". Marcus Attilius was one of the many who chose to become
         a gladiator on their own accord rather than slavery in ancient Rome.
@@ -548,6 +604,10 @@ PrefabInstance:
       propertyPath: name
       value: Crixus
       objectReference: {fileID: 0}
+    - target: {fileID: 9020716337012394915, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1793623347}
     - target: {fileID: 9020716337012394915, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: description
       value: meaning "one with curly hair". Crixus was a famous gladiator known to
@@ -566,6 +626,10 @@ PrefabInstance:
       propertyPath: timer
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 9071513377284133047, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 387621650}
     - target: {fileID: 9071513377284133047, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: description
       value: meaning "a true one"; one of the many famous gladiators of the who was
@@ -642,6 +706,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 9071513378736235630, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 387621648}
+    - target: {fileID: 9071513378736235630, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: description
       value: meaning "ancient", one of the two ancient roman gladiators who are famous
         for their unforgettable battle between Priscus and Verus in which neither
@@ -673,6 +741,10 @@ PrefabInstance:
       propertyPath: defense
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9071513378742902380, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1221349372}
     - target: {fileID: 9071513378742902380, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: appleEnemy
       value: 0
@@ -719,6 +791,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 9071513379128385647, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 387621652}
+    - target: {fileID: 9071513379128385647, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: description
       value: meaning "ear of grain", was one of the ancient Roman famous gladiators
         who fought to win many battles in the amphitheater. He had built a close
@@ -734,6 +810,10 @@ PrefabInstance:
       propertyPath: name
       value: Carpophorus
       objectReference: {fileID: 0}
+    - target: {fileID: 9142061711463311132, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 281513171}
     - target: {fileID: 9142061711463311132, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: description
       value: meaning "fruit bearer". Carpophorus is not a Roman gladiator in the
@@ -800,6 +880,21 @@ GameObject:
 --- !u!1 &387621646 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9071513377698474624, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+  m_PrefabInstance: {fileID: 387621639}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &387621648 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9071513377763185623, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+  m_PrefabInstance: {fileID: 387621639}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &387621650 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9071513378723341734, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+  m_PrefabInstance: {fileID: 387621639}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &387621652 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9071513377698474630, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
   m_PrefabInstance: {fileID: 387621639}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &394431384 stripped
@@ -972,6 +1067,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 524583555}
   m_CullTransparentMesh: 1
+--- !u!95 &533293470 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8723422088151952527, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+  m_PrefabInstance: {fileID: 387621639}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &536098358
 GameObject:
   m_ObjectHideFlags: 0
@@ -1498,6 +1598,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 776225707}
   m_CullTransparentMesh: 1
+--- !u!95 &878581962 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4402650157250097983, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+  m_PrefabInstance: {fileID: 387621639}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &967083243
 GameObject:
   m_ObjectHideFlags: 0
@@ -1775,6 +1880,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1570df2515a51539392c91507ca3c7d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1076354023 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5984758321133808130, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+  m_PrefabInstance: {fileID: 387621639}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1157801600
 GameObject:
   m_ObjectHideFlags: 0
@@ -1841,6 +1951,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1158904148 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9185767074119964803, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+  m_PrefabInstance: {fileID: 387621639}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1162630802 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1173553261239456818, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
@@ -1868,6 +1983,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 9071513377195683061, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
   m_PrefabInstance: {fileID: 387621639}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1221349372 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9071513377195683067, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+  m_PrefabInstance: {fileID: 387621639}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1368892826 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9020716337012394915, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
@@ -1879,6 +1999,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1570df2515a51539392c91507ca3c7d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1480656332 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4555590058839642325, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+  m_PrefabInstance: {fileID: 387621639}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1491554233
 GameObject:
   m_ObjectHideFlags: 0
@@ -2219,6 +2344,16 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 
+--- !u!95 &1750287694 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5358207711374822555, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+  m_PrefabInstance: {fileID: 387621639}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1793623347 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9090493669347146239, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+  m_PrefabInstance: {fileID: 387621639}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1900460990
 GameObject:
   m_ObjectHideFlags: 0
