@@ -213,6 +213,7 @@ public class BattleManager : MonoBehaviour
 
             IEnumerator BackToMain()
             {
+                DisableButtons();
                 yield return new WaitForSeconds(3f);
                 SceneManager.LoadScene("Main");
             }
