@@ -63,7 +63,7 @@ public class BattleManager : MonoBehaviour
         enabled = enemy;
         disabled = Player.Instance;
         disabledHealthBar = playerHealthBar;
-        if (distance < 2.5 && & enemy.attack >= Player.Instance.attack)
+        if (distance < 2.5 && enemy.attack >= Player.Instance.attack)
         {
             Attack();
         }
