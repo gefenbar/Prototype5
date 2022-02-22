@@ -493,6 +493,14 @@ PrefabInstance:
       value: Prudes
       objectReference: {fileID: 0}
     - target: {fileID: 1173553261239456818, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: attack
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1173553261239456818, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: defense
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1173553261239456818, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: animator
       value: 
       objectReference: {fileID: 1158904148}
@@ -504,6 +512,14 @@ PrefabInstance:
     - target: {fileID: 2271699670859527877, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: name
       value: 'Mevia '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2271699670859527877, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: attack
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2271699670859527877, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: defense
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 2271699670859527877, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: animator
@@ -518,6 +534,14 @@ PrefabInstance:
     - target: {fileID: 3734444921935157870, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: name
       value: Gannicus
+      objectReference: {fileID: 0}
+    - target: {fileID: 3734444921935157870, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: attack
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 3734444921935157870, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: defense
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 3734444921935157870, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: animator
@@ -535,6 +559,14 @@ PrefabInstance:
       value: 'Tetricus '
       objectReference: {fileID: 0}
     - target: {fileID: 5034781426090485015, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: attack
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5034781426090485015, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: defense
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 5034781426090485015, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: animator
       value: 
       objectReference: {fileID: 533293470}
@@ -543,12 +575,24 @@ PrefabInstance:
       value: The arena champions, prepare to die.
       objectReference: {fileID: 0}
     - target: {fileID: 5216596844269849173, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: attack
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5216596844269849173, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: defense
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 5216596844269849173, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: animator
       value: 
       objectReference: {fileID: 1750287694}
     - target: {fileID: 6335847218525735104, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: name
       value: Commodus
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335847218525735104, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: defense
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6335847218525735104, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: animator
@@ -566,6 +610,14 @@ PrefabInstance:
       value: 'Roburius '
       objectReference: {fileID: 0}
     - target: {fileID: 6664480360588399704, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: attack
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 6664480360588399704, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: defense
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6664480360588399704, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: animator
       value: 
       objectReference: {fileID: 878581962}
@@ -576,6 +628,10 @@ PrefabInstance:
     - target: {fileID: 8049789299303600827, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: name
       value: Flamma
+      objectReference: {fileID: 0}
+    - target: {fileID: 8049789299303600827, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: defense
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8049789299303600827, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: animator
@@ -592,6 +648,14 @@ PrefabInstance:
       value: Marcus Attilius
       objectReference: {fileID: 0}
     - target: {fileID: 8743061819408041822, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: attack
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8743061819408041822, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: defense
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8743061819408041822, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: animator
       value: 
       objectReference: {fileID: 1076354023}
@@ -603,6 +667,10 @@ PrefabInstance:
     - target: {fileID: 9020716337012394915, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: name
       value: Crixus
+      objectReference: {fileID: 0}
+    - target: {fileID: 9020716337012394915, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: defense
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 9020716337012394915, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: animator
@@ -625,6 +693,14 @@ PrefabInstance:
     - target: {fileID: 9071513377284133047, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: timer
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 9071513377284133047, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: attack
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9071513377284133047, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: defense
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 9071513377284133047, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: animator
@@ -704,6 +780,14 @@ PrefabInstance:
     - target: {fileID: 9071513378736235630, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: timer
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 9071513378736235630, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: attack
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9071513378736235630, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: defense
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 9071513378736235630, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: animator
@@ -789,6 +873,14 @@ PrefabInstance:
     - target: {fileID: 9071513379128385647, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: timer
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 9071513379128385647, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: attack
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9071513379128385647, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: defense
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9071513379128385647, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: animator
