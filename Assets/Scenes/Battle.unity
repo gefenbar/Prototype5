@@ -6321,6 +6321,10 @@ PrefabInstance:
       propertyPath: soundManager
       value: 
       objectReference: {fileID: 2072285004}
+    - target: {fileID: 3538512020914368543, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3734444921935157870, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: body
       value: 
@@ -6628,6 +6632,14 @@ PrefabInstance:
     - target: {fileID: 9071513377129263738, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: m_Layer
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9071513377129263738, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9071513377129263742, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
+      propertyPath: m_UpdateMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9071513377145887540, guid: d2a2c175aa7a7dbdbb3732c1e10fb018, type: 3}
       propertyPath: m_Layer

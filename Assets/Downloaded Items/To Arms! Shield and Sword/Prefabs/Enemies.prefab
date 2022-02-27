@@ -8725,6 +8725,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1570df2515a51539392c91507ca3c7d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  appleEffect: {fileID: 0}
+  potionEffect: {fileID: 0}
+  scrollEffect: {fileID: 0}
   body: {fileID: 1588527390182017724}
   name: Enemy10
   isDefending: 0
@@ -8732,11 +8735,14 @@ MonoBehaviour:
   health: 100
   defense: 11
   attack: 9
-  weakness: 
-  strength: 
+  description: 
+  counter: 10
   timer: {fileID: 0}
   soundManager: {fileID: 0}
   animator: {fileID: 1812523957218901034}
+  appleEnemy: 0
+  scrollEnemy: 0
+  potionEnemy: 0
 --- !u!1 &1591472609377815221
 GameObject:
   m_ObjectHideFlags: 0
@@ -12068,6 +12074,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1570df2515a51539392c91507ca3c7d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  appleEffect: {fileID: 0}
+  potionEffect: {fileID: 0}
+  scrollEffect: {fileID: 0}
   body: {fileID: 2195433641724068475}
   name: Enemy14
   isDefending: 0
@@ -12075,11 +12084,14 @@ MonoBehaviour:
   health: 100
   defense: 11
   attack: 9
-  weakness: 
-  strength: 
+  description: 
+  counter: 10
   timer: {fileID: 0}
   soundManager: {fileID: 0}
   animator: {fileID: 4690616489614619278}
+  appleEnemy: 0
+  scrollEnemy: 0
+  potionEnemy: 0
 --- !u!1 &2201530345438977701
 GameObject:
   m_ObjectHideFlags: 0
@@ -19071,6 +19083,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1570df2515a51539392c91507ca3c7d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  appleEffect: {fileID: 0}
+  potionEffect: {fileID: 0}
+  scrollEffect: {fileID: 0}
   body: {fileID: 3365191517127973679}
   name: Enemy9
   isDefending: 0
@@ -19078,11 +19093,14 @@ MonoBehaviour:
   health: 100
   defense: 11
   attack: 9
-  weakness: 
-  strength: 
+  description: 
+  counter: 10
   timer: {fileID: 0}
   soundManager: {fileID: 0}
   animator: {fileID: 302907112124228079}
+  appleEnemy: 0
+  scrollEnemy: 0
+  potionEnemy: 0
 --- !u!1 &3365567406587253317
 GameObject:
   m_ObjectHideFlags: 0
@@ -22149,6 +22167,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1570df2515a51539392c91507ca3c7d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  appleEffect: {fileID: 0}
+  potionEffect: {fileID: 0}
+  scrollEffect: {fileID: 0}
   body: {fileID: 3996572795935157875}
   name: Enemy15
   isDefending: 0
@@ -22156,11 +22177,14 @@ MonoBehaviour:
   health: 100
   defense: 11
   attack: 9
-  weakness: 
-  strength: 
+  description: 
+  counter: 10
   timer: {fileID: 0}
   soundManager: {fileID: 0}
   animator: {fileID: 8842544962653795429}
+  appleEnemy: 0
+  scrollEnemy: 0
+  potionEnemy: 0
 --- !u!1 &3999731791763748288
 GameObject:
   m_ObjectHideFlags: 0
@@ -30154,6 +30178,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1570df2515a51539392c91507ca3c7d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  appleEffect: {fileID: 0}
+  potionEffect: {fileID: 0}
+  scrollEffect: {fileID: 0}
   body: {fileID: 5295381776829227645}
   name: Enemy7
   isDefending: 0
@@ -30161,11 +30188,14 @@ MonoBehaviour:
   health: 100
   defense: 11
   attack: 9
-  weakness: 
-  strength: 
+  description: 
+  counter: 10
   timer: {fileID: 0}
   soundManager: {fileID: 0}
   animator: {fileID: 594877554633344927}
+  appleEnemy: 0
+  scrollEnemy: 0
+  potionEnemy: 0
 --- !u!1 &5297069538427636088
 GameObject:
   m_ObjectHideFlags: 0
@@ -31654,6 +31684,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1570df2515a51539392c91507ca3c7d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  appleEffect: {fileID: 0}
+  potionEffect: {fileID: 0}
+  scrollEffect: {fileID: 0}
   body: {fileID: 5547475683984474636}
   name: Enemy13
   isDefending: 0
@@ -31661,11 +31694,14 @@ MonoBehaviour:
   health: 100
   defense: 11
   attack: 9
-  weakness: 
-  strength: 
+  description: 
+  counter: 10
   timer: {fileID: 0}
   soundManager: {fileID: 0}
   animator: {fileID: 7724084168427893351}
+  appleEnemy: 0
+  scrollEnemy: 0
+  potionEnemy: 0
 --- !u!1 &5553241518982838527
 GameObject:
   m_ObjectHideFlags: 0
@@ -34871,6 +34907,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1570df2515a51539392c91507ca3c7d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  appleEffect: {fileID: 0}
+  potionEffect: {fileID: 0}
+  scrollEffect: {fileID: 0}
   body: {fileID: 6188595200896831758}
   name: Enemy8
   isDefending: 0
@@ -34878,11 +34917,14 @@ MonoBehaviour:
   health: 100
   defense: 11
   attack: 9
-  weakness: 
-  strength: 
+  description: 
+  counter: 10
   timer: {fileID: 0}
   soundManager: {fileID: 0}
   animator: {fileID: 2047926400507079829}
+  appleEnemy: 0
+  scrollEnemy: 0
+  potionEnemy: 0
 --- !u!1 &6188950055279963933
 GameObject:
   m_ObjectHideFlags: 0
@@ -36516,6 +36558,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1570df2515a51539392c91507ca3c7d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  appleEffect: {fileID: 0}
+  potionEffect: {fileID: 0}
+  scrollEffect: {fileID: 0}
   body: {fileID: 6486133648658916027}
   name: Enemy11
   isDefending: 0
@@ -36523,11 +36568,14 @@ MonoBehaviour:
   health: 100
   defense: 11
   attack: 9
-  weakness: 
-  strength: 
+  description: 
+  counter: 10
   timer: {fileID: 0}
   soundManager: {fileID: 0}
   animator: {fileID: 3612583522990539566}
+  appleEnemy: 0
+  scrollEnemy: 0
+  potionEnemy: 0
 --- !u!1 &6491561139035479269
 GameObject:
   m_ObjectHideFlags: 0
@@ -40074,6 +40122,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1570df2515a51539392c91507ca3c7d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  appleEffect: {fileID: 0}
+  potionEffect: {fileID: 0}
+  scrollEffect: {fileID: 0}
   body: {fileID: 7100878329537925588}
   name: Enemy6
   isDefending: 0
@@ -40081,11 +40132,14 @@ MonoBehaviour:
   health: 100
   defense: 11
   attack: 9
-  weakness: 
-  strength: 
+  description: 
+  counter: 10
   timer: {fileID: 0}
   soundManager: {fileID: 0}
   animator: {fileID: 7234290899242916132}
+  appleEnemy: 0
+  scrollEnemy: 0
+  potionEnemy: 0
 --- !u!1 &7102922380149771108
 GameObject:
   m_ObjectHideFlags: 0
@@ -45095,6 +45149,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1570df2515a51539392c91507ca3c7d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  appleEffect: {fileID: 0}
+  potionEffect: {fileID: 0}
+  scrollEffect: {fileID: 0}
   body: {fileID: 7959699189915412280}
   name: Enemy5
   isDefending: 0
@@ -45102,11 +45159,14 @@ MonoBehaviour:
   health: 100
   defense: 11
   attack: 9
-  weakness: 
-  strength: 
+  description: 
+  counter: 10
   timer: {fileID: 0}
   soundManager: {fileID: 0}
   animator: {fileID: 6238980441583362885}
+  appleEnemy: 0
+  scrollEnemy: 0
+  potionEnemy: 0
 --- !u!1 &7972487222488086771
 GameObject:
   m_ObjectHideFlags: 0
@@ -45447,6 +45507,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1570df2515a51539392c91507ca3c7d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  appleEffect: {fileID: 0}
+  potionEffect: {fileID: 0}
+  scrollEffect: {fileID: 0}
   body: {fileID: 8077087260152004624}
   name: Enemy12
   isDefending: 0
@@ -45454,11 +45517,14 @@ MonoBehaviour:
   health: 100
   defense: 11
   attack: 9
-  weakness: 
-  strength: 
+  description: 
+  counter: 10
   timer: {fileID: 0}
   soundManager: {fileID: 0}
   animator: {fileID: 4165780585569582757}
+  appleEnemy: 0
+  scrollEnemy: 0
+  potionEnemy: 0
 --- !u!1 &8078321153819480660
 GameObject:
   m_ObjectHideFlags: 0
@@ -51146,6 +51212,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1570df2515a51539392c91507ca3c7d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  appleEffect: {fileID: 0}
+  potionEffect: {fileID: 0}
+  scrollEffect: {fileID: 0}
   body: {fileID: 9071513377195683061}
   name: Enemy1
   isDefending: 0
@@ -51153,11 +51222,14 @@ MonoBehaviour:
   health: 100
   defense: 5
   attack: 3
-  weakness: 0
-  strength: 
+  description: 
+  counter: 10
   timer: {fileID: 0}
   soundManager: {fileID: 0}
   animator: {fileID: 9071513378584336679}
+  appleEnemy: 0
+  scrollEnemy: 0
+  potionEnemy: 0
 --- !u!1 &9071513377204911079
 GameObject:
   m_ObjectHideFlags: 0
@@ -54996,6 +55068,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1570df2515a51539392c91507ca3c7d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  appleEffect: {fileID: 0}
+  potionEffect: {fileID: 0}
+  scrollEffect: {fileID: 0}
   body: {fileID: 9071513377698474624}
   name: Enemy2
   isDefending: 0
@@ -55003,11 +55078,14 @@ MonoBehaviour:
   health: 100
   defense: 7
   attack: 5
-  weakness: 0
-  strength: 
+  description: 
+  counter: 10
   timer: {fileID: 0}
   soundManager: {fileID: 0}
   animator: {fileID: 9071513378441664889}
+  appleEnemy: 0
+  scrollEnemy: 0
+  potionEnemy: 0
 --- !u!1 &9071513377699005473
 GameObject:
   m_ObjectHideFlags: 0
@@ -55449,6 +55527,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1570df2515a51539392c91507ca3c7d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  appleEffect: {fileID: 0}
+  potionEffect: {fileID: 0}
+  scrollEffect: {fileID: 0}
   body: {fileID: 9071513377763185617}
   name: Enemy4
   isDefending: 0
@@ -55456,11 +55537,14 @@ MonoBehaviour:
   health: 100
   defense: 11
   attack: 9
-  weakness: 
-  strength: 
+  description: 
+  counter: 10
   timer: {fileID: 0}
   soundManager: {fileID: 0}
   animator: {fileID: 9071513378148797965}
+  appleEnemy: 0
+  scrollEnemy: 0
+  potionEnemy: 0
 --- !u!1 &9071513377763433540
 GameObject:
   m_ObjectHideFlags: 0
@@ -64106,6 +64190,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1570df2515a51539392c91507ca3c7d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  appleEffect: {fileID: 0}
+  potionEffect: {fileID: 0}
+  scrollEffect: {fileID: 0}
   body: {fileID: 9071513378723341728}
   name: Enemy3
   isDefending: 0
@@ -64113,11 +64200,14 @@ MonoBehaviour:
   health: 100
   defense: 9
   attack: 7
-  weakness: 0
-  strength: 
+  description: 
+  counter: 10
   timer: {fileID: 0}
   soundManager: {fileID: 0}
   animator: {fileID: 9071513377129263742}
+  appleEnemy: 0
+  scrollEnemy: 0
+  potionEnemy: 0
 --- !u!1 &9071513378728005267
 GameObject:
   m_ObjectHideFlags: 0
